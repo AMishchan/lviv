@@ -1,0 +1,303 @@
+a{
+    text-decoration: none !important;
+}
+.banner-breadcrumbs{
+    color:#fff;
+}
+/*====================================*landing your Lviv*/
+.landing-banner-container{
+    padding-left: 24%!important;
+    -webkit-align-self: flex-end !important;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+}
+.landing-banner-info{
+    position: absolute;
+    bottom:0;
+    padding-left: 20% !important;
+}
+.your-lviv-container .main-slider__slide .breadcrumbs {
+    margin-bottom: 10px !important;
+    color: #fff;
+
+}
+
+.landing-tab-menu li {
+    display: inline-block;
+}
+.your-lviv-container .landing-tab-menu a{
+  color:#6b6767;
+}
+
+.landing-tab-menu {
+    margin-bottom: 15px;
+}
+
+.landing-tab-menu li {
+    margin: 2px 1px;
+    padding: 5px 8px;
+    color: #6b6767;
+    background-color: rgba(175, 173, 173, 0.35);
+}
+
+.landing-desc-title {
+    font-weight: 700;
+}
+
+.whishes-list .event-name {
+    font-weight: 700;
+}
+
+.whishes-title {
+    background-color: #2a2a2a;
+    color: #fff;
+    text-align: center;
+    text-align: -moz-center;
+    padding: 8px 0;
+    margin-bottom: 0;
+}
+
+.whishes-list {
+    padding: 0px 20px;
+    margin: 20px 0 20px 0;
+}
+
+.whishes-item {
+    background-color: #b3b3b36b;
+    padding: 8px;
+    margin-bottom: 4px;
+}
+
+.watches-on-map {
+    border: 2px solid #171717;
+    padding: 7px 10px;
+}
+
+.your-lviv-container .read-more a {
+    padding-bottom: 7px;
+    border-bottom: 2px solid #000000;
+}
+
+.categories-container {
+    padding: 1px 2px 2px 1px;
+}
+.div-fill-img{
+    background-repeat: no-repeat;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: cover;
+    margin-bottom: 20px;
+    position: relative;
+}
+.categories-container .col-lg-4 .list-background-image {
+    height: 250px;
+    margin: 10px 0 0 0;
+}
+
+.categories-container .col-lg-4 .title-info-holder > p {
+    color: #fff;
+    font-weight: 700;
+    font-size: 26px;
+    position: relative;
+    /*bottom: 0;*/
+    margin-bottom: 10px;
+}
+
+.categories-container .col-lg-4 div a p {
+    color: #fffde7;
+    position: relative;
+    /*bottom: 0;*/
+    font-size: 16px;
+}
+
+.categories-container .fa-chevron-right:before {
+    top: 2px;
+    content: "\f054";
+    position: relative;
+
+}
+
+.title-info-holder {
+    position: absolute;
+    bottom: 0;
+    padding: 6px 15px;
+}
+
+.interested h2 {
+    text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+    font-weight: 600;
+}
+
+.your-lviv-container .h3 {
+    color: #fff;
+    font-weight: 700;
+}
+
+.interested-block {
+    background: linear-gradient(#989494, #ece6e6);
+    height: 250px;
+}
+
+.interested-info-holder {
+    padding: 12px;
+
+}
+
+.interested-info-holder > p {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.interested-info-holder a p {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.interested-row {
+    margin: 25px 0 75px 0;
+}
+
+.your-lviv-container .navbar-default .navbar-nav > li > a{
+    border-bottom: 1px solid #7c7c7c73;
+    color: #656565;
+    font-size: 16px;
+    padding: 7px 2px !important;
+}
+.your-lviv-container .navbar-default {
+    border:none !important;
+}
+.your-lviv-container .navbar-default .navbar-nav > li{
+    margin: 0 7px 0 7px;
+}
+.your-lviv-container .navbar-default .navbar-nav{
+    float: none;
+    width: fit-content;
+    margin: auto;
+}
+/*-------events*/
+.events-banner{
+    height: 500px;
+}
+.landing-event-main{
+    height: auto;
+}
+.landing-event-main,.add-event-main{
+    height: 350px;
+}
+.landing-event-main .card-img-marker{
+    width: 200px;
+    height: 150px;
+    background-image: linear-gradient(180deg, #000000d4, #000);
+}
+.landing-event-main .card-img-marker p{
+    margin-bottom: 20px;
+}
+.landing-event-main .card-img-marker .card-marker-date-text, .landing-event-main .card-img-marker .card-marker-time-text{
+font-size: 13px;
+}
+.add-event-main .card-img-marker {
+    height: 100px;
+    background-image: linear-gradient(180deg, #000000d4, #000);
+}
+.add-event-main .card-img-marker p{
+    margin-top: 20px;
+}
+.events-heap :nth-child(-n+2){
+    margin-bottom: 30px;
+}
+.events-container section h2{
+    color: #000;
+    margin: 35px 1px;
+    font-weight: 700;
+}
+.row-filter .landing-tab-menu .active{
+    background-color: #2f2e2e;
+    color: #fff;
+}
+.events-container .jumbotron{
+    border-radius: 0 !important;
+}
+.looking-for-event{
+    background-color: #dddddd;
+}
+.events-container .calendar{
+    height: 140px;
+    background-color: #b8b8b8;
+}
+/*.events-container .form-search{*/
+    /*width: 20em;*/
+/*}*/
+.events-container .form-search input, .events-container .form-search button{
+    border:none!important;
+    background: #fff;
+    border-radius: 0!important;
+}
+.events-container .fa-search{
+    color: #656565;
+    font-size: 1.7em;
+}
+.events-container .looking-for-event form{
+margin-top: 30px;
+}
+.events-container .looking-for-event div:last-child button{
+    background-color: #737373;
+    padding: 7px 15px;
+    font-size: 1.1em;
+    color: #fff;
+    margin-top: 30px;
+}
+.map-events .add-event-main{
+
+}
+.event-list-item{
+    background-color: #ddd;
+    width: 100%;
+    display: block;
+    position: relative;
+    margin: 5px 0 18px 0;
+    height: 170px;
+}
+.event-list-item .card-marker{
+    background-image: linear-gradient(180deg, #000000d4, #000);
+    color:#fff;
+}
+.event-buy-ticket{
+    margin: 15px 0px 3px 0px;
+}
+.map-event-title{
+    height: 100%;
+    padding-left: 30px!important;
+}
+.map-event-address{
+    bottom: 0;
+    position: absolute;
+    color: #3b3b3b;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.map-event-desc{
+    color: #3b3b3b;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.map-events-amount{
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #3b3b3b;
+    padding-right: 25px;
+}
+.events-map{
+    height: 816px;
+}
+/*-------endevents*/
+/*====================================*landing your Lviv end*/
+
+
