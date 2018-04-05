@@ -56,8 +56,8 @@
 
                                 </div>
                                 <div class="card__img">
-                                    <img src="images/card-image-1.jpg" data-lg="images/card-image-1.jpg"
-                                         data-md="images/card-image-1.jpg" data-sm="images/card-image-1.jpg"
+                                    <img src="{{asset('images/card-image-1.jpg')}}" data-lg="{{asset('images/card-image-1.jpg')}}"
+                                         data-md="{{asset('images/card-image-1.jpg')}}" data-sm="{{asset('images/card-image-1.jpg')}}"
                                          alt="" class="blurryload">
                                 </div>
                                 <div class="card__overlay">
@@ -77,8 +77,8 @@
 
                                 </div>
                                 <div class="card__img">
-                                    <img src="images/card-image-1.jpg" data-lg="images/card-image-1.jpg"
-                                         data-md="images/card-image-1.jpg" data-sm="images/card-image-1.jpg"
+                                    <img src="{{asset('images/card-image-1.jpg')}}" data-lg="{{asset('images/card-image-1.jpg')}}"
+                                         data-md="{{asset('images/card-image-1.jpg')}}" data-sm="{{asset('images/card-image-1.jpg')}}"
                                          alt="" class="blurryload">
                                 </div>
                                 <div class="card__overlay">
@@ -98,8 +98,8 @@
 
                                 </div>
                                 <div class="card__img">
-                                    <img src="images/card-image-1.jpg" data-lg="images/card-image-1.jpg"
-                                         data-md="images/card-image-1.jpg" data-sm="images/card-image-1.jpg"
+                                    <img src="{{asset('images/card-image-1.jpg')}}" data-lg="{{asset('images/card-image-1.jpg')}}"
+                                         data-md="{{asset('images/card-image-1.jpg')}}" data-sm="{{asset('images/card-image-1.jpg')}}"
                                          alt="" class="blurryload">
                                 </div>
                                 <div class="card__overlay">
@@ -119,8 +119,8 @@
 
                                 </div>
                                 <div class="card__img">
-                                    <img src="images/card-image-1.jpg" data-lg="images/card-image-1.jpg"
-                                         data-md="images/card-image-1.jpg" data-sm="images/card-image-1.jpg"
+                                    <img src="{{asset('images/card-image-1.jpg')}}" data-lg="{{asset('images/card-image-1.jpg')}}"
+                                         data-md="{{asset('images/card-image-1.jpg')}}" data-sm="{{asset('images/card-image-1.jpg')}}"
                                          alt="" class="blurryload">
                                 </div>
                                 <div class="card__overlay">

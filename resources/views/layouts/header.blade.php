@@ -1,21 +1,22 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ config('app.name', 'Laravel') }}</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="{{asset('/build/images/og.jpg')}}">
+    <meta property="og:description" content="">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/png" href="{{asset('favicon/favicon.png')}}">
     <link rel="stylesheet" href="{{asset('font-awesome-4.7.0/css/font-awesome.min.css')}}">
     <link rel="stylesheet" href="{{asset('/css/main.css')}}?t=<?php echo(microtime(true)); ?>">
     <link rel="stylesheet" href="{{asset('/css/landing.css')}}?t=<?php echo(microtime(true)); ?>">
-
+    <link rel="stylesheet" href="{{asset('/css/calendar.css')}}?t=<?php echo(microtime(true)); ?>">
     <link href="{{ asset('/css/header-menu.css')}}?t=<?php echo(microtime(true)); ?>" rel="stylesheet">
-
     <script defer src="{{asset('/libs/jquery/jquery-3.3.1.min.js')}}"></script>
-    <script defer src="{{asset('/js/main.js')}}"></script>
-    <script defer src="{{asset('/js/jquery-ui.js')}}"></script>
 </head>
 <header class="header header--main">
     <div class="container">
@@ -27,7 +28,7 @@
                 <div class="row-flex row-flex--middle">
                     <div class="col-md-5">
                         <div class="header__logo">
-                            <a href="/"><img src="images/lviv-logo-sprite.png" alt=""></a>
+                            <a href="/"><img src="{{asset('images/lviv-logo-sprite.png')}}" alt=""></a>
                         </div>
                     </div>
                     <div class="col p-0 px-onehalf-md">
@@ -52,7 +53,7 @@
                     <button class="dropdown-toggle" type="button" data-toggle="dropdown">{{$data['locale']}}</button>
                     <ul class="dropdown-menu dropdown-menu-right">
                         @foreach($data['languages'] as $language)
-                            <li><a onclick="location.href='setlang/{{$language->code}}'">{{$language->display_name}}</a></li>
+                            <li><a href="/setlang/{{$language->code}}">{{$language->display_name}}</a></li>
                         @endforeach
                     </ul>
                 </div>

@@ -6,12 +6,13 @@
                 @foreach($data['categories'] as $category)
                     @if($category['data_menu'] == 'now' & $category['left_sidebar_menu'] != 0)
                         @foreach($category['left_sidebar_menu'] as $left_sidebar_menu)
-                            <li><a href="#">{{$left_sidebar_menu['title']}}</a></li>
+                            <li><a href="{{$left_sidebar_menu['path']}}">{{$left_sidebar_menu['title']}}</a></li>
                             @if($left_sidebar_menu['children'] & $left_sidebar_menu['left_sidebar_droopdown'])
                                 @foreach($left_sidebar_menu['left_sidebar_droopdown'] as $left_sidebar_droopdown)
                                     <ul class="dropdown">
                                         <li>
-                                            <a class="" href="#">{{$left_sidebar_droopdown['title']}}</a>
+                                            <a class=""
+                                               href="{{$left_sidebar_droopdown['path']}}">{{$left_sidebar_droopdown['title']}}</a>
                                         </li>
                                     </ul>
                                 @endforeach
@@ -66,8 +67,10 @@
                                     <p class="card-marker-time">15.30-16.00</p>
                                 </div>
                                 <div class="card__img card-img-now">
-                                    <img src="images/card-image-1.jpg" data-lg="images/card-image-1.jpg"
-                                         data-md="images/card-image-1.jpg" data-sm="images/card-image-1.jpg"
+                                    <img src="{{asset('images/card-image-1.jpg')}}"
+                                         data-lg="{{asset('images/card-image-1.jpg')}}"
+                                         data-md="{{asset('images/card-image-1.jpg')}}"
+                                         data-sm="{{asset('images/card-image-1.jpg')}}"
                                          alt="" class="blurryload">
                                 </div>
                                 <div class="card__overlay">
@@ -89,8 +92,10 @@
                                     <p class="card-marker-time">15.30-16.00</p>
                                 </div>
                                 <div class="card__img card-img-now">
-                                    <img src="images/card-image-1.jpg" data-lg="images/card-image-1.jpg"
-                                         data-md="images/card-image-1.jpg" data-sm="images/card-image-1.jpg"
+                                    <img src="{{asset('images/card-image-1.jpg')}}"
+                                         data-lg="{{asset('images/card-image-1.jpg')}}"
+                                         data-md="{{asset('images/card-image-1.jpg')}}"
+                                         data-sm="{{asset('images/card-image-1.jpg')}}"
                                          alt="" class="blurryload">
                                 </div>
                                 <div class="card__overlay">
@@ -111,10 +116,10 @@
                                     <p class="card-marker-month-small">Вересня</p>
                                 </div>
                                 <div class="card__img card-img-now">
-                                    <img src="images/card-image-1.jpg"
-                                         data-lg="images/card-image-1.jpg"
-                                         data-md="images/card-image-1.jpg"
-                                         data-sm="images/card-image-1.jpg"
+                                    <img src="{{asset('images/card-image-1.jpg')}}"
+                                         data-lg="{{asset('images/card-image-1.jpg')}}"
+                                         data-md="{{asset('images/card-image-1.jpg')}}"
+                                         data-sm="{{asset('images/card-image-1.jpg')}}"
                                          alt="" class="blurryload">
                                 </div>
                                 <div class="card__overlay card-overlay-small">
@@ -135,10 +140,10 @@
                                     <p class="card-marker-month-small">Вересня</p>
                                 </div>
                                 <div class="card__img card-img-now">
-                                    <img src="images/card-image-1.jpg"
-                                         data-lg="images/card-image-1.jpg"
-                                         data-md="images/card-image-1.jpg"
-                                         data-sm="images/card-image-1.jpg"
+                                    <img src="{{asset('images/card-image-1.jpg')}}"
+                                         data-lg="{{asset('images/card-image-1.jpg')}}"
+                                         data-md="{{asset('images/card-image-1.jpg')}}"
+                                         data-sm="{{asset('images/card-image-1.jpg')}}"
                                          alt="" class="blurryload">
                                 </div>
                                 <div class="card__overlay card-overlay-small">
@@ -159,10 +164,10 @@
                                     <p class="card-marker-month-small">Вересня</p>
                                 </div>
                                 <div class="card__img card-img-now">
-                                    <img src="images/card-image-1.jpg"
-                                         data-lg="images/card-image-1.jpg"
-                                         data-md="images/card-image-1.jpg"
-                                         data-sm="images/card-image-1.jpg"
+                                    <img src="{{asset('images/card-image-1.jpg')}}"
+                                         data-lg="{{asset('images/card-image-1.jpg')}}"
+                                         data-md="{{asset('images/card-image-1.jpg')}}"
+                                         data-sm="{{asset('images/card-image-1.jpg')}}"
                                          alt="" class="blurryload">
                                 </div>
                                 <div class="card__overlay card-overlay-small">
@@ -183,10 +188,10 @@
                                     <p class="card-marker-month-small">Вересня</p>
                                 </div>
                                 <div class="card__img card-img-now">
-                                    <img src="images/card-image-1.jpg"
-                                         data-lg="images/card-image-1.jpg"
-                                         data-md="images/card-image-1.jpg"
-                                         data-sm="images/card-image-1.jpg"
+                                    <img src="{{asset('images/card-image-1.jpg')}}"
+                                         data-lg="{{asset('images/card-image-1.jpg')}}"
+                                         data-md="{{asset('images/card-image-1.jpg')}}"
+                                         data-sm="{{asset('images/card-image-1.jpg')}}"
                                          alt="" class="blurryload">
                                 </div>
                                 <div class="card__overlay card-overlay-small">
@@ -202,7 +207,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="{{route('now')}}" class="btn btn--green">Більше подій</a>
+                {{--<a href="{{route('page-news')}}" class="btn btn--green">Більше подій</a>--}}
             </div>
         </div>
     </div>

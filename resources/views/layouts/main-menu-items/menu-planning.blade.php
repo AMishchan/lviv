@@ -50,8 +50,8 @@
                 <div class="col-sm-4 col-md-4 col-lg-4">
                     <a href="#" class="card card__moded">
                         <div class="card__img card-img-now card-img-now-planning">
-                            <img src="images/icons/icon-plane.svg" data-lg="images/icons/icons-plane.svg"
-                                 data-md="images/card-image-1.jpg" data-sm="images/card-image-1.jpg"
+                            <img src="{{asset('images/icons/icon-plane.svg')}}" data-lg="images/icons/icons-plane.svg"
+                                 data-md="{{asset('images/card-image-1.jpg')}}" data-sm="{{asset('images/card-image-1.jpg')}}"
                                  alt="" class="blurryload card__img_plane">
                         </div>
                         <div class="card__overlay card__overlay_moded">
@@ -64,8 +64,8 @@
                 <div class="col-sm-4 col-md-4 col-lg-4">
                     <a href="#" class="card card__moded">
                         <div class="card__img card-img-now card-img-now-planning">
-                            <img src="images/icons/icon-train.svg" data-lg="images/card-image-1.jpg"
-                                 data-md="images/card-image-1.jpg" data-sm="images/card-image-1.jpg"
+                            <img src="{{asset('images/icons/icon-train.svg')}}" data-lg="{{asset('images/card-image-1.jpg')}}"
+                                 data-md="{{asset('images/card-image-1.jpg')}}" data-sm="{{asset('images/card-image-1.jpg')}}"
                                  alt="" class="blurryload card__img_train">
                         </div>
                         <div class="card__overlay card__overlay_moded">
@@ -78,8 +78,8 @@
                 <div class="col-sm-4 col-md-4 col-lg-4">
                     <a href="#" class="card card__moded">
                         <div class="card__img card-img-now card-img-now-planning">
-                            <img src="images/icons/icon-bus.svg" data-lg="images/card-image-1.jpg"
-                                 data-md="images/card-image-1.jpg" data-sm="images/card-image-1.jpg"
+                            <img src="{{asset('images/icons/icon-bus.svg')}}" data-lg="{{asset('images/card-image-1.jpg')}}"
+                                 data-md="{{asset('images/card-image-1.jpg')}}" data-sm="{{asset('images/card-image-1.jpg')}}"
                                  alt="" class="blurryload card__img_bus">
                         </div>
                         <div class="card__overlay card__overlay_moded">
@@ -101,10 +101,10 @@
                             <span>5.2</span>
                         </div>
                         <div class="card__img card-img-pl">
-                            <img src="images/card-image-1.jpg"
-                                 data-lg="images/card-image-1.jpg"
-                                 data-md="images/card-image-1.jpg"
-                                 data-sm="images/card-image-1.jpg"
+                            <img src="{{asset('images/card-image-1.jpg')}}"
+                                 data-lg="{{asset('images/card-image-1.jpg')}}"
+                                 data-md="{{asset('images/card-image-1.jpg')}}"
+                                 data-sm="{{asset('images/card-image-1.jpg')}}"
                                  alt="" class="blurryload">
                         </div>
                         <div class="card__overlay card-overlay-small">
@@ -124,10 +124,10 @@
                             <span>5.2</span>
                         </div>
                         <div class="card__img card-img-pl">
-                            <img src="images/card-image-1.jpg"
-                                 data-lg="images/card-image-1.jpg"
-                                 data-md="images/card-image-1.jpg"
-                                 data-sm="images/card-image-1.jpg"
+                            <img src="{{asset('images/card-image-1.jpg')}}"
+                                 data-lg="{{asset('images/card-image-1.jpg')}}"
+                                 data-md="{{asset('images/card-image-1.jpg')}}"
+                                 data-sm="{{asset('images/card-image-1.jpg')}}"
                                  alt="" class="blurryload">
                         </div>
                         <div class="card__overlay card-overlay-small">
@@ -147,10 +147,10 @@
                             <span>5.2</span>
                         </div>
                         <div class="card__img card-img-pl">
-                            <img src="images/card-image-1.jpg"
-                                 data-lg="images/card-image-1.jpg"
-                                 data-md="images/card-image-1.jpg"
-                                 data-sm="images/card-image-1.jpg"
+                            <img src="{{asset('images/card-image-1.jpg')}}"
+                                 data-lg="{{asset('images/card-image-1.jpg')}}"
+                                 data-md="{{asset('images/card-image-1.jpg')}}"
+                                 data-sm="{{asset('images/card-image-1.jpg')}}"
                                  alt="" class="blurryload">
                         </div>
                         <div class="card__overlay card-overlay-small">
@@ -170,10 +170,10 @@
                             <span>5.2</span>
                         </div>
                         <div class="card__img card-img-pl">
-                            <img src="images/card-image-1.jpg"
-                                 data-lg="images/card-image-1.jpg"
-                                 data-md="images/card-image-1.jpg"
-                                 data-sm="images/card-image-1.jpg"
+                            <img src="{{asset('images/card-image-1.jpg')}}"
+                                 data-lg="{{asset('images/card-image-1.jpg')}}"
+                                 data-md="{{asset('images/card-image-1.jpg')}}"
+                                 data-sm="{{asset('images/card-image-1.jpg')}}"
                                  alt="" class="blurryload">
                         </div>
                         <div class="card__overlay card-overlay-small">
