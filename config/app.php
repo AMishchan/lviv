@@ -77,8 +77,8 @@ return [
     |
     */
 
-    'locale' => 'ua',
-    'locales' => ['ua','en','pl','de','cz','ru','fr','it','es','el','ka','sk','cz','sv'],
+    'locale' => 'uk',
+    'locales' => ['uk','en','pl','de','cz','ru','fr','it','es','el','ka','sk','cz','sv'],
     /*
     |--------------------------------------------------------------------------
     | Application Fallback Locale
@@ -90,7 +90,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'ua',
+    'fallback_locale' => 'en',
 
     /*
     |--------------------------------------------------------------------------
@@ -179,6 +179,7 @@ return [
         Lavary\Menu\ServiceProvider::class,
         App\Providers\MenuServiceProvider::class,
 
+        TCG\Voyager\VoyagerServiceProvider::class,
     ],
 
     /*

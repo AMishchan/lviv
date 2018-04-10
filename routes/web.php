@@ -15,6 +15,10 @@ Route::get('/', 'MainpageController@index')->middleware('locale');
 
 Auth::routes();
 
+Route::group(['prefix' => 'owner','middleware' => ['auth']], function (){
+    Route::get('/','OwnerController@owner')->name('owner');
+    Route::post('/store','OwnerController@store')->name('owner');
+});
     Route::get('/home', 'HomeController@index')->name('home')->middleware('locale');
     Route::get('/now',function () {return view('now');})->name('now')->middleware('locale');
     Route::get('/now/page-news',function () {return view('now.page-news');})->name('page-news')->middleware('locale');
@@ -27,3 +31,8 @@ Auth::routes();
     Route::get('/events',function () {return view('events');})->name('events')->middleware('locale');
     Route::get('/setlang/{lang}', 'LocaleController@index')->name('setlang')->middleware('locale');
 
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
