@@ -29,6 +29,7 @@ Route::group(['prefix' => 'owner','middleware' => ['auth']], function (){
     Route::get('/business',function () {return view('business');})->name('business')->middleware('locale');
     Route::get('/your-lviv',function () {return view('your-lviv');})->name('your-lviv')->middleware('locale');
     Route::get('/events',function () {return view('events');})->name('events')->middleware('locale');
+    Route::get('/event',function () {return view('single.event');})->name('event')->middleware('locale');
     Route::get('/setlang/{lang}', 'LocaleController@index')->name('setlang')->middleware('locale');
 
 Route::group(['prefix' => 'admin'], function () {

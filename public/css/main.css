@@ -8543,6 +8543,7 @@ a.label:hover {
 }
 
 .slick-dots-tabs li a {
+    margin-right: 20px;
     color: #0072b8;
     font-weight: 700;
     letter-spacing: .1px;
@@ -9525,7 +9526,7 @@ a.label:hover {
 }
 .slick-dots-tabs li.slick-active a {
     color: #0072b8;/*ch*/
-    font-size: 1.1em;/*ad*/
+
 }
 .slick-dots-tabs li a {
     color: #8b929b;/*color ch*/
@@ -9534,3 +9535,10 @@ a.label:hover {
     font-weight: 900;
 }
 /*====================================================================end modified css*/
+/*===============================================================================event*/
+.landing-event-main .btn--green, .add-event-main .btn--green{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+/*===============================================================================endevent*/
