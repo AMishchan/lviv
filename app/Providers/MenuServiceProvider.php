@@ -31,31 +31,31 @@ class MenuServiceProvider extends ServiceProvider
     public function mainMenu()
     {
         View::composer("layouts.front", function ($view) {
-            //TODO make $locale = Session::get('locale'); and add "_" - important!
-            $locale = '';
+
+            $locale = Session::get('locale');;
             $languages = Language::where('status', 1)->get();
             $categories = MenuController::head_elements_select($locale);
             foreach ($categories as &$category)
             {
                 if (MenuController::childSelect($category['id'], $category['parent_id'])) {
                     $left_sidebar_menus = MenuController::head_elements_select($locale, $category['id']);
-                    $category['title'] = $category["title$locale"];
+                    $category['title'] = $category["title_$locale"];
                     $category['left_sidebar_menu'] = $left_sidebar_menus;
                     $category['childrens'] = true;
                     foreach ($category['left_sidebar_menu'] as &$left_sidebar_menu)
                     {
                         if (MenuController::childSelect($category['id'], $category['parent_id'])){
                             $left_sidebar_menu['left_sidebar_droopdown'] = MenuController::head_elements_select($locale, $left_sidebar_menu['id']);
-                            $left_sidebar_menu['title'] = $left_sidebar_menu["title$locale"];
+                            $left_sidebar_menu['title'] = $left_sidebar_menu["title_$locale"];
                             $left_sidebar_menu['childrens'] = true;
                             foreach ($left_sidebar_menu['left_sidebar_droopdown'] as &$left_sidebar_menu_droopdown)
                             {
-                                $left_sidebar_menu_droopdown['title'] = $left_sidebar_menu_droopdown["title$locale"];
+                                $left_sidebar_menu_droopdown['title'] = $left_sidebar_menu_droopdown["title_$locale"];
                             }
 
                         }else{
                             $left_sidebar_menu['left_sidebar_droopdown'] = false;
-                            $left_sidebar_menu['title'] = $left_sidebar_menu["title$locale"];
+                            $left_sidebar_menu['title'] = $left_sidebar_menu["title_$locale"];
                         }
                     }
                 } else {
