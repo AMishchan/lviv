@@ -59,7 +59,8 @@
     <li class="{{ implode(" ", $listItemClass) }}">
         <a {!! $linkAttributes !!} target="{{ $item->target }}">
             <span class="icon {{ $item->icon_class }}"></span>
-            <span class="title">{{ $transItem->title }}</span>
+            {{--TODO lang changes for title + _uk same like in adminmenublade--}}
+            <span class="title">{{ $transItem->title_uk }}</span>
         </a>
         @if($hasChildren)
             <div id="{{ $transItem->id }}-dropdown-element" class="panel-collapse collapse {{ (in_array('active', $listItemClass) ? 'in' : '') }}">

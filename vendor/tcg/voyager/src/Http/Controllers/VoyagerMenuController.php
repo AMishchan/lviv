@@ -16,7 +16,7 @@ class VoyagerMenuController extends Controller
         $this->authorize('edit', $menu);
 
         $isModelTranslatable = is_bread_translatable(Voyager::model('MenuItem'));
-
+//dump(Voyager::view('voyager::menus.builder', compact('menu', 'isModelTranslatable')));
         return Voyager::view('voyager::menus.builder', compact('menu', 'isModelTranslatable'));
     }
 

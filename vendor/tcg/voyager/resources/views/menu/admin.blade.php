@@ -20,7 +20,7 @@
                 <i class="voyager-edit"></i> {{ __('voyager.generic.edit') }}
             </div>
         </div>
-        <div class="dd-handle">1
+        <div class="dd-handle">
             @if($options->isModelTranslatable)
                 @include('voyager::multilingual.input-hidden', [
                     'isModelTranslatable' => true,
@@ -28,7 +28,8 @@
                     '_field_trans'        => htmlspecialchars(json_encode($item->getTranslationsOf('title')))
                 ])
             @endif
-            <span>{{ $item->title }}</span> <small class="url">{{ $item->link() }}</small>
+            {{--TODO _uk added to title if you going to make changes and make lang flexible make variables instead _uk--}}
+            <span>{{ $item->title_uk}}</span> <small class="url">{{ $item->link() }}</small>
         </div>
         @if(!$item->children->isEmpty())
             @include('voyager::menu.admin', ['items' => $item->children])
