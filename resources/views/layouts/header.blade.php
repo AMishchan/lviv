@@ -36,7 +36,7 @@
                             <ul class="row-flex">
                                 {{--output all published categories--}}
                                 @foreach($data['categories'] as $category)
-                                    <li><a href="#" class="nav-link" data-menu="{{$category['data_menu']}}">{{$category['title']}}</a></li>
+                                    <li><a href="#" class="nav-link" data-menu="{{$category['template']}}">{{$category['title']}}</a></li>
                                 @endforeach
                                 <li><a href="#" class="nav-link visible-xs visible-sm"
                                        data-menu="languages">Languages</a></li>

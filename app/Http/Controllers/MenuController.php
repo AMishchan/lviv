@@ -1,17 +1,26 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Top;
+
+use TCG\Voyager\Models\MenuItem;
 
 class MenuController extends Controller
 {
-    public static function head_elements_select($locale, $id = false)
+    public static function head_elements_select($locale, $id = NULL)
     {
-        $elements =Top::select('id', "title_$locale", 'path', 'parent_id', 'children', 'template', 'data_menu')
+        $elements = MenuItem::select('id', 'menu_id', "title", 'url', 'icon_class', 'color', 'parent_id', 'order', 'route', 'template')
             ->where('parent_id', $id)
-            ->where('published', true)
+            ->whereNotIn('menu_id', ['1'])
             ->get()
             ->toArray();
         return $elements;
+    }
+
+    public static function childSelect($id, $parent_id)
+    {
+        if (MenuItem::where($id, $parent_id)) {
+            return true;
+        }
+
     }
 }

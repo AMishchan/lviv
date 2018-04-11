@@ -6,7 +6,7 @@
             <div class="main-menu-close"></div>
             {{--including templates for all elements of menu--}}
             @foreach($data['categories'] as $category)
-                @include("layouts.main-menu-items.{$category['template']}")
+                    @include("layouts.main-menu-items.{$category['template']}")
             @endforeach
             <div class="menu" id="languages">
                 <a href="#" class="btn-menu-back visible-xs visible-sm">Назад</a>
@@ -59,7 +59,7 @@
                 @foreach($data['categories'] as $category)
                     <ul class="col">
                         <li><a href="#"><h3>{{$category['title']}}</h3></a></li>
-                        @if($category['children'])
+                        @if($category['childrens'])
                             @foreach($category['left_sidebar_menu'] as $left_sidebar_menu)
                                 <li><a href="#">{{$left_sidebar_menu['title']}}</a></li>
                             @endforeach

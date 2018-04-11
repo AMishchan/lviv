@@ -4,10 +4,10 @@
         <div class="col-sm-5 col-md-3 col-lg-3">
             <ul class="menu__nav mb-4 menu-trig">
                 @foreach($data['categories'] as $category)
-                    @if($category['data_menu'] == 'business' & $category['left_sidebar_menu'] != 0)
+                    @if($category['template'] == 'business' & $category['left_sidebar_menu'] != 0)
                         @foreach($category['left_sidebar_menu'] as $left_sidebar_menu)
                             <li><a href="#">{{$left_sidebar_menu['title']}}</a></li>
-                            @if($left_sidebar_menu['children'] & $left_sidebar_menu['left_sidebar_droopdown'])
+                            @if($left_sidebar_menu['childrens'] & $left_sidebar_menu['left_sidebar_droopdown'])
                                 @foreach($left_sidebar_menu['left_sidebar_droopdown'] as $left_sidebar_droopdown)
                                     <ul class="menu__subnav">
                                         <li>

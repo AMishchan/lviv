@@ -20,7 +20,7 @@
                 <i class="voyager-edit"></i> {{ __('voyager.generic.edit') }}
             </div>
         </div>
-        <div class="dd-handle">
+        <div class="dd-handle">1
             @if($options->isModelTranslatable)
                 @include('voyager::multilingual.input-hidden', [
                     'isModelTranslatable' => true,

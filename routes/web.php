@@ -31,8 +31,6 @@ Route::group(['prefix' => 'owner','middleware' => ['auth']], function (){
     Route::get('/events',function () {return view('events');})->name('events')->middleware('locale');
     Route::get('/setlang/{lang}', 'LocaleController@index')->name('setlang')->middleware('locale');
 
-
-
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });

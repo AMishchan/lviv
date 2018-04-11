@@ -4,11 +4,13 @@ namespace TCG\Voyager\Http\Controllers;
 
 use Illuminate\Http\Request;
 use TCG\Voyager\Facades\Voyager;
+//use Illuminate\Support\Facades\Session;
 
 class VoyagerMenuController extends Controller
 {
     public function builder($id)
     {
+
         $menu = Voyager::model('Menu')->findOrFail($id);
 
         $this->authorize('edit', $menu);
@@ -151,7 +153,7 @@ class VoyagerMenuController extends Controller
         $trans = json_decode($data['title_i18n'], true);
 
         // Set field value with the default locale
-        $data['title'] = $trans[config('voyager.multilingual.default', 'en')];
+        $data['title'] = $trans[config('voyager.multilingual.default', 'uk')];
 
         unset($data['title_i18n']);     // Remove hidden input holding translations
         unset($data['i18n_selector']);  // Remove language selector input radio

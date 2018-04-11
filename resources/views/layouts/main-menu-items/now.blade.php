@@ -4,10 +4,10 @@
         <div class="col-md-3 col-lg-3">
             <ul class="menu__subnav menu-trig menu__nav">
                 @foreach($data['categories'] as $category)
-                    @if($category['data_menu'] == 'now' & $category['left_sidebar_menu'] != 0)
+                    @if($category['template'] == 'now' & $category['left_sidebar_menu'] != 0)
                         @foreach($category['left_sidebar_menu'] as $left_sidebar_menu)
-                            <li><a href="{{$left_sidebar_menu['path']}}">{{$left_sidebar_menu['title']}}</a></li>
-                            @if($left_sidebar_menu['children'] & $left_sidebar_menu['left_sidebar_droopdown'])
+                            <li><a href="{{$left_sidebar_menu['url']}}">{{$left_sidebar_menu['title']}}</a></li>
+                            @if($left_sidebar_menu['childrens'] & $left_sidebar_menu['left_sidebar_droopdown'])
                                 @foreach($left_sidebar_menu['left_sidebar_droopdown'] as $left_sidebar_droopdown)
                                     <ul class="dropdown">
                                         <li>

@@ -6,12 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
 use TCG\Voyager\Events\MenuDisplay;
 use TCG\Voyager\Facades\Voyager;
+use Illuminate\Support\Facades\Session;
 
 /**
  * @todo: Refactor this class by using something like MenuBuilder Helper.
  */
 class Menu extends Model
-{
+{   public $locale ;
     protected $table = 'menus';
 
     protected $guarded = [];
@@ -37,7 +38,7 @@ class Menu extends Model
      * @return string
      */
     public static function display($menuName, $type = null, array $options = [])
-    {
+    {$locale = Session::get('locale');
         // GET THE MENU - sort collection in blade
         $menu = static::where('name', '=', $menuName)
             ->with(['parent_items.children' => function ($q) {
