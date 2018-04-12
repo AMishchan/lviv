@@ -2,20 +2,25 @@
     <a href="#" class="btn-menu-back visible-xs visible-sm">Назад</a>
     <div class="row">
         <div class="col-sm-5 col-md-3 col-lg-3">
-            <ul class="menu__nav mb-4 menu-trig">
+            <ul class="accordion-menu menu__subnav menu-trig menu__nav">
                 @foreach($data['categories'] as $category)
                     @if($category['template'] == 'business' & $category['left_sidebar_menu'] != 0)
                         @foreach($category['left_sidebar_menu'] as $left_sidebar_menu)
-                            <li><a href="#">{{$left_sidebar_menu['title']}}</a></li>
-                            @if($left_sidebar_menu['childrens'] & $left_sidebar_menu['left_sidebar_droopdown'])
-                                @foreach($left_sidebar_menu['left_sidebar_droopdown'] as $left_sidebar_droopdown)
-                                    <ul class="menu__subnav">
-                                        <li>
-                                            <a class="" href="#">{{$left_sidebar_droopdown['title']}}</a>
-                                        </li>
+                            <li><a class="dropdownlink" href="#">{{$left_sidebar_menu['title']}}
+                                    @if($left_sidebar_menu['left_sidebar_droopdown'])
+                                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                    @endif
+                                </a>
+                                @if($left_sidebar_menu['childrens'] & $left_sidebar_menu['left_sidebar_droopdown'])
+                                    <ul class="submenuItems dropdown">
+                                        @foreach($left_sidebar_menu['left_sidebar_droopdown'] as $left_sidebar_droopdown)
+                                            <li>
+                                                <a class="" href="#">{{$left_sidebar_droopdown['title']}}</a>
+                                            </li>
+                                        @endforeach
                                     </ul>
-                                @endforeach
-                            @endif
+                                @endif
+                                 </li>
                         @endforeach
                     @endif
                 @endforeach
@@ -49,8 +54,10 @@
                 <div class="col-sm-4 col-md-4 col-lg-4">
                     <a href="#" class="card ">
                         <div class="card__img card-img-now">
-                            <img src="{{asset('images/card-image-1.jpg')}}" data-lg="{{asset('images/card-image-1.jpg')}}"
-                                 data-md="{{asset('images/card-image-1.jpg')}}" data-sm="{{asset('images/card-image-1.jpg')}}"
+                            <img src="{{asset('images/card-image-1.jpg')}}"
+                                 data-lg="{{asset('images/card-image-1.jpg')}}"
+                                 data-md="{{asset('images/card-image-1.jpg')}}"
+                                 data-sm="{{asset('images/card-image-1.jpg')}}"
                                  alt="" class="blurryload">
                         </div>
                         <div class="card__overlay">
@@ -65,8 +72,10 @@
                 <div class="col-sm-4 col-md-4 col-lg-4">
                     <a href="#" class="card ">
                         <div class="card__img card-img-now">
-                            <img src="{{asset('images/card-image-1.jpg')}}" data-lg="{{asset('images/card-image-1.jpg')}}"
-                                 data-md="{{asset('images/card-image-1.jpg')}}" data-sm="{{asset('images/card-image-1.jpg')}}"
+                            <img src="{{asset('images/card-image-1.jpg')}}"
+                                 data-lg="{{asset('images/card-image-1.jpg')}}"
+                                 data-md="{{asset('images/card-image-1.jpg')}}"
+                                 data-sm="{{asset('images/card-image-1.jpg')}}"
                                  alt="" class="blurryload">
                         </div>
                         <div class="card__overlay">
@@ -81,8 +90,10 @@
                 <div class="col-sm-4 col-md-4 col-lg-4">
                     <a href="#" class="card ">
                         <div class="card__img card-img-now">
-                            <img src="{{asset('images/card-image-1.jpg')}}" data-lg="{{asset('images/card-image-1.jpg')}}"
-                                 data-md="{{asset('images/card-image-1.jpg')}}" data-sm="{{asset('images/card-image-1.jpg')}}"
+                            <img src="{{asset('images/card-image-1.jpg')}}"
+                                 data-lg="{{asset('images/card-image-1.jpg')}}"
+                                 data-md="{{asset('images/card-image-1.jpg')}}"
+                                 data-sm="{{asset('images/card-image-1.jpg')}}"
                                  alt="" class="blurryload">
                         </div>
                         <div class="card__overlay">
@@ -105,8 +116,10 @@
 
                         </div>
                         <div class="card__img">
-                            <img src="{{asset('images/card-image-1.jpg')}}" data-lg="{{asset('images/card-image-1.jpg')}}"
-                                 data-md="{{asset('images/card-image-1.jpg')}}" data-sm="{{asset('images/card-image-1.jpg')}}"
+                            <img src="{{asset('images/card-image-1.jpg')}}"
+                                 data-lg="{{asset('images/card-image-1.jpg')}}"
+                                 data-md="{{asset('images/card-image-1.jpg')}}"
+                                 data-sm="{{asset('images/card-image-1.jpg')}}"
                                  alt="" class="blurryload">
                         </div>
                         <div class="card__overlay">
@@ -126,8 +139,10 @@
 
                         </div>
                         <div class="card__img">
-                            <img src="{{asset('images/card-image-1.jpg')}}" data-lg="{{asset('images/card-image-1.jpg')}}"
-                                 data-md="{{asset('images/card-image-1.jpg')}}" data-sm="{{asset('images/card-image-1.jpg')}}"
+                            <img src="{{asset('images/card-image-1.jpg')}}"
+                                 data-lg="{{asset('images/card-image-1.jpg')}}"
+                                 data-md="{{asset('images/card-image-1.jpg')}}"
+                                 data-sm="{{asset('images/card-image-1.jpg')}}"
                                  alt="" class="blurryload">
                         </div>
                         <div class="card__overlay">
@@ -147,8 +162,10 @@
 
                         </div>
                         <div class="card__img">
-                            <img src="{{asset('images/card-image-1.jpg')}}" data-lg="{{asset('images/card-image-1.jpg')}}"
-                                 data-md="{{asset('images/card-image-1.jpg')}}" data-sm="{{asset('images/card-image-1.jpg')}}"
+                            <img src="{{asset('images/card-image-1.jpg')}}"
+                                 data-lg="{{asset('images/card-image-1.jpg')}}"
+                                 data-md="{{asset('images/card-image-1.jpg')}}"
+                                 data-sm="{{asset('images/card-image-1.jpg')}}"
                                  alt="" class="blurryload">
                         </div>
                         <div class="card__overlay">
@@ -168,8 +185,10 @@
 
                         </div>
                         <div class="card__img">
-                            <img src="{{asset('images/card-image-1.jpg')}}" data-lg="{{asset('images/card-image-1.jpg')}}"
-                                 data-md="{{asset('images/card-image-1.jpg')}}" data-sm="{{asset('images/card-image-1.jpg')}}"
+                            <img src="{{asset('images/card-image-1.jpg')}}"
+                                 data-lg="{{asset('images/card-image-1.jpg')}}"
+                                 data-md="{{asset('images/card-image-1.jpg')}}"
+                                 data-sm="{{asset('images/card-image-1.jpg')}}"
                                  alt="" class="blurryload">
                         </div>
                         <div class="card__overlay">

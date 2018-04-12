@@ -2,20 +2,24 @@
     <a href="#" class="btn-menu-back visible-xs visible-sm">Назад</a>
     <div class="row">
         <div class="col-sm-5 col-md-3 col-lg-3">
-            <ul class="menu__nav mb-4 menu-trig">
+            <ul class="accordion-menu menu__subnav menu-trig menu__nav">
                 @foreach($data['categories'] as $category)
                     @if($category['template'] == 'lviv' & $category['left_sidebar_menu'] != 0)
                         @foreach($category['left_sidebar_menu'] as $left_sidebar_menu)
-                            <li><a href="#">{{$left_sidebar_menu['title']}}</a></li>
-                            @if($left_sidebar_menu['childrens'] & $left_sidebar_menu['left_sidebar_droopdown'])
-                                @foreach($left_sidebar_menu['left_sidebar_droopdown'] as $left_sidebar_droopdown)
-                                    <ul class="dropdown">
-                                        <li>
-                                            <a class="" href="#">{{$left_sidebar_droopdown['title']}}</a>
-                                        </li>
+                            <li><a class="dropdownlink" href="#">{{$left_sidebar_menu['title']}}
+                                    @if($left_sidebar_menu['left_sidebar_droopdown'])
+                                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                    @endif</a>
+                                @if($left_sidebar_menu['childrens'] & $left_sidebar_menu['left_sidebar_droopdown'])
+                                    <ul class="submenuItems dropdown">
+                                        @foreach($left_sidebar_menu['left_sidebar_droopdown'] as $left_sidebar_droopdown)
+                                            <li>
+                                                <a class="" href="#">{{$left_sidebar_droopdown['title']}}</a>
+                                            </li>
+                                        @endforeach
                                     </ul>
-                                @endforeach
-                            @endif
+                                @endif
+                            </li>
                         @endforeach
                     @endif
                 @endforeach
