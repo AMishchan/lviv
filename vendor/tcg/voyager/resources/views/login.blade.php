@@ -6,11 +6,11 @@
     <meta name="robots" content="none" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta name="description" content="admin login">
-    <title>Admin - {{ Voyager::setting("admin.title") }}</title>
+    <title>Admin - Lviv-Travel</title>
     <link rel="stylesheet" href="{{ voyager_asset('css/app.css') }}">
     <style>
         body {
-            background-image:url('{{ Voyager::image( Voyager::setting("admin.bg_image"), voyager_asset("images/bg.jpg") ) }}');
+            background-image:url('{{ Voyager::image( Voyager::setting("admin.bg_image"),asset("images/lviv.jpg") ) }}');
             background-color: {{ Voyager::setting("admin.bg_color", "#FFFFFF" ) }};
         }
         .login-sidebar{
@@ -40,15 +40,9 @@
             <div class="clearfix">
                 <div class="col-sm-12 col-md-10 col-md-offset-2">
                     <div class="logo-title-container">
-                        <?php $admin_logo_img = Voyager::setting('admin.icon_image', ''); ?>
-                        @if($admin_logo_img == '')
-                        <img class="img-responsive pull-left logo hidden-xs animated fadeIn" src="{{ voyager_asset('images/logo-icon-light.png') }}" alt="Logo Icon">
-                        @else
-                        <img class="img-responsive pull-left logo hidden-xs animated fadeIn" src="{{ Voyager::image($admin_logo_img) }}" alt="Logo Icon">
-                        @endif
                         <div class="copy animated fadeIn">
-                            <h1>{{ Voyager::setting('admin.title', 'Voyager') }}</h1>
-                            <p>{{ Voyager::setting('admin.description', __('voyager.login.welcome')) }}</p>
+                            <h1>Admin</h1>
+                            <p>LVIV-TRAVEL</p>
                         </div>
                     </div> <!-- .logo-title-container -->
                 </div>

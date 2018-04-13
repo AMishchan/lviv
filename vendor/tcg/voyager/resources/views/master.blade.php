@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
 <head>
-    <title>@yield('page_title', setting('admin.title') . " - " . setting('admin.description'))</title>
+    <title>Admin-Lviv-Travel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
 
@@ -9,8 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ voyager_asset('images/logo-icon.png') }}" type="image/x-icon">
-
+    <link rel="shortcut icon" href="{{ asset('favicon/favicon.png') }}" type="image/x-icon">
 
 
     <!-- App CSS -->
@@ -44,21 +43,14 @@
 
 <body class="voyager @if(isset($dataType) && isset($dataType->slug)){{ $dataType->slug }}@endif">
 
-<div id="voyager-loader">
-    <?php $admin_loader_img = Voyager::setting('admin.loader', ''); ?>
-    @if($admin_loader_img == '')
-        <img src="{{ voyager_asset('images/logo-icon.png') }}" alt="Voyager Loader">
-    @else
-        <img src="{{ Voyager::image($admin_loader_img) }}" alt="Voyager Loader">
-    @endif
-</div>
+
 
 <?php
-$user_avatar = Voyager::image(Auth::user()->avatar);
-if ((substr(Auth::user()->avatar, 0, 7) == 'http://') || (substr(Auth::user()->avatar, 0, 8) == 'https://')) {
-    $user_avatar = Auth::user()->avatar;
-}
-?>
+//$user_avatar = Voyager::image(Auth::user()->avatar);
+//if ((substr(Auth::user()->avatar, 0, 7) == 'http://') || (substr(Auth::user()->avatar, 0, 8) == 'https://')) {
+//    $user_avatar = Auth::user()->avatar;
+//}
+//?>
 
 <div class="app-container">
     <div class="fadetoblack visible-xs"></div>
@@ -101,7 +93,7 @@ if ((substr(Auth::user()->avatar, 0, 7) == 'http://') || (substr(Auth::user()->a
         </div>
     </div>
 </div>
-@include('voyager::partials.app-footer')
+{{----}}
 
 <!-- Javascript Libs -->
 
@@ -117,7 +109,7 @@ if ((substr(Auth::user()->avatar, 0, 7) == 'http://') || (substr(Auth::user()->a
 
     @if(Session::has('message'))
 
-    // TODO: change Controllers to use AlertsMessages trait... then remove this
+    // TODO: change Controllers to use AlertsMevfcdvdfvzdfbdfbdfbdgbssages trait... then remove this
     var alertType = {!! json_encode(Session::get('alert-type', 'info')) !!};
     var alertMessage = {!! json_encode(Session::get('message')) !!};
     var alerter = toastr[alertType];

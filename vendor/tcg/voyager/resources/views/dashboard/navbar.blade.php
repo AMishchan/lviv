@@ -34,11 +34,11 @@
         <ul class="nav navbar-nav navbar-right">
             <li class="dropdown profile">
                 <a href="#" class="dropdown-toggle text-right" data-toggle="dropdown" role="button"
-                   aria-expanded="false"><img src="{{ $user_avatar }}" class="profile-img"> <span
+                   aria-expanded="false"> <span
                             class="caret"></span></a>
                 <ul class="dropdown-menu dropdown-menu-animated">
-                    <li class="profile-img">
-                        <img src="{{ $user_avatar }}" class="profile-img">
+                    <li class="profile">
+                        {{--<img src="{{ asset('images/image-5.jpg') }}" class="profile-img">--}}
                         <div class="profile-body">
                             <h5>{{ Auth::user()->name }}</h5>
                             <h6>{{ Auth::user()->email }}</h6>
