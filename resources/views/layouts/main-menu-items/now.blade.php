@@ -6,7 +6,7 @@
                 @foreach($data['categories'] as $category)
                     @if($category['template'] == 'now' & $category['left_sidebar_menu'] != 0)
                         @foreach($category['left_sidebar_menu'] as $left_sidebar_menu)
-                            <li><a class="dropdownlink" href="#">{{$left_sidebar_menu['title']}}
+                            <li><a class="dropdownlink" href="{{$left_sidebar_menu['url']}}">{{$left_sidebar_menu['title']}}
                                     @if($left_sidebar_menu['left_sidebar_droopdown'])
                                         <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                     @endif</a>
@@ -14,7 +14,7 @@
                                     <ul class="submenuItems dropdown">
                                         @foreach($left_sidebar_menu['left_sidebar_droopdown'] as $left_sidebar_droopdown)
                                             <li>
-                                                <a class="" href="#">{{$left_sidebar_droopdown['title']}}</a>
+                                                <a class="" href="{{$left_sidebar_droopdown['url']}}">{{$left_sidebar_droopdown['title']}}</a>
                                             </li>
                                         @endforeach
                                     </ul>

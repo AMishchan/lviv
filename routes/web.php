@@ -24,6 +24,7 @@ Route::group(['prefix' => 'owner','middleware' => ['auth']], function (){
     Route::get('/now/page-news',function () {return view('now.page-news');})->name('page-news')->middleware('locale');
     Route::get('/now/page-news/single-news',function () {return view('single.news');})->name('single-news')->middleware('locale');
     Route::get('/now/lviv-city-card',function () {return view('now.lviv-city-card');})->name('lviv-city-card')->middleware('locale');
+    Route::get('/your-lviv/food-and-drinks',function () {return view('templates.sub-section');})->name('your-lviv')->middleware('locale');
 
     Route::get('/planning',function () {return view('planning');})->name('planning')->middleware('locale');
     Route::get('/business',function () {return view('business');})->name('business')->middleware('locale');

@@ -1,0 +1,1500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d23dd204-7240-4a9b-80da-159e432b4e66" name="Default" comment="header--small backgr change to fff">
+      <change beforePath="" afterPath="$PROJECT_DIR$/resources/views/layouts/interested.blade.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/resources/views/templates/sub-section.blade.php" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change beforePath="$PROJECT_DIR$/public/images/1.jpg" afterPath="$PROJECT_DIR$/public/images/1.jpg" />
+      <change beforePath="$PROJECT_DIR$/public/images/default/default.png" afterPath="$PROJECT_DIR$/public/images/default/default.png" />
+      <change beforePath="$PROJECT_DIR$/public/images/lviv.jpg" afterPath="$PROJECT_DIR$/public/images/lviv.jpg" />
+      <change beforePath="$PROJECT_DIR$/public/js/accordeon.js" afterPath="$PROJECT_DIR$/public/js/accordeon.js" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/public/js/app.js" />
+      <change beforePath="$PROJECT_DIR$/public/storage" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/views/business.blade.php" afterPath="$PROJECT_DIR$/resources/views/business.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/heap" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main-menu-items/lviv.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/main-menu-items/lviv.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main-menu-items/now.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/main-menu-items/now.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/social.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/social.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/.gitattributes" afterPath="$PROJECT_DIR$/vendor/composer/composer/.gitattributes" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/.github/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/.github/CONTRIBUTING.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/.github/ISSUE_TEMPLATE.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/.github/ISSUE_TEMPLATE.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/.gitignore" afterPath="$PROJECT_DIR$/vendor/composer/composer/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/.php_cs" afterPath="$PROJECT_DIR$/vendor/composer/composer/.php_cs" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/.travis.yml" afterPath="$PROJECT_DIR$/vendor/composer/composer/.travis.yml" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/CHANGELOG.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/CHANGELOG.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/LICENSE" afterPath="$PROJECT_DIR$/vendor/composer/composer/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/PORTING_INFO" afterPath="$PROJECT_DIR$/vendor/composer/composer/PORTING_INFO" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/README.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/README.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/appveyor.yml" afterPath="$PROJECT_DIR$/vendor/composer/composer/appveyor.yml" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/composer.json" afterPath="$PROJECT_DIR$/vendor/composer/composer/composer.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/composer.lock" afterPath="$PROJECT_DIR$/vendor/composer/composer/composer.lock" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/00-intro.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/00-intro.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/01-basic-usage.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/01-basic-usage.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/02-libraries.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/02-libraries.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/03-cli.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/03-cli.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/04-schema.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/04-schema.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/05-repositories.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/05-repositories.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/06-config.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/06-config.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/07-community.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/07-community.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/articles/aliases.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/articles/aliases.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/articles/autoloader-optimization.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/articles/autoloader-optimization.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/articles/custom-installers.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/articles/custom-installers.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/articles/handling-private-packages-with-satis.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/articles/handling-private-packages-with-satis.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/articles/http-basic-authentication.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/articles/http-basic-authentication.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/articles/plugins.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/articles/plugins.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/articles/scripts.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/articles/scripts.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/articles/troubleshooting.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/articles/troubleshooting.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/articles/vendor-binaries.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/articles/vendor-binaries.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/articles/versions.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/articles/versions.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/dev/DefaultPolicy.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/dev/DefaultPolicy.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/faqs/how-do-i-install-a-package-to-a-custom-path-for-my-framework.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/faqs/how-do-i-install-a-package-to-a-custom-path-for-my-framework.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/faqs/how-to-install-composer-programmatically.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/faqs/how-to-install-composer-programmatically.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/faqs/how-to-install-untrusted-packages-safely.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/faqs/how-to-install-untrusted-packages-safely.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/faqs/why-are-unbound-version-constraints-a-bad-idea.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/faqs/why-are-unbound-version-constraints-a-bad-idea.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/faqs/why-are-version-constraints-combining-comparisons-and-wildcards-a-bad-idea.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/faqs/why-are-version-constraints-combining-comparisons-and-wildcards-a-bad-idea.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/faqs/why-can't-composer-load-repositories-recursively.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/faqs/why-can't-composer-load-repositories-recursively.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/fixtures/fixtures.md" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/fixtures/fixtures.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/fixtures/repo-composer-plain/packages.json" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/fixtures/repo-composer-plain/packages.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/fixtures/repo-composer-with-providers/p/bar/baz$923363b3c22e73abb2e3fd891c8156dd4d0821a97fd3e428bc910833e3e46dbe.json" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/fixtures/repo-composer-with-providers/p/bar/baz$923363b3c22e73abb2e3fd891c8156dd4d0821a97fd3e428bc910833e3e46dbe.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/fixtures/repo-composer-with-providers/p/foo/bar$4baabb3303afa3e34a4d3af18fb138e5f3b79029c1f8d9ab5b477ea15776ba0a.json" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/fixtures/repo-composer-with-providers/p/foo/bar$4baabb3303afa3e34a4d3af18fb138e5f3b79029c1f8d9ab5b477ea15776ba0a.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/fixtures/repo-composer-with-providers/p/gar/nix$5d210670cb46c8364c8e3fb449967b9bea558b971e5b082f330ae4f1d484c321.json" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/fixtures/repo-composer-with-providers/p/gar/nix$5d210670cb46c8364c8e3fb449967b9bea558b971e5b082f330ae4f1d484c321.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/fixtures/repo-composer-with-providers/p/provider-active$1893a061e579543822389ecd12d791c612db0c05e22d90e9286e233cacd86ed8.json" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/fixtures/repo-composer-with-providers/p/provider-active$1893a061e579543822389ecd12d791c612db0c05e22d90e9286e233cacd86ed8.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/fixtures/repo-composer-with-providers/p/qux/quux$c142d1a07ca354be46b613f59f1d601923a5a00ccc5fcce50a77ecdd461eb72d.json" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/fixtures/repo-composer-with-providers/p/qux/quux$c142d1a07ca354be46b613f59f1d601923a5a00ccc5fcce50a77ecdd461eb72d.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/doc/fixtures/repo-composer-with-providers/packages.json" afterPath="$PROJECT_DIR$/vendor/composer/composer/doc/fixtures/repo-composer-with-providers/packages.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/phpunit.xml.dist" afterPath="$PROJECT_DIR$/vendor/composer/composer/phpunit.xml.dist" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/res/composer-repository-schema.json" afterPath="$PROJECT_DIR$/vendor/composer/composer/res/composer-repository-schema.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/res/composer-schema.json" afterPath="$PROJECT_DIR$/vendor/composer/composer/res/composer-schema.json" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Autoload/AutoloadGenerator.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Autoload/AutoloadGenerator.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Autoload/ClassLoader.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Autoload/ClassLoader.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Autoload/ClassMapGenerator.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Autoload/ClassMapGenerator.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Cache.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Cache.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/AboutCommand.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/AboutCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/ArchiveCommand.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/ArchiveCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/BaseCommand.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/BaseCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/BaseDependencyCommand.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/BaseDependencyCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/CheckPlatformReqsCommand.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/CheckPlatformReqsCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/ClearCacheCommand.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/ClearCacheCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/ConfigCommand.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/ConfigCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/CreateProjectCommand.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/CreateProjectCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/DependsCommand.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/DependsCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/DiagnoseCommand.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/DiagnoseCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/DumpAutoloadCommand.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/DumpAutoloadCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/ExecCommand.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/ExecCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/GlobalCommand.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/GlobalCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/HomeCommand.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/HomeCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/InitCommand.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/InitCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/InstallCommand.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/InstallCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/LicensesCommand.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/LicensesCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/OutdatedCommand.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/OutdatedCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/ProhibitsCommand.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/ProhibitsCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/RemoveCommand.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/RemoveCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/RequireCommand.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/RequireCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/RunScriptCommand.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/RunScriptCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/ScriptAliasCommand.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/ScriptAliasCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/SearchCommand.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/SearchCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/SelfUpdateCommand.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/SelfUpdateCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/ShowCommand.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/ShowCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/StatusCommand.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/StatusCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/SuggestsCommand.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/SuggestsCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/UpdateCommand.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/UpdateCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/ValidateCommand.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Command/ValidateCommand.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Compiler.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Compiler.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Composer.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Composer.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Config.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Config.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Config/ConfigSourceInterface.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Config/ConfigSourceInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Config/JsonConfigSource.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Config/JsonConfigSource.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Console/Application.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Console/Application.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Console/HtmlOutputFormatter.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Console/HtmlOutputFormatter.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/Decisions.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/Decisions.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/DefaultPolicy.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/DefaultPolicy.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/GenericRule.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/GenericRule.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/Operation/InstallOperation.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/Operation/InstallOperation.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/Operation/MarkAliasInstalledOperation.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/Operation/MarkAliasInstalledOperation.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/Operation/MarkAliasUninstalledOperation.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/Operation/MarkAliasUninstalledOperation.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/Operation/OperationInterface.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/Operation/OperationInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/Operation/SolverOperation.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/Operation/SolverOperation.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/Operation/UninstallOperation.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/Operation/UninstallOperation.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/Operation/UpdateOperation.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/Operation/UpdateOperation.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/PolicyInterface.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/PolicyInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/Pool.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/Pool.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/Problem.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/Problem.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/Request.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/Request.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/Rule.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/Rule.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/Rule2Literals.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/Rule2Literals.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/RuleSet.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/RuleSet.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/RuleSetGenerator.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/RuleSetGenerator.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/RuleSetIterator.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/RuleSetIterator.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/RuleWatchChain.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/RuleWatchChain.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/RuleWatchGraph.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/RuleWatchGraph.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/RuleWatchNode.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/RuleWatchNode.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/Solver.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/Solver.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/SolverBugException.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/SolverBugException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/SolverProblemsException.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/SolverProblemsException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/Transaction.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/DependencyResolver/Transaction.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/ArchiveDownloader.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/ArchiveDownloader.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/ChangeReportInterface.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/ChangeReportInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/DownloadManager.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/DownloadManager.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/DownloaderInterface.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/DownloaderInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/DvcsDownloaderInterface.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/DvcsDownloaderInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/FileDownloader.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/FileDownloader.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/FilesystemException.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/FilesystemException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/FossilDownloader.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/FossilDownloader.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/GitDownloader.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/GitDownloader.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/GzipDownloader.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/GzipDownloader.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/HgDownloader.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/HgDownloader.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/PathDownloader.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/PathDownloader.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/PearPackageExtractor.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/PearPackageExtractor.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/PerforceDownloader.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/PerforceDownloader.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/PharDownloader.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/PharDownloader.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/RarDownloader.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/RarDownloader.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/SvnDownloader.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/SvnDownloader.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/TarDownloader.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/TarDownloader.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/TransportException.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/TransportException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/VcsCapableDownloaderInterface.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/VcsCapableDownloaderInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/VcsDownloader.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/VcsDownloader.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/XzDownloader.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/XzDownloader.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/ZipDownloader.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Downloader/ZipDownloader.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/EventDispatcher/Event.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/EventDispatcher/Event.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/EventDispatcher/EventDispatcher.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/EventDispatcher/EventDispatcher.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/EventDispatcher/EventSubscriberInterface.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/EventDispatcher/EventSubscriberInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/EventDispatcher/ScriptExecutionException.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/EventDispatcher/ScriptExecutionException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Exception/NoSslException.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Exception/NoSslException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Factory.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Factory.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/IO/BaseIO.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/IO/BaseIO.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/IO/BufferIO.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/IO/BufferIO.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/IO/ConsoleIO.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/IO/ConsoleIO.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/IO/IOInterface.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/IO/IOInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/IO/NullIO.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/IO/NullIO.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/BinaryInstaller.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/BinaryInstaller.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/BinaryPresenceInterface.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/BinaryPresenceInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/InstallationManager.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/InstallationManager.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/InstallerEvent.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/InstallerEvent.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/InstallerEvents.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/InstallerEvents.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/InstallerInterface.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/InstallerInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/LibraryInstaller.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/LibraryInstaller.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/MetapackageInstaller.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/MetapackageInstaller.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/NoopInstaller.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/NoopInstaller.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/PackageEvent.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/PackageEvent.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/PackageEvents.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/PackageEvents.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/PearBinaryInstaller.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/PearBinaryInstaller.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/PearInstaller.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/PearInstaller.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/PluginInstaller.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/PluginInstaller.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/ProjectInstaller.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/ProjectInstaller.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/SuggestedPackagesReporter.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Installer/SuggestedPackagesReporter.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Json/JsonFile.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Json/JsonFile.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Json/JsonFormatter.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Json/JsonFormatter.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Json/JsonManipulator.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Json/JsonManipulator.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Json/JsonValidationException.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Json/JsonValidationException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/AliasPackage.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/AliasPackage.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Archiver/ArchivableFilesFilter.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Archiver/ArchivableFilesFilter.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Archiver/ArchivableFilesFinder.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Archiver/ArchivableFilesFinder.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Archiver/ArchiveManager.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Archiver/ArchiveManager.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Archiver/ArchiverInterface.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Archiver/ArchiverInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Archiver/BaseExcludeFilter.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Archiver/BaseExcludeFilter.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Archiver/ComposerExcludeFilter.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Archiver/ComposerExcludeFilter.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Archiver/GitExcludeFilter.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Archiver/GitExcludeFilter.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Archiver/HgExcludeFilter.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Archiver/HgExcludeFilter.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Archiver/PharArchiver.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Archiver/PharArchiver.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Archiver/ZipArchiver.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Archiver/ZipArchiver.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/BasePackage.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/BasePackage.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/CompletePackage.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/CompletePackage.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/CompletePackageInterface.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/CompletePackageInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Dumper/ArrayDumper.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Dumper/ArrayDumper.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Link.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Link.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/LinkConstraint/EmptyConstraint.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/LinkConstraint/EmptyConstraint.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/LinkConstraint/LinkConstraintInterface.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/LinkConstraint/LinkConstraintInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/LinkConstraint/MultiConstraint.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/LinkConstraint/MultiConstraint.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/LinkConstraint/SpecificConstraint.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/LinkConstraint/SpecificConstraint.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/LinkConstraint/VersionConstraint.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/LinkConstraint/VersionConstraint.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Loader/ArrayLoader.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Loader/ArrayLoader.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Loader/InvalidPackageException.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Loader/InvalidPackageException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Loader/JsonLoader.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Loader/JsonLoader.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Loader/LoaderInterface.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Loader/LoaderInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Loader/RootPackageLoader.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Loader/RootPackageLoader.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Loader/ValidatingArrayLoader.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Loader/ValidatingArrayLoader.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Locker.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Locker.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Package.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Package.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/PackageInterface.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/PackageInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/RootAliasPackage.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/RootAliasPackage.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/RootPackage.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/RootPackage.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/RootPackageInterface.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/RootPackageInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Version/VersionGuesser.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Version/VersionGuesser.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Version/VersionParser.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Version/VersionParser.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Version/VersionSelector.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Package/Version/VersionSelector.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Plugin/Capability/Capability.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Plugin/Capability/Capability.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Plugin/Capability/CommandProvider.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Plugin/Capability/CommandProvider.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Plugin/Capable.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Plugin/Capable.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Plugin/CommandEvent.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Plugin/CommandEvent.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Plugin/PluginEvents.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Plugin/PluginEvents.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Plugin/PluginInterface.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Plugin/PluginInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Plugin/PluginManager.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Plugin/PluginManager.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Plugin/PreFileDownloadEvent.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Plugin/PreFileDownloadEvent.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Question/StrictConfirmationQuestion.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Question/StrictConfirmationQuestion.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/ArrayRepository.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/ArrayRepository.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/ArtifactRepository.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/ArtifactRepository.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/BaseRepository.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/BaseRepository.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/ComposerRepository.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/ComposerRepository.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/CompositeRepository.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/CompositeRepository.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/ConfigurableRepositoryInterface.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/ConfigurableRepositoryInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/FilesystemRepository.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/FilesystemRepository.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/InstalledArrayRepository.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/InstalledArrayRepository.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/InstalledFilesystemRepository.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/InstalledFilesystemRepository.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/InstalledRepositoryInterface.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/InstalledRepositoryInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/InvalidRepositoryException.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/InvalidRepositoryException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/PackageRepository.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/PackageRepository.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/PathRepository.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/PathRepository.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Pear/BaseChannelReader.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Pear/BaseChannelReader.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Pear/ChannelInfo.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Pear/ChannelInfo.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Pear/ChannelReader.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Pear/ChannelReader.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Pear/ChannelRest10Reader.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Pear/ChannelRest10Reader.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Pear/ChannelRest11Reader.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Pear/ChannelRest11Reader.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Pear/DependencyConstraint.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Pear/DependencyConstraint.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Pear/DependencyInfo.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Pear/DependencyInfo.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Pear/PackageDependencyParser.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Pear/PackageDependencyParser.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Pear/PackageInfo.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Pear/PackageInfo.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Pear/ReleaseInfo.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Pear/ReleaseInfo.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/PearRepository.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/PearRepository.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/PlatformRepository.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/PlatformRepository.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/RepositoryFactory.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/RepositoryFactory.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/RepositoryInterface.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/RepositoryInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/RepositoryManager.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/RepositoryManager.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/RepositorySecurityException.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/RepositorySecurityException.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Vcs/BitbucketDriver.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Vcs/BitbucketDriver.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Vcs/FossilDriver.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Vcs/FossilDriver.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Vcs/GitBitbucketDriver.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Vcs/GitBitbucketDriver.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Vcs/GitDriver.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Vcs/GitDriver.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Vcs/GitHubDriver.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Vcs/GitHubDriver.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Vcs/GitLabDriver.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Vcs/GitLabDriver.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Vcs/HgBitbucketDriver.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Vcs/HgBitbucketDriver.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Vcs/HgDriver.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Vcs/HgDriver.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Vcs/PerforceDriver.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Vcs/PerforceDriver.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Vcs/SvnDriver.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Vcs/SvnDriver.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Vcs/VcsDriver.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Vcs/VcsDriver.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Vcs/VcsDriverInterface.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/Vcs/VcsDriverInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/VcsRepository.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/VcsRepository.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/WritableArrayRepository.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/WritableArrayRepository.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/WritableRepositoryInterface.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Repository/WritableRepositoryInterface.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Script/CommandEvent.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Script/CommandEvent.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Script/Event.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Script/Event.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Script/PackageEvent.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Script/PackageEvent.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Script/ScriptEvents.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Script/ScriptEvents.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/SelfUpdate/Keys.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/SelfUpdate/Keys.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/SelfUpdate/Versions.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/SelfUpdate/Versions.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/AuthHelper.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/AuthHelper.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/Bitbucket.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/Bitbucket.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/ComposerMirror.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/ComposerMirror.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/ConfigValidator.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/ConfigValidator.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/ErrorHandler.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/ErrorHandler.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/Filesystem.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/Filesystem.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/Git.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/Git.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/GitHub.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/GitHub.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/GitLab.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/GitLab.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/IniHelper.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/IniHelper.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/NoProxyPattern.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/NoProxyPattern.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/Perforce.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/Perforce.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/Platform.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/Platform.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/ProcessExecutor.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/ProcessExecutor.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/RemoteFilesystem.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/RemoteFilesystem.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/Silencer.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/Silencer.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/SpdxLicense.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/SpdxLicense.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/StreamContextFactory.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/StreamContextFactory.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/Svn.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/Svn.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/TlsHelper.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/TlsHelper.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/Url.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/Util/Url.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/XdebugHandler.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/Composer/XdebugHandler.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/composer/src/bootstrap.php" afterPath="$PROJECT_DIR$/vendor/composer/composer/src/bootstrap.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="lviv_travel@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="lviv_travel@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="lviv_travel@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="lviv_travel: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="autoscrollToSource" value="true" />
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="225">
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lviv.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/main-menu-items/lviv.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="8" column="93" lean-forward="false" selection-start-line="8" selection-start-column="93" selection-end-line="8" selection-end-column="93" />
+              <folding>
+                <marker date="1523629193408" expanded="true" signature="268:300" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="326:395" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="430:482" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="548:573" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="577:606" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="579:606" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="649:693" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="872:950" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="1072:1143" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="1265:1297" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="2246:2278" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="2326:2358" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="2406:2438" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="2486:2518" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="3477:3509" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="3557:3589" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="3637:3669" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="3717:3749" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="4708:4740" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="4788:4820" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="4868:4900" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="4948:4980" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="5939:5971" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="6019:6051" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="6099:6131" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="6179:6211" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="7125:7157" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="7205:7237" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="7285:7317" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="7365:7397" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="8175:8207" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="8255:8287" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="8335:8367" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="8415:8447" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="9225:9257" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="9305:9337" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="9385:9417" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="9465:9497" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="10275:10307" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="10355:10387" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="10435:10467" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="10515:10547" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="11022:11040" ph="..." />
+                <marker date="1523629193408" expanded="true" signature="11137:11153" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sub-section.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/templates/sub-section.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="475" column="30" lean-forward="true" selection-start-line="475" selection-start-column="30" selection-end-line="475" selection-end-column="30" />
+              <folding>
+                <element signature="e#69#138#0#HTML" expanded="true" />
+                <element signature="e#13859#13884#0#HTML" expanded="true" />
+                <element signature="e#14797#14819#0#HTML" expanded="true" />
+                <element signature="e#15265#15330#0#HTML" expanded="true" />
+                <element signature="e#16063#16084#0#HTML" expanded="true" />
+                <element signature="e#17190#17256#0#HTML" expanded="true" />
+                <element signature="e#17991#18012#0#HTML" expanded="true" />
+                <element signature="e#19119#19184#0#HTML" expanded="true" />
+                <element signature="e#19969#19989#0#HTML" expanded="true" />
+                <element signature="e#21259#21313#0#HTML" expanded="true" />
+                <element signature="e#22170#22224#0#HTML" expanded="true" />
+                <element signature="e#23081#23135#0#HTML" expanded="true" />
+                <element signature="e#23992#24046#0#HTML" expanded="true" />
+                <element signature="e#24903#24957#0#HTML" expanded="true" />
+                <element signature="e#25814#25868#0#HTML" expanded="true" />
+                <element signature="e#26725#26779#0#HTML" expanded="true" />
+                <element signature="e#27636#27690#0#HTML" expanded="true" />
+                <element signature="e#28812#28828#0#HTML" expanded="true" />
+                <marker date="1523631163295" expanded="true" signature="9:24" ph="..." />
+                <marker date="1523631163295" expanded="true" signature="35:44" ph="..." />
+                <marker date="1523631163295" expanded="true" signature="100:133" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="17312" column="24" lean-forward="true" selection-start-line="17312" selection-start-column="24" selection-end-line="17312" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="events.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/events.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1456">
+              <caret line="104" column="102" lean-forward="false" selection-start-line="104" selection-start-column="102" selection-end-line="104" selection-end-column="102" />
+              <folding>
+                <marker date="1523455718164" expanded="true" signature="9:24" ph="..." />
+                <marker date="1523455718164" expanded="true" signature="35:44" ph="..." />
+                <marker date="1523455718164" expanded="true" signature="2202:2216" ph="..." />
+                <marker date="1523455718164" expanded="true" signature="2792:2806" ph="..." />
+                <marker date="1523455718164" expanded="true" signature="3381:3395" ph="..." />
+                <marker date="1523455718164" expanded="true" signature="3970:3984" ph="..." />
+                <marker date="1523455718164" expanded="true" signature="4559:4573" ph="..." />
+                <marker date="1523455718164" expanded="true" signature="5148:5162" ph="..." />
+                <marker date="1523455718164" expanded="true" signature="5737:5751" ph="..." />
+                <marker date="1523455718164" expanded="true" signature="6326:6340" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>#545454</find>
+      <find>loo</find>
+      <find>look</find>
+      <find>icon</find>
+      <find>ng-icon.svg</find>
+      <find>ion-icon.svg</find>
+      <find>images</find>
+      <find>card-image-coffee.jpg</find>
+      <find>images/card-image-1.jpg</find>
+      <find>local</find>
+      <find>src=&quot;./</find>
+      <find>asset('</find>
+      <find>voyager</find>
+      <find>admin</find>
+      <find>pare</find>
+      <find>edit</find>
+      <find>locale</find>
+      <find>dd-</find>
+      <find>dd-h</find>
+      <find>dd-ha</find>
+      <find>dd-han</find>
+      <find>scrolled</find>
+      <find>slick-ac</find>
+      <find>dro</find>
+      <find>cddd39</find>
+      <find>storage</find>
+      <find>img</find>
+      <find>title</find>
+      <find>popup</find>
+      <find>83</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/public</dir>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="REBASE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="070c98a3c6e413e78d2f44d52ae7e3cc0ab865fd" />
+      </map>
+    </option>
+  </component>
+  <component name="GotoClassSymbolConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="$XSLT" />
+      <filtered-out-file-type name="Angular2HTML" />
+      <filtered-out-file-type name="AngularJS" />
+      <filtered-out-file-type name="ApacheConfig" />
+      <filtered-out-file-type name="Apple JS" />
+      <filtered-out-file-type name="Asp" />
+      <filtered-out-file-type name="Blade" />
+      <filtered-out-file-type name="CSS" />
+      <filtered-out-file-type name="CoffeeScript" />
+      <filtered-out-file-type name="CoffeeScriptLiterate" />
+      <filtered-out-file-type name="DB2" />
+      <filtered-out-file-type name="DTD" />
+      <filtered-out-file-type name="Derby" />
+      <filtered-out-file-type name="Dockerfile" />
+      <filtered-out-file-type name="ECMA Script Level 4" />
+      <filtered-out-file-type name="ECMAScript 6" />
+      <filtered-out-file-type name="Flow JS" />
+      <filtered-out-file-type name="GWT JavaScript" />
+      <filtered-out-file-type name="GenericSQL" />
+      <filtered-out-file-type name="Gherkin" />
+      <filtered-out-file-type name="H2" />
+      <filtered-out-file-type name="HSQLDB" />
+      <filtered-out-file-type name="HTML" />
+      <filtered-out-file-type name="HTTP Request" />
+      <filtered-out-file-type name="Haml" />
+      <filtered-out-file-type name="Ini" />
+      <filtered-out-file-type name="JQL" />
+      <filtered-out-file-type name="JQuery-CSS" />
+      <filtered-out-file-type name="JSON" />
+      <filtered-out-file-type name="JSRegexp" />
+      <filtered-out-file-type name="JSX Harmony" />
+      <filtered-out-file-type name="JavaScript" />
+      <filtered-out-file-type name="JavaScript 1.5" />
+      <filtered-out-file-type name="JavaScript 1.6" />
+      <filtered-out-file-type name="JavaScript 1.7" />
+      <filtered-out-file-type name="JavaScript 1.8" />
+      <filtered-out-file-type name="LESS" />
+      <filtered-out-file-type name="Locale" />
+      <filtered-out-file-type name="Markdown" />
+      <filtered-out-file-type name="MySQL" />
+      <filtered-out-file-type name="Nashorn JS" />
+      <filtered-out-file-type name="Oracle" />
+      <filtered-out-file-type name="OracleSqlPlus" />
+      <filtered-out-file-type name="PHP" />
+      <filtered-out-file-type name="PostgreSQL" />
+      <filtered-out-file-type name="PostgresPLSQL" />
+      <filtered-out-file-type name="RELAX-NG" />
+      <filtered-out-file-type name="ReST" />
+      <filtered-out-file-type name="Redshift" />
+      <filtered-out-file-type name="RegExp" />
+      <filtered-out-file-type name="SASS" />
+      <filtered-out-file-type name="SCSS" />
+      <filtered-out-file-type name="SQL" />
+      <filtered-out-file-type name="SQL92" />
+      <filtered-out-file-type name="SQLite" />
+      <filtered-out-file-type name="Smarty" />
+      <filtered-out-file-type name="SmartyConfig" />
+      <filtered-out-file-type name="Sybase" />
+      <filtered-out-file-type name="TEXT" />
+      <filtered-out-file-type name="TSQL" />
+      <filtered-out-file-type name="Twig" />
+      <filtered-out-file-type name="TypeScript" />
+      <filtered-out-file-type name="TypeScript JSX" />
+      <filtered-out-file-type name="Vue" />
+      <filtered-out-file-type name="VueJS" />
+      <filtered-out-file-type name="XHTML" />
+      <filtered-out-file-type name="XML" />
+      <filtered-out-file-type name="XPath" />
+      <filtered-out-file-type name="XPath2" />
+      <filtered-out-file-type name="YouTrack" />
+      <filtered-out-file-type name="textmate" />
+      <filtered-out-file-type name="yaml" />
+    </file-type-list>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/resources/views/layouts/heap" />
+        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
+        <option value="$PROJECT_DIR$/public/css/calendar.css" />
+        <option value="$PROJECT_DIR$/public/css/modified.css" />
+        <option value="$PROJECT_DIR$/public/css/landing.css" />
+        <option value="$PROJECT_DIR$/public/js/scripts.js" />
+        <option value="$PROJECT_DIR$/resources/views/now/page-news.php" />
+        <option value="$PROJECT_DIR$/resources/views/now/lviv-city-card.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/single/news.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/now/page-news.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/Locale.php" />
+        <option value="$PROJECT_DIR$/resources/views/your-lviv.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/LandingController.php" />
+        <option value="$PROJECT_DIR$/vendor/tcg/voyager/resources/views/multilingual/language-selector.blade.php" />
+        <option value="$PROJECT_DIR$/vendor/tcg/voyager/resources/views/menus/builder.blade.php" />
+        <option value="$PROJECT_DIR$/vendor/tcg/voyager/resources/views/formfields/custom/subcategories.blade.php" />
+        <option value="$PROJECT_DIR$/vendor/tcg/voyager/src/Models/Category.php" />
+        <option value="$PROJECT_DIR$/vendor/tcg/voyager/resources/views/menus/browse.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/main-menu-items/menu-business.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/main-menu-items/menu-events.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/main-menu-items/menu-lviv.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/main-menu-items/menu-now.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/main-menu-items/menu-planning.blade.php" />
+        <option value="$PROJECT_DIR$/app/Top.php" />
+        <option value="$PROJECT_DIR$/resources/views/business.blade.php" />
+        <option value="$PROJECT_DIR$/vendor/tcg/voyager/src/Models/MenuItem.php" />
+        <option value="$PROJECT_DIR$/vendor/tcg/voyager/src/Models/Menu.php" />
+        <option value="$PROJECT_DIR$/vendor/tcg/voyager/resources/views/menu/admin.blade.php" />
+        <option value="$PROJECT_DIR$/vendor/tcg/voyager/resources/views/menu/admin_menu.blade.php" />
+        <option value="$PROJECT_DIR$/vendor/tcg/voyager/src/Http/Controllers/VoyagerMenuController.php" />
+        <option value="$PROJECT_DIR$/app/Providers/MenuServiceProvider.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/MenuController.php" />
+        <option value="$PROJECT_DIR$/resources/views/events.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/single/event.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/header.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/front.blade.php" />
+        <option value="$PROJECT_DIR$/public/js/accordeon.js" />
+        <option value="$PROJECT_DIR$/vendor/tcg/voyager/resources/views/dashboard/sidebar.blade.php" />
+        <option value="$PROJECT_DIR$/vendor/tcg/voyager/resources/views/dashboard/navbar.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/main-menu-items/now.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/social.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/main-menu-items/events.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/main-menu-items/planning.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/main-menu-items/business.blade.php" />
+        <option value="$PROJECT_DIR$/public/css/header-menu.css" />
+        <option value="$PROJECT_DIR$/public/css/main.css" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/main-menu-items/lviv.blade.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/resources/views/templates/sub-section.blade.php" />
+        <option value="$PROJECT_DIR$/public/js/app.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/mtdowling/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit-mock-objects" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-color" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/erusev/parsedown" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/dlnsk/h-rbac" />
+      <path value="$PROJECT_DIR$/vendor/lavary/laravel-menu" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/seld/cli-prompt" />
+      <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/tcg/voyager" />
+      <path value="$PROJECT_DIR$/vendor/arrilot/laravel-widgets" />
+      <path value="$PROJECT_DIR$/vendor/larapack/voyager-hooks" />
+      <path value="$PROJECT_DIR$/vendor/larapack/doctrine-support" />
+      <path value="$PROJECT_DIR$/vendor/larapack/hooks" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="316" />
+    <option name="y" value="392" />
+    <option name="width" value="692" />
+    <option name="height" value="581" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="main-menu-items" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="routes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="storage" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../djerelo.loc" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views" />
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images/place-images" />
+      <recent name="$PROJECT_DIR$/public/images/logo" />
+      <recent name="$PROJECT_DIR$/resources/lang/ua" />
+      <recent name="$PROJECT_DIR$/resources/views" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="bootstrap.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="bootstrap.js" working-dir="$PROJECT_DIR$/resources/assets/js" />
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.bootstrap.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d23dd204-7240-4a9b-80da-159e432b4e66" name="Default" comment="" />
+      <created>1518781563465</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1518781563465</updated>
+      <workItem from="1518781564949" duration="925000" />
+      <workItem from="1518783290766" duration="3426000" />
+      <workItem from="1519032375173" duration="1682000" />
+      <workItem from="1519034222065" duration="1983000" />
+      <workItem from="1519036238944" duration="9562000" />
+      <workItem from="1519050046013" duration="8460000" />
+      <workItem from="1519121715630" duration="10298000" />
+      <workItem from="1519210682812" duration="9974000" />
+      <workItem from="1519289755043" duration="22259000" />
+      <workItem from="1519375715232" duration="246000" />
+      <workItem from="1519376387403" duration="15778000" />
+      <workItem from="1519399062996" duration="375000" />
+      <workItem from="1519632627108" duration="10260000" />
+      <workItem from="1519645797793" duration="12310000" />
+      <workItem from="1519723463071" duration="9556000" />
+      <workItem from="1519741973135" duration="3610000" />
+      <workItem from="1519806712175" duration="15431000" />
+      <workItem from="1519833404119" duration="1354000" />
+      <workItem from="1519894113590" duration="20069000" />
+      <workItem from="1520849340494" duration="3269000" />
+      <workItem from="1520931125544" duration="1350000" />
+      <workItem from="1521027439201" duration="762000" />
+      <workItem from="1521107154594" duration="8006000" />
+      <workItem from="1521190854471" duration="9079000" />
+      <workItem from="1521449649640" duration="5492000" />
+      <workItem from="1521473543039" duration="1665000" />
+      <workItem from="1521533753293" duration="21955000" />
+      <workItem from="1521620902545" duration="19322000" />
+      <workItem from="1521710010138" duration="14386000" />
+      <workItem from="1521796386947" duration="15513000" />
+      <workItem from="1522070413688" duration="381000" />
+      <workItem from="1522141703428" duration="6000" />
+      <workItem from="1522146048495" duration="39537000" />
+      <workItem from="1522310690061" duration="25813000" />
+      <workItem from="1522393476379" duration="11889000" />
+      <workItem from="1522653763103" duration="19969000" />
+      <workItem from="1522738770189" duration="24669000" />
+      <workItem from="1522831945230" duration="8024000" />
+      <workItem from="1522841334436" duration="6240000" />
+      <workItem from="1522914560767" duration="17682000" />
+      <workItem from="1522997897400" duration="4632000" />
+      <workItem from="1523430524296" duration="29185000" />
+      <workItem from="1523523614884" duration="20260000" />
+      <workItem from="1523602011756" duration="3843000" />
+      <workItem from="1523622957321" duration="7538000" />
+    </task>
+    <task id="LOCAL-00001" summary="header--small backgr change to fff">
+      <created>1519221888656</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1519221888656</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="502279000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="316" y="392" width="1319" height="786" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22369447" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18706158" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18926975" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14731099" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24941543" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34678626" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="header--small backgr change to fff" />
+    <option name="LAST_COMMIT_MESSAGE" value="header--small backgr change to fff" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/Top.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/vendor/tcg/voyager/assets/js/plugins/giphy/html/js/GiphySearch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1983">
+          <caret line="821" column="15" lean-forward="false" selection-start-line="821" selection-start-column="15" selection-end-line="821" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/jquery-ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="209" column="7" lean-forward="false" selection-start-line="209" selection-start-column="7" selection-end-line="209" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/src/Providers/VoyagerEventServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LocaleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/resources/views/menus/browse.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="34" lean-forward="false" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/resources/views/menus/builder.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1608">
+          <caret line="73" column="44" lean-forward="true" selection-start-line="73" selection-start-column="44" selection-end-line="73" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/resources/views/menus/partial/notice.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/src/Models/MenuItem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/src/Models/Menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="41" column="50" lean-forward="true" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/resources/views/menu/admin.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="13" column="49" lean-forward="true" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/resources/views/menu/admin_menu.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/src/Http/Controllers/VoyagerMenuController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/MenuServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/routes/voyager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="72" column="22" lean-forward="false" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/single/news.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MenuController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/single/event.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="352" column="34" lean-forward="false" selection-start-line="352" selection-start-column="34" selection-end-line="352" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/publishable/assets/images/logo-icon-light.png" />
+    <entry file="file://$PROJECT_DIR$/public/images/logo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/logo-2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/favicon/favicon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/resources/views/compass/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1386">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/resources/views/compass/includes/fonts.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/resources/views/media/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/resources/views/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/resources/views/master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="11" column="99" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/accordeon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/resources/views/dashboard/navbar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="39" column="53" lean-forward="true" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/resources/views/dashboard/sidebar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="18" column="128" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/front.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="826">
+          <caret line="8251" column="34" lean-forward="true" selection-start-line="8251" selection-start-column="34" selection-end-line="8251" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/header-menu.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="38" column="3" lean-forward="true" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/main-menu-items/business.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="181" column="73" lean-forward="false" selection-start-line="181" selection-start-column="73" selection-end-line="181" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/main-menu-items/events.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="123" column="71" lean-forward="false" selection-start-line="123" selection-start-column="71" selection-end-line="123" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/main-menu-items/now.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="191" column="30" lean-forward="false" selection-start-line="191" selection-start-column="30" selection-end-line="191" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/main-menu-items/planning.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="167" column="77" lean-forward="false" selection-start-line="167" selection-start-column="77" selection-end-line="167" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/social.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+          <folding>
+            <marker date="1523619609963" expanded="true" signature="9:24" ph="..." />
+            <marker date="1523619609963" expanded="true" signature="35:44" ph="..." />
+            <marker date="1523619609963" expanded="true" signature="31591:31611" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/resources/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-402">
+          <caret line="104" column="7" lean-forward="true" selection-start-line="104" selection-start-column="7" selection-end-line="104" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/main-menu-items/lviv.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="8" column="93" lean-forward="false" selection-start-line="8" selection-start-column="93" selection-end-line="8" selection-end-column="93" />
+          <folding>
+            <marker date="1523629193408" expanded="true" signature="268:300" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="326:395" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="430:482" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="548:573" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="577:606" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="579:606" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="649:693" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="872:950" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="1072:1143" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="1265:1297" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="2246:2278" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="2326:2358" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="2406:2438" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="2486:2518" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="3477:3509" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="3557:3589" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="3637:3669" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="3717:3749" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="4708:4740" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="4788:4820" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="4868:4900" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="4948:4980" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="5939:5971" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="6019:6051" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="6099:6131" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="6179:6211" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="7125:7157" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="7205:7237" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="7285:7317" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="7365:7397" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="8175:8207" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="8255:8287" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="8335:8367" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="8415:8447" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="9225:9257" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="9305:9337" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="9385:9417" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="9465:9497" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="10275:10307" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="10355:10387" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="10435:10467" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="10515:10547" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="11022:11040" ph="..." />
+            <marker date="1523629193408" expanded="true" signature="11137:11153" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/events.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1456">
+          <caret line="104" column="102" lean-forward="false" selection-start-line="104" selection-start-column="102" selection-end-line="104" selection-end-column="102" />
+          <folding>
+            <marker date="1523455718164" expanded="true" signature="9:24" ph="..." />
+            <marker date="1523455718164" expanded="true" signature="35:44" ph="..." />
+            <marker date="1523455718164" expanded="true" signature="2202:2216" ph="..." />
+            <marker date="1523455718164" expanded="true" signature="2792:2806" ph="..." />
+            <marker date="1523455718164" expanded="true" signature="3381:3395" ph="..." />
+            <marker date="1523455718164" expanded="true" signature="3970:3984" ph="..." />
+            <marker date="1523455718164" expanded="true" signature="4559:4573" ph="..." />
+            <marker date="1523455718164" expanded="true" signature="5148:5162" ph="..." />
+            <marker date="1523455718164" expanded="true" signature="5737:5751" ph="..." />
+            <marker date="1523455718164" expanded="true" signature="6326:6340" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/components/Example.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/templates/sub-section.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="475" column="30" lean-forward="true" selection-start-line="475" selection-start-column="30" selection-end-line="475" selection-end-column="30" />
+          <folding>
+            <element signature="e#69#138#0#HTML" expanded="true" />
+            <element signature="e#13859#13884#0#HTML" expanded="true" />
+            <element signature="e#14797#14819#0#HTML" expanded="true" />
+            <element signature="e#15265#15330#0#HTML" expanded="true" />
+            <element signature="e#16063#16084#0#HTML" expanded="true" />
+            <element signature="e#17190#17256#0#HTML" expanded="true" />
+            <element signature="e#17991#18012#0#HTML" expanded="true" />
+            <element signature="e#19119#19184#0#HTML" expanded="true" />
+            <element signature="e#19969#19989#0#HTML" expanded="true" />
+            <element signature="e#21259#21313#0#HTML" expanded="true" />
+            <element signature="e#22170#22224#0#HTML" expanded="true" />
+            <element signature="e#23081#23135#0#HTML" expanded="true" />
+            <element signature="e#23992#24046#0#HTML" expanded="true" />
+            <element signature="e#24903#24957#0#HTML" expanded="true" />
+            <element signature="e#25814#25868#0#HTML" expanded="true" />
+            <element signature="e#26725#26779#0#HTML" expanded="true" />
+            <element signature="e#27636#27690#0#HTML" expanded="true" />
+            <element signature="e#28812#28828#0#HTML" expanded="true" />
+            <marker date="1523631163295" expanded="true" signature="9:24" ph="..." />
+            <marker date="1523631163295" expanded="true" signature="35:44" ph="..." />
+            <marker date="1523631163295" expanded="true" signature="100:133" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="17312" column="24" lean-forward="true" selection-start-line="17312" selection-start-column="24" selection-end-line="17312" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
