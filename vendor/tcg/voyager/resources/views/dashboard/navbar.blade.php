@@ -34,8 +34,9 @@
         <ul class="nav navbar-nav navbar-right">
             <li class="dropdown profile">
                 <a href="#" class="dropdown-toggle text-right" data-toggle="dropdown" role="button"
-                   aria-expanded="false"> <span
-                            class="caret"></span></a>
+                   aria-expanded="false">
+                    <img src="{{ $user_avatar }}" class="profile-img">
+                    <span class="caret"></span></a>
                 <ul class="dropdown-menu dropdown-menu-animated">
                     <li class="profile">
                         {{--<img src="{{ asset('images/image-5.jpg') }}" class="profile-img">--}}

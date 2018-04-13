@@ -1,5 +1,5 @@
 @include('layouts.header')
-    @yield('content')
+@yield('content')
 <footer class="footer">
     <div class="container">
         <div class="visible-lg visible-md">
@@ -65,6 +65,9 @@
         <p class="text-secondary text-small text-center m-0">2017 Lviv Travel</p>
     </div>
 </footer>
+
+
+<script defer src="{{asset('/js/accordeon.js')}}"></script>
 <script defer src="{{asset('/js/scripts.js')}}"></script>
 </body>
 </html>
