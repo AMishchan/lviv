@@ -35,7 +35,7 @@
             <li class="dropdown profile">
                 <a href="#" class="dropdown-toggle text-right" data-toggle="dropdown" role="button"
                    aria-expanded="false">
-                    <img src="{{ $user_avatar }}" class="profile-img">
+                    {{--<img src="" class="profile-img">--}}
                     <span class="caret"></span></a>
                 <ul class="dropdown-menu dropdown-menu-animated">
                     <li class="profile">

@@ -17,11 +17,9 @@
                 <div class="dimmer"></div>
                 <div class="panel-content">
 
-                    {{--<img src="{{asset('images/default/default.png')}}" class="avatar" alt="{{ Auth::user()->name }} avatar">--}}
-                    <h1>{{ ucwords(Auth::user()->name) }}</h1>
 
                     {{--<img src="{{asset('images/default/default.png')}}" class="avatar" alt="{{ Auth::user()->name }} avatar">--}}
-                    <h4>{{ ucwords(Auth::user()->name) }}</h4>
+                    <h1>{{ ucwords(Auth::user()->name) }}</h1>
                     <p>{{ Auth::user()->email }}</p>
 
                     <a href="{{ route('voyager.profile') }}" class="btn btn-primary">{{ __('voyager.generic.profile') }}</a>
