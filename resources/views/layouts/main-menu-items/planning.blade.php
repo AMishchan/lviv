@@ -24,28 +24,6 @@
                     @endif
                 @endforeach
             </ul>
-            <div class="col-xs-12 col-md-6">
-                <div class="popup-socials">
-                    <span class="mr-2 fw-bold visible-md-inline-block">Слідкуй за нами</span>
-                    <ul class="social">
-                        <li>
-                            <a href="#" class="btn-social"><i class="fa fa-facebook-official"
-                                                              aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn-social"><i class="fa fa-instagram"
-                                                              aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn-social"><i class="fa fa-twitter-square"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn-social"><i class="fa fa-google-plus-square"
-                                                              aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
         </div>
         <div class="col-sm-7 col-md-9 col-lg-9 hidden-xs">
             <div class="row">
@@ -187,8 +165,9 @@
                         </div>
                     </a>
                 </div>
-                <a href="{{route('planning')}}" class="btn btn--green">Більше подій</a>
+                <a href="{{route('planning')}}" class="btn btn--green">Більше</a>
             </div>
         </div>
     </div>
+    @include('layouts.social')
 </div>

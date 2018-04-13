@@ -24,28 +24,6 @@
                     @endif
                 @endforeach
             </ul>
-            <div class="col-xs-12 col-md-6">
-                <div class="popup-socials">
-                    <span class="mr-2 fw-bold visible-md-inline-block">Слідкуй за нами</span>
-                    <ul class="social">
-                        <li>
-                            <a href="#" class="btn-social"><i class="fa fa-facebook-official"
-                                                              aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn-social"><i class="fa fa-instagram"
-                                                              aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn-social"><i class="fa fa-twitter-square"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn-social"><i class="fa fa-google-plus-square"
-                                                              aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
         </div>
         <div class="col-md-9 col-lg-9 ">
             <div class="b-l hidden-xs">
@@ -143,7 +121,8 @@
                 <input type="text" placeholder="Шукати: aртисти, події">
                 <button class="btn"><i class="fa fa-search"></i></button>
             </form>
-            <a href="{{route('events')}}" class="btn btn--green">Більше подій</a>
+            <a href="{{route('events')}}" class="btn btn--green">Більше</a>
         </div>
     </div>
+    @include('layouts.social')
 </div>

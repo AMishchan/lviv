@@ -8255,7 +8255,7 @@ a.label:hover {
 }
 
 .main-menu .menu.active {
-    padding: 80px 0 20px;
+    padding: 40px 0 20px;
     opacity: 1;
     height: auto
 }
@@ -9583,4 +9583,9 @@ a.label:hover {
 }
 .submenuItems:first-child{
     margin-top: 15px;
+}
+.popup-socials{
+    bottom: 24px;
+    position: absolute;
+    display: flex;
 }
