@@ -3,20 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="d23dd204-7240-4a9b-80da-159e432b4e66" name="Default" comment="header--small backgr change to fff">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/public/images/documentation/getStartBg.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/documentation/qub-logo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/documentation/qub-logo.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/neonimages/food.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/neonimages/fun.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/neonimages/logo.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/neonimages/monuments.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/neonimages/museums.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/neonimages/parks.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/neonimages/places.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/neonimages/theaters.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/images/place-images/place-image.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/views/templates/sub-section.blade.php" afterPath="$PROJECT_DIR$/resources/views/templates/sub-section.blade.php" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MenuController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/MenuController.php" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/MenuServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/MenuServiceProvider.php" />
       <change beforePath="$PROJECT_DIR$/resources/views/your-lviv.blade.php" afterPath="$PROJECT_DIR$/resources/views/your-lviv.blade.php" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/tcg/voyager/resources/views/menus/builder.blade.php" afterPath="$PROJECT_DIR$/vendor/tcg/voyager/resources/views/menus/builder.blade.php" />
+      <change beforePath="$PROJECT_DIR$/vendor/tcg/voyager/src/Http/Controllers/VoyagerMenuController.php" afterPath="$PROJECT_DIR$/vendor/tcg/voyager/src/Http/Controllers/VoyagerMenuController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -65,8 +57,18 @@
       <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="33" column="30" lean-forward="false" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="30" />
+            <state relative-caret-position="462">
+              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="voyager.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/routes/voyager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -75,24 +77,131 @@
       <file leaf-file-name="your-lviv.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/your-lviv.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="51" column="42" lean-forward="false" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
+            <state relative-caret-position="350">
+              <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding>
-                <marker date="1523868192055" expanded="true" signature="9:24" ph="..." />
-                <marker date="1523868192055" expanded="true" signature="35:44" ph="..." />
-                <marker date="1523868192055" expanded="true" signature="2291:2326" ph="..." />
-                <marker date="1523868192055" expanded="true" signature="2553:2562" ph="..." />
-                <marker date="1523868192055" expanded="true" signature="2841:2885" ph="..." />
-                <marker date="1523868192055" expanded="true" signature="3379:3421" ph="..." />
-                <marker date="1523868192055" expanded="true" signature="3974:4012" ph="..." />
-                <marker date="1523868192055" expanded="true" signature="4563:4603" ph="..." />
-                <marker date="1523868192055" expanded="true" signature="5145:5189" ph="..." />
-                <marker date="1523868192055" expanded="true" signature="5745:5787" ph="..." />
-                <marker date="1523868192055" expanded="true" signature="6340:6382" ph="..." />
-                <marker date="1523868192055" expanded="true" signature="7188:7245" ph="..." />
-                <marker date="1523868192055" expanded="true" signature="7925:7982" ph="..." />
-                <marker date="1523868192055" expanded="true" signature="8654:8711" ph="..." />
-                <marker date="1523868192055" expanded="true" signature="9392:9449" ph="..." />
+                <element signature="e#91#153#0#HTML" expanded="true" />
+                <element signature="e#2267#2290#0#HTML" expanded="true" />
+                <marker date="1523884843844" expanded="true" signature="9:24" ph="..." />
+                <marker date="1523884843844" expanded="true" signature="35:44" ph="..." />
+                <marker date="1523884843844" expanded="true" signature="2314:2343" ph="..." />
+                <marker date="1523884843844" expanded="true" signature="2394:2426" ph="..." />
+                <marker date="1523884843844" expanded="true" signature="2629:2668" ph="..." />
+                <marker date="1523884843844" expanded="true" signature="2938:3306" ph="..." />
+                <marker date="1523884843844" expanded="true" signature="3262:3306" ph="..." />
+                <marker date="1523884843844" expanded="true" signature="3809:3851" ph="..." />
+                <marker date="1523884843844" expanded="true" signature="4367:4405" ph="..." />
+                <marker date="1523884843844" expanded="true" signature="4993:5033" ph="..." />
+                <marker date="1523884843844" expanded="true" signature="5584:5628" ph="..." />
+                <marker date="1523884843844" expanded="true" signature="6221:6263" ph="..." />
+                <marker date="1523884843844" expanded="true" signature="6825:6865" ph="..." />
+                <marker date="1523884843844" expanded="true" signature="7680:7737" ph="..." />
+                <marker date="1523884843844" expanded="true" signature="8475:8532" ph="..." />
+                <marker date="1523884843844" expanded="true" signature="9262:9319" ph="..." />
+                <marker date="1523884843844" expanded="true" signature="10058:10115" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="builder.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/resources/views/menus/builder.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="392">
+              <caret line="107" column="72" lean-forward="false" selection-start-line="107" selection-start-column="72" selection-end-line="107" selection-end-column="72" />
+              <folding>
+                <marker date="1523884514066" expanded="true" signature="9:26" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="38:86" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="98:111" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="179:215" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="221:234" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="335:377" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="409:450" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="468:477" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="492:523" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="802:845" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="1019:1096" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="1553:1582" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="1775:1824" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="1934:2010" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="2124:2148" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="2177:2191" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="2328:2376" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="2537:2567" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="3037:3066" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="3279:3323" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="3460:3498" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="3628:3684" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="3732:3791" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="3908:3922" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="4003:4044" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="4080:4166" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="4201:4220" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="4269:4282" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="4288:4327" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="4332:4353" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="4459:4472" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="4526:4555" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="4644:4682" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="4846:4885" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="4949:4991" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="5134:5166" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="5317:5344" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="5481:5520" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="5675:5704" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="5767:5811" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="5979:6031" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="6155:13963" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="6310:6352" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="6411:6445" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="6609:6646" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="6705:6741" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="6942:6980" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="7045:7082" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="7197:7208" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="7499:7529" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="7670:7700" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="7891:7903" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="7945:13940" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="7958:8197" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="7976:7996" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="8013:8075" ph=" Multilingual setup for main page ..." />
+                <marker date="1523884514066" expanded="true" signature="8217:8277" ph=" Multilingual for Add/Edit Menu ..." />
+                <marker date="1523884514066" expanded="true" signature="8636:8679" ph=" Set Variables ..." />
+                <marker date="1523884514066" expanded="true" signature="9538:9576" ph=" Add Menu ..." />
+                <marker date="1523884514066" expanded="true" signature="9612:9693" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="9625:9676" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="9712:9751" ph=" Edit Menu ..." />
+                <marker date="1523884514066" expanded="true" signature="9788:9902" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="9820:9885" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="9921:9969" ph=" Menu Modal is Open ..." />
+                <marker date="1523884514066" expanded="true" signature="9996:12700" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="10033:12699" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="10235:10636" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="10644:12535" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="11390:11482" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="11542:11620" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="11665:11918" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="11971:12096" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="12104:12229" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="12287:12398" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="12406:12517" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="12573:12685" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="12720:12771" ph=" Toggle Form Menu Type ..." />
+                <marker date="1523884514066" expanded="true" signature="12802:13100" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="12826:13099" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="12879:12978" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="12986:13085" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="13120:13166" ph=" Delete menu item ..." />
+                <marker date="1523884514066" expanded="true" signature="13203:13448" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="13237:13447" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="13468:13511" ph=" Reorder items ..." />
+                <marker date="1523884514066" expanded="true" signature="13538:13928" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="13562:13927" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="13589:13641" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="13754:13768" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="13808:13911" ph="..." />
+                <marker date="1523884514066" expanded="true" signature="13847:13889" ph="..." />
               </folding>
             </state>
           </provider>
@@ -109,10 +218,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>#545454</find>
-      <find>loo</find>
-      <find>look</find>
-      <find>icon</find>
       <find>ng-icon.svg</find>
       <find>ion-icon.svg</find>
       <find>images</find>
@@ -125,7 +230,6 @@
       <find>admin</find>
       <find>pare</find>
       <find>edit</find>
-      <find>locale</find>
       <find>dd-</find>
       <find>dd-h</find>
       <find>dd-ha</find>
@@ -136,13 +240,19 @@
       <find>cddd39</find>
       <find>storage</find>
       <find>img</find>
-      <find>title</find>
       <find>popup</find>
       <find>83</find>
+      <find>-&gt;middleware('locale')</find>
+      <find>locale</find>
+      <find>menu_item</find>
+      <find>middleware</find>
+      <find>vo</find>
+      <find>title</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/public</dir>
       <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/vendor/tcg/voyager</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -233,23 +343,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/layouts/heap" />
-        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
-        <option value="$PROJECT_DIR$/public/css/calendar.css" />
-        <option value="$PROJECT_DIR$/public/css/modified.css" />
-        <option value="$PROJECT_DIR$/public/css/landing.css" />
-        <option value="$PROJECT_DIR$/public/js/scripts.js" />
-        <option value="$PROJECT_DIR$/resources/views/now/page-news.php" />
         <option value="$PROJECT_DIR$/resources/views/now/lviv-city-card.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/single/news.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/now/page-news.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/Locale.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/LandingController.php" />
         <option value="$PROJECT_DIR$/vendor/tcg/voyager/resources/views/multilingual/language-selector.blade.php" />
-        <option value="$PROJECT_DIR$/vendor/tcg/voyager/resources/views/menus/builder.blade.php" />
         <option value="$PROJECT_DIR$/vendor/tcg/voyager/resources/views/formfields/custom/subcategories.blade.php" />
         <option value="$PROJECT_DIR$/vendor/tcg/voyager/src/Models/Category.php" />
-        <option value="$PROJECT_DIR$/vendor/tcg/voyager/resources/views/menus/browse.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/main-menu-items/menu-business.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/main-menu-items/menu-events.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/main-menu-items/menu-lviv.blade.php" />
@@ -257,13 +358,9 @@
         <option value="$PROJECT_DIR$/resources/views/layouts/main-menu-items/menu-planning.blade.php" />
         <option value="$PROJECT_DIR$/app/Top.php" />
         <option value="$PROJECT_DIR$/resources/views/business.blade.php" />
-        <option value="$PROJECT_DIR$/vendor/tcg/voyager/src/Models/MenuItem.php" />
         <option value="$PROJECT_DIR$/vendor/tcg/voyager/src/Models/Menu.php" />
         <option value="$PROJECT_DIR$/vendor/tcg/voyager/resources/views/menu/admin.blade.php" />
         <option value="$PROJECT_DIR$/vendor/tcg/voyager/resources/views/menu/admin_menu.blade.php" />
-        <option value="$PROJECT_DIR$/vendor/tcg/voyager/src/Http/Controllers/VoyagerMenuController.php" />
-        <option value="$PROJECT_DIR$/app/Providers/MenuServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/MenuController.php" />
         <option value="$PROJECT_DIR$/resources/views/events.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/single/event.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/header.blade.php" />
@@ -278,11 +375,24 @@
         <option value="$PROJECT_DIR$/resources/views/layouts/main-menu-items/business.blade.php" />
         <option value="$PROJECT_DIR$/public/css/header-menu.css" />
         <option value="$PROJECT_DIR$/public/css/main.css" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/main-menu-items/lviv.blade.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/public/js/app.js" />
         <option value="$PROJECT_DIR$/resources/views/templates/sub-section.blade.php" />
+        <option value="$PROJECT_DIR$/app/Providers/MenuServiceProvider.php" />
+        <option value="$PROJECT_DIR$/vendor/tcg/voyager/publishable/database/seeds/MenuItemsTableSeeder.php" />
+        <option value="$PROJECT_DIR$/vendor/tcg/voyager/src/Models/MenuItem.php" />
+        <option value="$PROJECT_DIR$/vendor/tcg/voyager/resources/views/menus/browse.blade.php" />
+        <option value="$PROJECT_DIR$/vendor/tcg/voyager/src/Http/Middleware/AdminLocale.php" />
+        <option value="$PROJECT_DIR$/vendor/tcg/voyager/src/Http/Middleware/VoyagerAdminMiddleware.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/AdminLocale.php" />
+        <option value="$PROJECT_DIR$/vendor/tcg/voyager/src/Http/Controllers/Traits/BreadRelationshipParser.php" />
+        <option value="$PROJECT_DIR$/vendor/tcg/voyager/src/Http/Controllers/VoyagerController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/vendor/tcg/voyager/src/Http/Controllers/VoyagerMenuController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/MenuController.php" />
+        <option value="$PROJECT_DIR$/vendor/tcg/voyager/resources/views/menus/builder.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/your-lviv.blade.php" />
       </list>
     </option>
@@ -380,10 +490,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="316" />
-    <option name="y" value="392" />
-    <option name="width" value="692" />
-    <option name="height" value="581" />
+    <option name="x" value="331" />
+    <option name="y" value="275" />
+    <option name="width" value="690" />
+    <option name="height" value="566" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -413,13 +523,51 @@
             <path>
               <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
               <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Middleware" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Providers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
               <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="storage" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="storage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="posts" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
@@ -438,6 +586,116 @@
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tcg" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tcg" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="voyager" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tcg" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="voyager" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tcg" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="voyager" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tcg" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="voyager" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="menus" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tcg" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="voyager" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="routes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tcg" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="voyager" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tcg" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="voyager" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tcg" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="voyager" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tcg" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="voyager" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Traits" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tcg" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="voyager" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Middleware" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lviv-travel.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lviv-travel.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tcg" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="voyager" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Policies" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -549,7 +807,7 @@
       <workItem from="1523523614884" duration="20260000" />
       <workItem from="1523602011756" duration="3843000" />
       <workItem from="1523622957321" duration="7538000" />
-      <workItem from="1523862427457" duration="4953000" />
+      <workItem from="1523862427457" duration="21103000" />
     </task>
     <task id="LOCAL-00001" summary="header--small backgr change to fff">
       <created>1519221888656</created>
@@ -562,7 +820,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="507371000" />
+    <option name="totallyTimeSpent" value="523521000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -574,19 +832,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="316" y="392" width="1319" height="786" extended-state="6" />
+    <frame x="49" y="-3" width="1317" height="771" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22369447" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18939984" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18926975" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14731099" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24941543" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5859492" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22369447" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25409198" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14731099" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24941543" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -597,7 +856,6 @@
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -643,199 +901,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/resources/views/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/resources/views/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="11" column="99" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/accordeon.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/resources/views/dashboard/navbar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="39" column="53" lean-forward="true" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/resources/views/dashboard/sidebar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="18" column="128" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="128" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/front.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="826">
-          <caret line="8251" column="34" lean-forward="true" selection-start-line="8251" selection-start-column="34" selection-end-line="8251" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/header-menu.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="38" column="3" lean-forward="true" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/main-menu-items/business.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="181" column="73" lean-forward="false" selection-start-line="181" selection-start-column="73" selection-end-line="181" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/main-menu-items/events.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="123" column="71" lean-forward="false" selection-start-line="123" selection-start-column="71" selection-end-line="123" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/main-menu-items/now.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="191" column="30" lean-forward="false" selection-start-line="191" selection-start-column="30" selection-end-line="191" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/main-menu-items/planning.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="167" column="77" lean-forward="false" selection-start-line="167" selection-start-column="77" selection-end-line="167" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/social.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/resources/assets/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-402">
-          <caret line="104" column="7" lean-forward="true" selection-start-line="104" selection-start-column="7" selection-end-line="104" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/main-menu-items/lviv.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="8" column="93" lean-forward="false" selection-start-line="8" selection-start-column="93" selection-end-line="8" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/components/Example.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="17312" column="24" lean-forward="true" selection-start-line="17312" selection-start-column="24" selection-end-line="17312" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/card-image-2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/card-image-3.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/card-image-4.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/card-image-5.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/card-image-coffee.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/card-image-weather.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/images/card-image-1.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -933,14 +998,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="33" column="30" lean-forward="false" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/images/datepicker_images/ui-icons_444444_256x240.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -984,26 +1041,415 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/EventServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/storage/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/publishable/database/seeds/MenusTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/publishable/database/seeds/MenuItemsTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="4" column="32" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+          <folding>
+            <element signature="e#7#38#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/src/Models/MenuItem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-829">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/src/Models/Menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="868">
+          <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/src/Voyager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/src/Http/Controllers/VoyagerMediaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/resources/views/menus/browse.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="108" column="97" lean-forward="false" selection-start-line="108" selection-start-column="97" selection-end-line="108" selection-end-column="97" />
+          <folding>
+            <marker date="1523872970548" expanded="true" signature="9:26" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="38:116" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="128:141" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="214:246" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="262:294" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="319:364" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="440:471" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="533:542" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="557:588" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="655:672" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="1015:1045" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="1085:1106" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="1212:1243" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="1399:1424" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="1508:1537" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="1624:1645" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="1705:1809" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="1812:1852" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="1861:1883" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="2006:2028" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="2293:2308" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="2418:2448" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="2533:2563" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="2710:2723" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="2780:2853" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="2984:3012" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="3157:3170" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="3227:3303" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="3429:3460" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="4147:4176" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="4376:4415" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="4420:4454" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="4645:4669" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="4698:4712" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="4818:4861" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="4866:4900" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="5033:5063" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="5159:5171" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="5350:5394" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="5418:5460" ph="..." />
+            <marker date="1523872970548" expanded="true" signature="5615:5683" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/src/Facades/Voyager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/src/Contracts/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/src/Http/Controllers/VoyagerAuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/src/Http/Middleware/AdminLocale.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/routes/voyager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Language.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LocaleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/src/Http/Middleware/VoyagerAdminMiddleware.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="e#47#59#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Locale.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/src/Http/Controllers/Traits/BreadRelationshipParser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-910">
+          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/src/Http/Controllers/VoyagerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding>
+            <element signature="e#48#76#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="35" column="69" lean-forward="true" selection-start-line="35" selection-start-column="69" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/AdminLocale.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/src/Providers/VoyagerEventServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/src/Policies/MenuItemPolicy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-73">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/MenuServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/src/Http/Controllers/VoyagerMenuController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <folding>
+            <element signature="e#48#76#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MenuController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tcg/voyager/resources/views/menus/builder.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="107" column="72" lean-forward="false" selection-start-line="107" selection-start-column="72" selection-end-line="107" selection-end-column="72" />
+          <folding>
+            <marker date="1523884514066" expanded="true" signature="9:26" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="38:86" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="98:111" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="179:215" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="221:234" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="335:377" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="409:450" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="468:477" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="492:523" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="802:845" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="1019:1096" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="1553:1582" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="1775:1824" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="1934:2010" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="2124:2148" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="2177:2191" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="2328:2376" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="2537:2567" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="3037:3066" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="3279:3323" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="3460:3498" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="3628:3684" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="3732:3791" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="3908:3922" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="4003:4044" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="4080:4166" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="4201:4220" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="4269:4282" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="4288:4327" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="4332:4353" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="4459:4472" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="4526:4555" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="4644:4682" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="4846:4885" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="4949:4991" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="5134:5166" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="5317:5344" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="5481:5520" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="5675:5704" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="5767:5811" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="5979:6031" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="6155:13963" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="6310:6352" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="6411:6445" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="6609:6646" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="6705:6741" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="6942:6980" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="7045:7082" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="7197:7208" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="7499:7529" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="7670:7700" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="7891:7903" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="7945:13940" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="7958:8197" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="7976:7996" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="8013:8075" ph=" Multilingual setup for main page ..." />
+            <marker date="1523884514066" expanded="true" signature="8217:8277" ph=" Multilingual for Add/Edit Menu ..." />
+            <marker date="1523884514066" expanded="true" signature="8636:8679" ph=" Set Variables ..." />
+            <marker date="1523884514066" expanded="true" signature="9538:9576" ph=" Add Menu ..." />
+            <marker date="1523884514066" expanded="true" signature="9612:9693" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="9625:9676" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="9712:9751" ph=" Edit Menu ..." />
+            <marker date="1523884514066" expanded="true" signature="9788:9902" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="9820:9885" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="9921:9969" ph=" Menu Modal is Open ..." />
+            <marker date="1523884514066" expanded="true" signature="9996:12700" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="10033:12699" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="10235:10636" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="10644:12535" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="11390:11482" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="11542:11620" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="11665:11918" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="11971:12096" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="12104:12229" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="12287:12398" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="12406:12517" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="12573:12685" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="12720:12771" ph=" Toggle Form Menu Type ..." />
+            <marker date="1523884514066" expanded="true" signature="12802:13100" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="12826:13099" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="12879:12978" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="12986:13085" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="13120:13166" ph=" Delete menu item ..." />
+            <marker date="1523884514066" expanded="true" signature="13203:13448" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="13237:13447" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="13468:13511" ph=" Reorder items ..." />
+            <marker date="1523884514066" expanded="true" signature="13538:13928" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="13562:13927" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="13589:13641" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="13754:13768" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="13808:13911" ph="..." />
+            <marker date="1523884514066" expanded="true" signature="13847:13889" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/your-lviv.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="51" column="42" lean-forward="false" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
+        <state relative-caret-position="350">
+          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding>
-            <marker date="1523868192055" expanded="true" signature="9:24" ph="..." />
-            <marker date="1523868192055" expanded="true" signature="35:44" ph="..." />
-            <marker date="1523868192055" expanded="true" signature="2291:2326" ph="..." />
-            <marker date="1523868192055" expanded="true" signature="2553:2562" ph="..." />
-            <marker date="1523868192055" expanded="true" signature="2841:2885" ph="..." />
-            <marker date="1523868192055" expanded="true" signature="3379:3421" ph="..." />
-            <marker date="1523868192055" expanded="true" signature="3974:4012" ph="..." />
-            <marker date="1523868192055" expanded="true" signature="4563:4603" ph="..." />
-            <marker date="1523868192055" expanded="true" signature="5145:5189" ph="..." />
-            <marker date="1523868192055" expanded="true" signature="5745:5787" ph="..." />
-            <marker date="1523868192055" expanded="true" signature="6340:6382" ph="..." />
-            <marker date="1523868192055" expanded="true" signature="7188:7245" ph="..." />
-            <marker date="1523868192055" expanded="true" signature="7925:7982" ph="..." />
-            <marker date="1523868192055" expanded="true" signature="8654:8711" ph="..." />
-            <marker date="1523868192055" expanded="true" signature="9392:9449" ph="..." />
+            <element signature="e#91#153#0#HTML" expanded="true" />
+            <element signature="e#2267#2290#0#HTML" expanded="true" />
+            <marker date="1523884843844" expanded="true" signature="9:24" ph="..." />
+            <marker date="1523884843844" expanded="true" signature="35:44" ph="..." />
+            <marker date="1523884843844" expanded="true" signature="2314:2343" ph="..." />
+            <marker date="1523884843844" expanded="true" signature="2394:2426" ph="..." />
+            <marker date="1523884843844" expanded="true" signature="2629:2668" ph="..." />
+            <marker date="1523884843844" expanded="true" signature="2938:3306" ph="..." />
+            <marker date="1523884843844" expanded="true" signature="3262:3306" ph="..." />
+            <marker date="1523884843844" expanded="true" signature="3809:3851" ph="..." />
+            <marker date="1523884843844" expanded="true" signature="4367:4405" ph="..." />
+            <marker date="1523884843844" expanded="true" signature="4993:5033" ph="..." />
+            <marker date="1523884843844" expanded="true" signature="5584:5628" ph="..." />
+            <marker date="1523884843844" expanded="true" signature="6221:6263" ph="..." />
+            <marker date="1523884843844" expanded="true" signature="6825:6865" ph="..." />
+            <marker date="1523884843844" expanded="true" signature="7680:7737" ph="..." />
+            <marker date="1523884843844" expanded="true" signature="8475:8532" ph="..." />
+            <marker date="1523884843844" expanded="true" signature="9262:9319" ph="..." />
+            <marker date="1523884843844" expanded="true" signature="10058:10115" ph="..." />
           </folding>
         </state>
       </provider>
