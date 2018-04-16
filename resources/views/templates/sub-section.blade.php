@@ -31,12 +31,12 @@
                         інструментів, повадок, універсальний для всіх мов, присутніх у Галичині. </p>
                 </div>
                 <div>
-                    <a href="https://travel-assets.devqub.com/page-food.html#" class="label">Кав’ярня</a>
-                    <a href="https://travel-assets.devqub.com/page-food.html#" class="label">Паб</a>
-                    <a href="https://travel-assets.devqub.com/page-food.html#" class="label">Ресторація</a>
-                    <a href="https://travel-assets.devqub.com/page-food.html#" class="label">Рестбар</a>
-                    <a href="https://travel-assets.devqub.com/page-food.html#" class="label">Кава</a>
-                    <a href="https://travel-assets.devqub.com/page-food.html#" class="label">Філіжанка</a>
+                    <a href="#" class="label">Кав’ярня</a>
+                    <a href="#" class="label">Паб</a>
+                    <a href="#" class="label">Ресторація</a>
+                    <a href="#" class="label">Рестбар</a>
+                    <a href="#" class="label">Кава</a>
+                    <a href="#" class="label">Філіжанка</a>
                 </div>
             </div>
         </div>
@@ -45,17 +45,16 @@
         <div class="container">
             <h2 class="secttion__title mb-1">Рекомендовані заклади</h2>
             <div class="mb-1">
-                <a href="https://travel-assets.devqub.com/page-food.html#"
-                   class="mr-half label label--tab label--big active">Усі</a>
-                <a href="https://travel-assets.devqub.com/page-food.html#" class="mr-half label label--tab label--big">Культура</a>
-                <a href="https://travel-assets.devqub.com/page-food.html#" class="mr-half label label--tab label--big">Мистецтво</a>
-                <a href="https://travel-assets.devqub.com/page-food.html#" class="mr-half label label--tab label--big">Ресторація</a>
+                <a href="#" class="mr-half label label--tab label--big">Усі</a>
+                <a href="#" class="mr-half label label--tab label--big">Культура</a>
+                <a href="#" class="mr-half label label--tab label--big">Мистецтво</a>
+                <a href="#" class="mr-half label label--tab label--big">Ресторація</a>
             </div>
             <div class="row mb-1">
                 <div class="col-sm-6 col-md-4 col-lg-3">
-                    <a href="https://travel-assets.devqub.com/page-food.html#" class="card ">
+                    <a href="#" class="card ">
                         <div class="card__img">
-                            <img src="./Lviv Travel _ Їжа та напої_files/card-image-4.jpg"
+                            <img src="{{asset('images/card-image-4.jpg')}}"
                                  data-lg="images/card-image-4.jpg" data-md="images/card-image-4.jpg"
                                  data-sm="images/card-image-4.jpg" alt="" class="blurryload">
                         </div>

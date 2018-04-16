@@ -32,7 +32,7 @@
                     <a href="#" class="label mb-1">Рестбар</a>
                 </div>
                 <div>
-                    <a href="" class="label mb-1">Кава</a>
+                    <a href="#" class="label mb-1">Кава</a>
                     <a href="#" class="label mb-1">Філіжанка</a>
                 </div>
             </div>
@@ -49,53 +49,53 @@
                         <img class="d-i-block mb-2" src="{{asset('images/neonimages/food.svg')}}" alt="">
                         <h2 class="mb-2">Їжа та напої</h2>
                         <p class="text-secondary text-gray mb-2">Львів - це не лише місто-музей, але й місто музеїв.</p>
-                        <a href="https://travel-assets.devqub.com/page-food.html" class="btn btn--green btn--sm">Детальніше</a>
+                        <a href="#" class="btn btn--green btn--sm">Детальніше</a>
                     </div>        </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="card-icon text-center mb-3 p-2 py-4-lg px-1-lg">
-                        <img class="d-i-block mb-2" src="{{asset('images/neonimages/monuments.svg')}}" alt="">
+                        <img class="d-i-block mb-2" src="{{asset('images/icons/yl-icons/monuments.svg')}}" alt="">
                         <h2 class="mb-2">Пам’ятки</h2>
                         <p class="text-secondary text-gray mb-2">Львів – це місто величних пам'яток архітектури</p>
                         <a href="#" class="btn btn--green btn--sm">Детальніше</a>
                     </div>        </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="card-icon text-center mb-3 p-2 py-4-lg px-1-lg">
-                        <img class="d-i-block mb-2" src="{{asset('images/neonimages/museums.svg')}}" alt="">
+                        <img class="d-i-block mb-2" src="{{asset('images/icons/yl-icons/museums.svg')}}" alt="">
                         <h2 class="mb-2">Музеї та Галереї</h2>
                         <p class="text-secondary text-gray mb-2">Львів - це не лише місто-музей, але й місто музеїв.</p>
                         <a href="https://travel-assets.devqub.com/page-food.html" class="btn btn--green btn--sm">Детальніше</a>
                     </div>        </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="card-icon text-center mb-3 p-2 py-4-lg px-1-lg">
-                        <img class="d-i-block mb-2" src="{{asset('images/neonimages/fun.svg')}}" alt="">
+                        <img class="d-i-block mb-2" src="{{asset('images/icons/yl-icons/fun.svg')}}" alt="">
                         <h2 class="mb-2">Атракції</h2>
                         <p class="text-secondary text-gray mb-2">Львів - це місто величних свят, та грандіозних фестивалів</p>
                         <a href="https://travel-assets.devqub.com/page-food.html" class="btn btn--green btn--sm">Детальніше</a>
                     </div>        </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="card-icon text-center mb-3 p-2 py-4-lg px-1-lg">
-                        <img class="d-i-block mb-2" src="{{asset('images/neonimages/parks.svg')}}" alt="">
+                        <img class="d-i-block mb-2" src="{{asset('images/icons/yl-icons/parks.svg')}}" alt="">
                         <h2 class="mb-2">Парки</h2>
                         <p class="text-secondary text-gray mb-2">Величні парки міста Лева, подорож по зеленому місту</p>
                         <a href="https://travel-assets.devqub.com/page-food.html" class="btn btn--green btn--sm">Детальніше</a>
                     </div>        </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="card-icon text-center mb-3 p-2 py-4-lg px-1-lg">
-                        <img class="d-i-block mb-2" src="{{asset('images/neonimages/theaters.svg')}}" alt="">
+                        <img class="d-i-block mb-2" src="{{asset('images//icons/yl-icons/theaters.svg')}}" alt="">
                         <h2 class="mb-2">Театри/Філармонії</h2>
                         <p class="text-secondary text-gray mb-2">Львів - це місто класичної музики та неймовірних опер</p>
                         <a href="https://travel-assets.devqub.com/page-food.html" class="btn btn--green btn--sm">Детальніше</a>
                     </div>        </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="card-icon text-center mb-3 p-2 py-4-lg px-1-lg">
-                        <img class="d-i-block mb-2" src="{{asset('images/neonimages/places.svg')}}" alt="">
+                        <img class="d-i-block mb-2" src="{{asset('images//icons/yl-icons/places.svg')}}" alt="">
                         <h2 class="mb-2">Громадські місця</h2>
                         <p class="text-secondary text-gray mb-2">Львів - це не лише місто-музей, але й місто музеїв.</p>
                         <a href="https://travel-assets.devqub.com/page-food.html" class="btn btn--green btn--sm">Детальніше</a>
                     </div>        </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="card-icon text-center mb-3 p-2 py-4-lg px-1-lg">
-                        <img class="d-i-block mb-2" src="{{asset('images/neonimages/parks.svg')}}" alt="">
+                        <img class="d-i-block mb-2" src="{{asset('images/n/icons/yl-icons/parks.svg')}}" alt="">
                         <h2 class="mb-2">Навколо Львова</h2>
                         <p class="text-secondary text-gray mb-2">Подорож визначними місцями та пам’ятками Львова</p>
                         <a href="https://travel-assets.devqub.com/page-food.html" class="btn btn--green btn--sm">Детальніше</a>
