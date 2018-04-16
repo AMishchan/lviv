@@ -11,6 +11,7 @@ class MenuController extends Controller
         $elements = MenuItem::select('id', 'menu_id', "title_$locale", 'url', 'icon_class', 'color', 'parent_id', 'order', 'route', 'template')
             ->where('parent_id', $id)
             ->whereNotIn('menu_id', ['1'])
+            ->orderBy('order','ASC')
             ->get()
             ->toArray();
         return $elements;

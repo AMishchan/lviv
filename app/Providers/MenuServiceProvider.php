@@ -30,7 +30,7 @@ class MenuServiceProvider extends ServiceProvider
     }
     public function mainMenu()
     {
-        View::composer("layouts.front", function ($view) {
+        View::composer(['layouts.front', 'your-lviv'], function ($view) {
 
             $locale = Session::get('locale');;
             $languages = Language::where('status', 1)->get();

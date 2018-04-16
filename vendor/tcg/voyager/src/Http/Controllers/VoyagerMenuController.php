@@ -4,20 +4,27 @@ namespace TCG\Voyager\Http\Controllers;
 
 use Illuminate\Http\Request;
 use TCG\Voyager\Facades\Voyager;
-//use Illuminate\Support\Facades\Session;
+use App\Language;
 
 class VoyagerMenuController extends Controller
 {
+    protected $locales;
+
+    public function __construct()
+   {
+     $this->locales = Language::where('status', 1)->get();
+
+   }
     public function builder($id)
     {
-
+$locales = $this->locales;
         $menu = Voyager::model('Menu')->findOrFail($id);
 
         $this->authorize('edit', $menu);
 
         $isModelTranslatable = is_bread_translatable(Voyager::model('MenuItem'));
-//dump(Voyager::view('voyager::menus.builder', compact('menu', 'isModelTranslatable')));
-        return Voyager::view('voyager::menus.builder', compact('menu', 'isModelTranslatable'));
+
+        return Voyager::view('voyager::menus.builder', compact('menu', 'isModelTranslatable', 'locales'));
     }
 
     public function delete_menu($menu, $id)
