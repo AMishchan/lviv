@@ -285,17 +285,7 @@
                                     <option value="">Готелі (12)</option>
                                     <option value="">Хостели (10)</option>
                                     <option value="">Апартаменти (40)</option>
-                                </select><span class="select2 select2-container select2-container--default" dir="ltr"
-                                               data-select2-id="4" style="width: 144px;"><span class="selection"><span
-                                                class="select2-selection select2-selection--single" role="combobox"
-                                                aria-haspopup="true" aria-expanded="false" tabindex="0"
-                                                aria-labelledby="select2--container"><span
-                                                    class="select2-selection__rendered" id="select2--container"
-                                                    role="textbox" aria-readonly="true"
-                                                    title="Усі (122)">Усі (122)</span><span
-                                                    class="select2-selection__arrow" role="presentation"><b
-                                                        role="presentation"></b></span></span></span><span
-                                            class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                </select>
                             </div>
 
                             <div class="select-wrapper mb-onehalf col-sm-6 col-md-4"
@@ -306,17 +296,7 @@
                                     <option value="">Центр міста (12)</option>
                                     <option value="">Сихів (10)</option>
                                     <option value="">Левандівка (40)</option>
-                                </select><span class="select2 select2-container select2-container--default" dir="ltr"
-                                               data-select2-id="7" style="width: 134px;"><span class="selection"><span
-                                                class="select2-selection select2-selection--single" role="combobox"
-                                                aria-haspopup="true" aria-expanded="false" tabindex="0"
-                                                aria-labelledby="select2--container"><span
-                                                    class="select2-selection__rendered" id="select2--container"
-                                                    role="textbox" aria-readonly="true"
-                                                    title="Усі (122)">Усі (122)</span><span
-                                                    class="select2-selection__arrow" role="presentation"><b
-                                                        role="presentation"></b></span></span></span><span
-                                            class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                </select>
                             </div>
 
                             <div class="select-wrapper mb-onehalf col-sm-12 col-md-4"
@@ -328,17 +308,7 @@
                                     <option value="">3 stars</option>
                                     <option value="">2 stars</option>
                                     <option value="">1 stars</option>
-                                </select><span class="select2 select2-container select2-container--default" dir="ltr"
-                                               data-select2-id="10" style="width: 65px;"><span class="selection"><span
-                                                class="select2-selection select2-selection--single" role="combobox"
-                                                aria-haspopup="true" aria-expanded="false" tabindex="0"
-                                                aria-labelledby="select2--container"><span
-                                                    class="select2-selection__rendered" id="select2--container"
-                                                    role="textbox" aria-readonly="true"
-                                                    title="5 stars">5 stars</span><span class="select2-selection__arrow"
-                                                                                        role="presentation"><b
-                                                        role="presentation"></b></span></span></span><span
-                                            class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                </select>
                             </div>
                         </form>
                     </div>

@@ -47,9 +47,9 @@
         <div class="container">
             <div class="row">
                 <pre style="font-size: 7px;">
-                    {{var_dump($data['categories'])}}
+
                 </pre>
-                @foreach($data['categories'] as $listItem)
+
 
                     <div class="col-sm-6 col-md-4">
                         <div class="card-icon text-center mb-3 p-2 py-4-lg px-1-lg">
@@ -61,7 +61,7 @@
                         </div>
                     </div>
 
-                @endforeach
+
 
                 <div class="col-sm-6 col-md-4">
                     <div class="card-icon text-center mb-3 p-2 py-4-lg px-1-lg">
