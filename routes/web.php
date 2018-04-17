@@ -32,6 +32,7 @@ Route::group(['middleware' => ['locale']], function () {
     Route::get('/your-lviv',function () {return view('your-lviv');})->name('your-lviv');
     Route::get('/events',function () {return view('events');})->name('events');
     Route::get('/event',function () {return view('single.event');})->name('event');
+    Route::get('/your-lviv/food-and-drinks/food-place',function () {return view('single.food-place');})->name('food-place');
 
     Route::get('/setlang/{lang}', 'LocaleController@index')->name('setlang');
     Route::group(['prefix' => 'admin'], function () {

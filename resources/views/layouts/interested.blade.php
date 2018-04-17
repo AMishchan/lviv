@@ -1,4 +1,5 @@
 
+<div class="container">
 <section class="section">
     <h2 class="section__title">Вас може зацікавити</h2>
     <div class="row">
@@ -48,3 +49,4 @@
             </a></div>
     </div>
 </section>
+</div>
