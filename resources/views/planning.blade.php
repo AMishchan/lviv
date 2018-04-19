@@ -197,6 +197,6 @@
 
    @include('maps.searchMap')
 
-    @include('layouts.interested')
+    @include('layouts.bottom-info')
 
 @endsection

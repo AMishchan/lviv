@@ -86,6 +86,7 @@
             </div>
         </div>
     </div>
+    @include('parts.selected')
     <div class="container">
         <section class="section pb-3">
             <h2 class="section__title">Вже і зараз</h2>
@@ -667,7 +668,7 @@
                 </div>
             </div>
         </section>
-        @include('layouts.interested')
+        @include('layouts.bottom-info')
     </div>
 
 @endsection

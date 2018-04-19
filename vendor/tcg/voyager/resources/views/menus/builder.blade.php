@@ -105,9 +105,9 @@
                                       placeholder="{{ json_encode(['key' => 'value'], JSON_PRETTY_PRINT) }}"></textarea><br>
                         </div>
 
-                        <label for="icon_class">Піктограмма для лендінгу</label>
-                        <input type="text" class="form-control" id="m_icon_class" name="icon_class"
-                               placeholder="{{ __('voyager.menu_builder.icon_class_ph') }}"><br>
+                        {{--<label for="icon_class">Піктограмма для лендінгу</label>--}}
+                        {{--<input type="text" class="form-control" id="m_icon_class" name="icon_class"--}}
+                               {{--placeholder="{{ __('voyager.menu_builder.icon_class_ph') }}"><br>--}}
 
                         {{--<label for="color">{{ __('voyager.menu_builder.color') }}</label>--}}
                         {{--<input type="color" class="form-control" id="m_color" name="color"--}}

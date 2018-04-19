@@ -11,8 +11,6 @@
 |
 */
 
-
-
 Auth::routes();
 
 Route::group(['prefix' => 'owner','middleware' => ['auth']], function (){
@@ -24,6 +22,7 @@ Route::group(['prefix' => 'owner','middleware' => ['auth']], function (){
 Route::group(['middleware' => ['locale']], function () {
     Route::get('/', 'MainpageController@index');
     Route::get('/home', 'HomeController@index')->name('home');
+
 
     Route::get('/now', function () {
         return view('now');
@@ -58,19 +57,21 @@ Route::group(['middleware' => ['locale']], function () {
     Route::get('/event', function () {
         return view('single.event');
     })->name('event');
+Route::get('/your-lviv/food-and-drinks/food-place',function () {return view('single.place');})->name('food-place');
+
 
 
     Route::get('/setlang/{lang}', 'LocaleController@index')->name('setlang');
     Route::group(['prefix' => 'admin'], function () {
 
-        Route::get('/gids' , function(){
-            return view('tools.database.index');
-        });
+
         Voyager::routes();
-        
+
     });
 
 });
+
+
 
 
 

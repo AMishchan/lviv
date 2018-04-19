@@ -1,6 +1,5 @@
 @extends('layouts.front')
 @section('content')
-
     @include('layouts.banners.banner')
     <div class="container">
         <div class="row mb-4">
@@ -8,8 +7,6 @@
                 <ul class="breadcrumbs">
                     <li><a class="link link--blue"
                            href="https://travel-assets.devqub.com/page-your-lviv.html#">Головна</a></li>
-
-
                     <li>Твій Львів</li>
                 </ul>
                 <div class="mb-1 text-content text-secondary">
@@ -35,13 +32,8 @@
     <section class="section">
         <div class="container">
             <div class="row">
-<<<<<<< HEAD
-                <pre style="font-size: 7px;">
 
-                </pre>
 
-=======
->>>>>>> eab6e1eb9907b7d16e98d2ee6997fa69740f1234
 
                         <div class="col-sm-6 col-md-4">
                             <div class="card-icon text-center mb-3 p-2 py-4-lg px-1-lg">
@@ -52,12 +44,11 @@
                                 <a href="#" class="btn btn--green btn--sm">Детальніше</a>
                             </div>
                         </div>
-<<<<<<< HEAD
+
                     </div>
 
 
-=======
->>>>>>> eab6e1eb9907b7d16e98d2ee6997fa69740f1234
+
 
                 <div class="col-sm-6 col-md-4">
                     <div class="card-icon text-center mb-3 p-2 py-4-lg px-1-lg">
@@ -120,5 +111,5 @@
             </div>
         </div>
     </section>
-  @include('layouts.interested')
+  @include('layouts.bottom-info')
 @endsection
