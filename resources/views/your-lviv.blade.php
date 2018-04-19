@@ -1,16 +1,7 @@
 @extends('layouts.front')
 @section('content')
 
-    <div class="events-banner div-fill-img" style="background-image: url('images/main-slider-img-1.jpg');">
-        <div class="container landing-banner-info">
-
-            <div class="landing-banner-title">
-                <div class="text-hero text-white ">Твій Львів</div>
-            </div>
-            <div class="breadcrumbs banner-breadcrumbs">Головна/Твій Львів</div>
-
-        </div>
-    </div>
+    @include('layouts.banners.banner')
     <div class="container">
         <div class="row mb-4">
             <div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
@@ -35,8 +26,6 @@
                     <a href="#" class="label mb-1">Паб</a>
                     <a href="#" class="label mb-1">Ресторація</a>
                     <a href="#" class="label mb-1">Рестбар</a>
-                </div>
-                <div>
                     <a href="#" class="label mb-1">Кава</a>
                     <a href="#" class="label mb-1">Філіжанка</a>
                 </div>
@@ -46,22 +35,29 @@
     <section class="section">
         <div class="container">
             <div class="row">
+<<<<<<< HEAD
                 <pre style="font-size: 7px;">
 
                 </pre>
 
+=======
+>>>>>>> eab6e1eb9907b7d16e98d2ee6997fa69740f1234
 
-                    <div class="col-sm-6 col-md-4">
-                        <div class="card-icon text-center mb-3 p-2 py-4-lg px-1-lg">
-                            <img class="d-i-block mb-2" src="{{asset('images/icons/yl-icons/food.svg')}}" alt="">
-                            <h2 class="mb-2">Їжа та напої</h2>
-                            <p class="text-secondary text-gray mb-2">Львів - це не лише місто-музей, але й місто
-                                музеїв.</p>
-                            <a href="#" class="btn btn--green btn--sm">Детальніше</a>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card-icon text-center mb-3 p-2 py-4-lg px-1-lg">
+                                <img class="d-i-block mb-2" src="{{asset('images/icons/yl-icons/food.svg')}}" alt="">
+                                <h2 class="mb-2">Їжа та напої</h2>
+                                <p class="text-secondary text-gray mb-2">Львів - це не лише місто-музей, але й місто
+                                    музеїв.</p>
+                                <a href="#" class="btn btn--green btn--sm">Детальніше</a>
+                            </div>
                         </div>
+<<<<<<< HEAD
                     </div>
 
 
+=======
+>>>>>>> eab6e1eb9907b7d16e98d2ee6997fa69740f1234
 
                 <div class="col-sm-6 col-md-4">
                     <div class="card-icon text-center mb-3 p-2 py-4-lg px-1-lg">
@@ -124,55 +120,5 @@
             </div>
         </div>
     </section>
-    <section class="section">
-        <div class="container">
-            <h2 class="section__title">Туристу на замітку</h2>
-            <div class="row">
-                <div class="col-xs-6 col-sm-3">
-                    <a href="https://travel-assets.devqub.com/page-your-lviv.html#" class="card card--sq">
-                        <div class="card__img">
-                            <img src="{{asset('images/bottom_info_img/card-coloured-image-1.jpg')}}"
-                                 data-lg="images/card-coloured-image-1.jpg" data-md="images/card-coloured-image-1.jpg"
-                                 data-sm="images/card-coloured-image-1.jpg" alt="" class="blurryload">
-                        </div>
-                        <div class="card__colored card__colored--green">
-                            <div class="h3 center-absolute text-white text-center p-1">City Card</div>
-                        </div>
-                    </a></div>
-                <div class="col-xs-6 col-sm-3">
-                    <a href="https://travel-assets.devqub.com/page-your-lviv.html#" class="card card--sq">
-                        <div class="card__img">
-                            <img src="{{asset('images/bottom_info_img/card-coloured-image-2.jpg')}}"
-                                 data-lg="images/card-coloured-image-2.jpg" data-md="images/card-coloured-image-2.jpg"
-                                 data-sm="images/card-coloured-image-2.jpg" alt="" class="blurryload">
-                        </div>
-                        <div class="card__colored card__colored--red">
-                            <div class="h3 center-absolute text-white text-center p-1">ТІЦ</div>
-                        </div>
-                    </a></div>
-                <div class="col-xs-6 col-sm-3">
-                    <a href="https://travel-assets.devqub.com/page-your-lviv.html#" class="card card--sq">
-                        <div class="card__img">
-                            <img src="{{asset('images/bottom_info_img/card-coloured-image-3.jpg')}}"
-                                 data-lg="images/card-coloured-image-3.jpg" data-md="images/card-coloured-image-3.jpg"
-                                 data-sm="images/card-coloured-image-3.jpg" alt="" class="blurryload">
-                        </div>
-                        <div class="card__colored card__colored--orange">
-                            <div class="h3 center-absolute text-white text-center p-1">Транспорт</div>
-                        </div>
-                    </a></div>
-                <div class="col-xs-6 col-sm-3">
-                    <a href="https://travel-assets.devqub.com/page-your-lviv.html#" class="card card--sq">
-                        <div class="card__img">
-                            <img src="{{asset('images/bottom_info_img/card-coloured-image-4.jpg')}}"
-                                 data-lg="images/card-coloured-image-4.jpg" data-md="images/card-coloured-image-4.jpg"
-                                 data-sm="images/card-coloured-image-4.jpg" alt="" class="blurryload">
-                        </div>
-                        <div class="card__colored card__colored--green">
-                            <div class="h3 center-absolute text-white text-center p-1">Путівники та карти</div>
-                        </div>
-                    </a></div>
-            </div>
-        </div>
-    </section>
+  @include('layouts.interested')
 @endsection

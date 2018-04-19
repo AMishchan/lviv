@@ -1,14 +1,6 @@
 @extends('layouts.front')
 @section('content')
-    <div class="cover" style="background-image: url({{asset('images/cover-image-1.jpg')}});">
-        <div class="container">
-            <div class="cover__content">
-                <div class="d-i-block">
-                    <h1 class="cover__title">Їжа та напої</h1>
-                </div>
-            </div>
-        </div>
-    </div>
+    @include('layouts.banners.banner')
     <div class="container">
         <div class="row mb-4">
             <div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
@@ -52,7 +44,7 @@
             </div>
             <div class="row mb-1">
                 <div class="col-sm-6 col-md-4 col-lg-3">
-                    <a href="#" class="card ">
+                    <a href="{{route('food-place')}}" class="card ">
                         <div class="card__img">
                             <img src="{{asset('images/card-image-4.jpg')}}"
                                  data-lg="images/card-image-4.jpg" data-md="images/card-image-4.jpg"
@@ -244,6 +236,7 @@
             <button class="btn btn--green">Показати більше</button>
         </div>
     </section>
+<<<<<<< HEAD
     <section class="section pb-0">
         <div class="container-fluid">
             <h2 class="section__title">Поруч знаходиться</h2>
@@ -455,4 +448,7 @@
         </div>
 
     </section>
+=======
+   @include('maps.searchMap')
+>>>>>>> eab6e1eb9907b7d16e98d2ee6997fa69740f1234
 @endsection

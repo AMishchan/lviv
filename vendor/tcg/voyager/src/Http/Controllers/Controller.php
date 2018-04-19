@@ -344,7 +344,7 @@ abstract class Controller extends BaseController
                 return json_encode($content);
 
             /********** IMAGE TYPE **********/
-            case 'image':
+            case 'image' :
                 if ($request->hasFile($row->field)) {
                     $file = $request->file($row->field);
                     $options = json_decode($row->details);

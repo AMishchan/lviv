@@ -24,6 +24,7 @@ Route::group(['prefix' => 'owner','middleware' => ['auth']], function (){
 Route::group(['middleware' => ['locale']], function () {
     Route::get('/', 'MainpageController@index');
     Route::get('/home', 'HomeController@index')->name('home');
+
     Route::get('/now', function () {
         return view('now');
     })->name('now');
@@ -32,8 +33,9 @@ Route::group(['middleware' => ['locale']], function () {
         return view('now.page-news', compact('posts'));
     })->name('page-news');
     Route::get('/now/page-news/post/{slug}', function ($slug) {
+        $posts = App\Post::all();
         $post = App\Post::where('slug', '=', $slug)->firstOrFail();
-        return view('single.news', compact('post'));
+        return view('single.news', compact('post','posts'));
     })->name('single-news');
     Route::get('/now/lviv-city-card', function () {
         return view('now.lviv-city-card');
@@ -56,17 +58,16 @@ Route::group(['middleware' => ['locale']], function () {
     Route::get('/event', function () {
         return view('single.event');
     })->name('event');
-    Route::get('/post', function () {
-        $posts = App\Post::all();
-        return view('post', compact('posts'));
-    });
-    Route::get('post/', function($slug){
-        $post = App\Post::where('slug', '=', $slug)->firstOrFail();
-        return view('posts', compact('post'));
-    });
+
+
     Route::get('/setlang/{lang}', 'LocaleController@index')->name('setlang');
     Route::group(['prefix' => 'admin'], function () {
+
+        Route::get('/gids' , function(){
+            return view('tools.database.index');
+        });
         Voyager::routes();
+        
     });
 
 });

@@ -33,6 +33,7 @@ class PostDimmer extends AbstractWidget
                 'link' => route('voyager.posts.index'),
             ],
             'image' => voyager_asset('images/widget-backgrounds/02.jpg'),
+
         ]));
     }
 }

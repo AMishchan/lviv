@@ -18,7 +18,7 @@
                 <div class="panel-content">
 
 
-                    {{--<img src="{{asset('images/default/default.png')}}" class="avatar" alt="{{ Auth::user()->name }} avatar">--}}
+                    <img src="{{asset('images/default/default.png')}}" class="avatar" alt="{{ Auth::user()->name }} avatar">
                     <h1>{{ ucwords(Auth::user()->name) }}</h1>
                     <p>{{ Auth::user()->email }}</p>
 
