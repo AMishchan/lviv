@@ -365,5 +365,5 @@
         </div>
        @include('maps.fullWidthMap')
     </section>
-  @include('layouts.interested')
+  @include('layouts.bottom-info')
 @endsection

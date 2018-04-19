@@ -9589,3 +9589,12 @@ a.label:hover {
     position: absolute;
     display: flex;
 }
+/*============================================interesterd-slider*/
+.interested-slider .slick-slide{
+    margin:7px 7px;
+    height: 200px;
+}
+.interested-slider__slide{
+    height: 200px;
+}
+/*============================================interesterd-slider END*/

@@ -1,6 +1,5 @@
 @extends('layouts.front')
 @section('content')
-
     @include('layouts.banners.banner')
     <div class="container">
         <div class="row mb-4">
@@ -8,8 +7,6 @@
                 <ul class="breadcrumbs">
                     <li><a class="link link--blue"
                            href="https://travel-assets.devqub.com/page-your-lviv.html#">Головна</a></li>
-
-
                     <li>Твій Львів</li>
                 </ul>
                 <div class="mb-1 text-content text-secondary">
@@ -107,5 +104,5 @@
             </div>
         </div>
     </section>
-  @include('layouts.interested')
+  @include('layouts.bottom-info')
 @endsection
