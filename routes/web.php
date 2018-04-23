@@ -35,7 +35,22 @@ Route::group(['middleware' => ['locale']], function () {
         $posts = App\Post::all();
         $post = App\Post::where('slug', '=', $slug)->firstOrFail();
         return view('single.news', compact('post','posts'));
-    })->name('single-news');
+    })->name('single.news');
+        Route::get('/tur', function () {
+            $gids = App\Gid::all();
+            $excursions = App\Excursion::all();
+            return view('tur', compact('gids','excursions'));
+        })->name('tur');
+        Route::get('/tur/excursions/{slug}', function ($slug1) {
+            $excursions = App\Excursion::all();
+            $excursion = App\Excursion::where('slug','=',$slug1)->firstOrFail();
+            return view('excursions', compact('excursion','excursions'));
+    })->name('excursion');
+    Route::get('/tur/gids/{slug}', function ($slug1) {
+        $gids = App\Gid::all();
+        $gid = App\Gid::where('slug','=',$slug1)->firstOrFail();
+        return view('gids', compact('gid','gids'));
+    })->name('gids');
     Route::get('/now/lviv-city-card', function () {
         return view('now.lviv-city-card');
     })->name('lviv-city-card');
