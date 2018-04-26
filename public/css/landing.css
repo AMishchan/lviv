@@ -693,5 +693,73 @@ a{
 }
 /*-------endevents*/
 /*====================================*landing your Lviv end*/
-
+/*gids page*/
+.cover img{
+    border-radius:50%;
+    width: 13%;
+    top: 40%;
+    left: 1%;
+    position: absolute;
+}
+.cover__title{
+    font-size: 60px;
+    padding-bottom: 25px;
+}
+.breadcrumbs{
+    margin: 0 auto;
+    padding: 0;
+}
+a.label{
+    background-color: transparent;
+    font-size: 15px;
+    text-transform: none;
+    padding: 0;
+    margin: 0 auto;
+}
+/*section2*/
+.section2{
+    height: 100px;
+    padding: 0;
+    margin: 0 auto;
+}
+.fa-star{
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffa500;
+}
+.reviews{
+    padding-left: 10px;
+}
+.checked{
+    color: #ffa500;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffa500;
+}
+.string-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid black;
+    text-align: center;
+}
+.string-list li{
+    float: left;
+}
+.string{
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right: 1px solid black;
+}
+.string:hover{
+    background-color: #d3d3d3;
+    color: #000;
+}
+.meat{
+    display: flex;
+}
 
