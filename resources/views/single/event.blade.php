@@ -1,13 +1,27 @@
 @extends('layouts.front')
 @section('content')
-  @include('layouts.banners.banner')
+    <div class="cover" style="background-image: url({{ Voyager::image( $development->banner_photo ) }});">
+        <div class="container">
+            <div class="cover__content">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+                        <div class="d-i-block">
+                            <div class="label label--blue mb-1">{{$development->type}}</div>
+                            <h1 class="cover__title">{{$development->name}}</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
+
         <ul class="breadcrumbs">
             <li><a class="link link--blue" href="#">Твій Львів</a></li>
             <li><a class="link link--blue" href="#">Пам’ятки</a></li>
 
 
-            <li>"ОРФЕЙ" - "Різдво у Львові"</li>
+            <li>{{$development->name}}</li>
         </ul>
         <div class="row mb-4">
             <div class="col-xs-12 col-sm-5 col-md-4 pull-right">
@@ -15,15 +29,14 @@
                     <div class="col-lg-11 col-lg-offset-1">
                         <aside class="sidebar">
                             <ul class="info-list ">
-                                <li><i class="icon-date"></i><span
-                                            class="h3 text-primary">12 Січня 2018, Пт. 17:00</span></li>
+                                <li><i class="icon-date"></i>
+                                <span class="h3 text-primary">{{$development->date_on}}</span></li>
 
-                                <li><i class="icon-location"></i><span>Львівський національний академічний театр опери та балету ім. Соломії Крушельницької. Пр Свободи,
-                        28, м. Львів</span></li>
+                                <li><i class="icon-location"></i><span>{{$development->address}}</span></li>
 
-                                <li><i class="icon-phone"></i><span>+38 (032) 229-51-77</span></li>
+                                <li><i class="icon-phone"></i><span>{{$development->number}}</span></li>
 
-                                <li><i class="icon-time"></i><span>21:00-23:00</span></li>
+                                <li><i class="icon-time"></i><span>{{$development->time}}</span></li>
 
                                 <li><i class="icon-link"></i><a href="#" target="_blank">opera.lviv.ua</a></li>
 
@@ -38,20 +51,10 @@
             </div>
             <div class="col-xs-12 col-sm-7 col-md-8 pull-right">
                 <p class="text-secondary text-content pr-3-sm">
-                    Вокальний колектив "Орфей" запрошує львів'ян та гостей міста на різдвяний концерт "Різдво у Львові"
-                    що відбудеться 12 січня 2018 року у приміщенні театру ім. Марії Заньковецької о 17.00 та 19.30. На
-                    вас чекає яскраве шоу, добре відомі хіти та прем'єри нових пісень.
-                    <br><br>Творити різдвяну казку нам допоможуть наші друзі - колектив народного танцю "Веселі
-                    Черевички" керівники Володимир та Марія Чмирі а також Павло Табаков.
-                    <br><br>
+                    {{$development->title}}
                 </p>
                 <p id="hidden-content" class="collapse text-secondary text-content mb-3 pr-3-sm">
-                    Перший палац збудовано у стилі класицизму за проектом архітектора Ігнатія Хамбреза. Це була
-                    двоповерхова прямокутна в плані будівля із високим
-                    <br><br>Перший палац збудовано у стилі класицизму за проектом архітектора Ігнатія Хамбреза. Це була
-                    двоповерхова прямокутна в плані будівля із високим
-                    <br><br>Перший палац збудовано у стилі класицизму за проектом архітектора Ігнатія Хамбреза. Це була
-                    двоповерхова прямокутна в плані будівля із високим
+                    {{$development->post}}
                 </p>
                 <a class="collapsed c-btn link-default text-secondary mb-3 d-i-block" href="javascript:void(0);"
                    data-toggle="collapse" data-target="#hidden-content">

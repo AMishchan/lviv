@@ -1,5 +1,5 @@
 <?php
-
+use Illuminate\Support\Facades\DB;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,6 +27,9 @@ Route::group(['middleware' => ['locale']], function () {
     Route::get('/now', function () {
         return view('now');
     })->name('now');
+    Route::get('/now/lviv-city-card', function () {
+        return view('now.lviv-city-card');
+    })->name('lviv-city-card');
     Route::get('/now/page-news', function () {
         $posts = App\Post::all();
         return view('now.page-news', compact('posts'));
@@ -36,24 +39,37 @@ Route::group(['middleware' => ['locale']], function () {
         $post = App\Post::where('slug', '=', $slug)->firstOrFail();
         return view('single.news', compact('post','posts'));
     })->name('single.news');
-        Route::get('/tur', function () {
-            $gids = App\Gid::all();
-            $excursions = App\Excursion::all();
-            return view('tur', compact('gids','excursions'));
-        })->name('tur');
-        Route::get('/tur/excursions/{slug}', function ($slug1) {
-            $excursions = App\Excursion::all();
-            $excursion = App\Excursion::where('slug','=',$slug1)->firstOrFail();
-            return view('excursions', compact('excursion','excursions'));
-    })->name('excursion');
-    Route::get('/tur/gids/{slug}', function ($slug1) {
+
+
+    Route::get('/tur', function () {
         $gids = App\Gid::all();
+        $excursions = App\Excursion::all();
+        return view('tur', compact('gids','excursions'));
+    })->name('tur');
+    Route::get('/tur/excursions/{slug}', function ($slug1) {
+        $excursions = App\Excursion::all();
+        $excursion = App\Excursion::where('slug','=',$slug1, '')->firstOrFail();
+        return view('excursions', compact('excursion','excursions'));
+    })->name('excursion');
+    Route::get('/tur/gid/{slug}', function ($slug1) {
         $gid = App\Gid::where('slug','=',$slug1)->firstOrFail();
-        return view('gids', compact('gid','gids'));
+        $excursions = App\Excursion::all();
+        return view('gid', compact('gid','excursions'));
+    })->name('gid');
+
+    Route::get('/gids', function () {
+        $gids = App\Gid::all();
+        return view('gids', compact('gids'));
     })->name('gids');
-    Route::get('/now/lviv-city-card', function () {
-        return view('now.lviv-city-card');
-    })->name('lviv-city-card');
+    Route::get('/gids/gid/{slug}', function ($slug) {
+        $gid = App\Gid::where('slug','=',$slug)->firstOrFail();
+        $excursions = App\Excursion::all();
+//        TODO тут
+//        orderBy('id', 'DESC')->first();
+        return view('gid', compact('gid','excursions'));
+    })->name('gid');
+
+
     Route::get('/your-lviv/food-and-drinks', function () {
         return view('templates.sub-section');
     })->name('your-lviv');
@@ -66,13 +82,16 @@ Route::group(['middleware' => ['locale']], function () {
     Route::get('/your-lviv', function () {
         return view('your-lviv');
     })->name('your-lviv');
+
     Route::get('/events', function () {
-        return view('events');
+        $developments = App\Development::all();
+        return view('events',compact('developments'));
     })->name('events');
-    Route::get('/event', function () {
-        return view('single.event');
+    Route::get('/event/{slug}', function ($slug) {
+        $development = App\Development::where('slug','=',$slug)->firstOrFail();return view('single.event',compact('development'));
     })->name('event');
-Route::get('/your-lviv/food-and-drinks/food-place',function () {return view('single.place');})->name('food-place');
+
+    Route::get('/your-lviv/food-and-drinks/food-place',function () {return view('single.place');})->name('food-place');
 
 
 
