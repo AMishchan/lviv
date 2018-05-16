@@ -4,8 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-
-class Gid extends Model
+class Park extends Model
 {
-    
+    //
 }

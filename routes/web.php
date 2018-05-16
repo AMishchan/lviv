@@ -1,5 +1,6 @@
 <?php
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Session;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -93,7 +94,61 @@ Route::group(['middleware' => ['locale']], function () {
 
     Route::get('/your-lviv/food-and-drinks/food-place',function () {return view('single.place');})->name('food-place');
 
+    Route::get('/museums', function () {
+        $museums = App\Museum::all();
+        return view('museums', compact('museums'));
+    })->name('museums');
+    Route::get('/museums/{slug}', function ($slug1) {
+        $museum = App\Museum::where('slug','=',$slug1, '')->firstOrFail();
+        return view('single.museum', compact('museum'));
+    })->name('museum');
 
+    Route::get('/parks', function () {
+        $parks = App\Park::all();
+        return view('parks', compact('parks'));
+    })->name('parks');
+    Route::get('/parks/{slug}', function ($slug1) {
+        $park = App\Park::where('slug','=',$slug1, '')->firstOrFail();
+        return view('single.park', compact('park'));
+    })->name('park');
+
+    Route::get('/memories', function () {
+        $memories = App\Memory::all();
+        return view('memories', compact('memories'));
+    })->name('memories');
+    Route::get('/memories/{slug}', function ($slug1) {
+        $memory = App\Memory::where('slug','=',$slug1, '')->firstOrFail();
+        return view('single.memory', compact('memory'));
+    })->name('memory');
+
+    Route::get('/around_lviv', function () {
+        $arounds = App\AroundLviv::all();
+        return view('around_lvivs', compact('arounds'));
+    })->name('around_lvivs');
+    Route::get('/around_lviv/{slug}', function ($slug1) {
+        $locale = Session::get('locale');
+
+        $around = App\AroundLviv::where('slug','=',$slug1, '')->firstOrFail()->get()->first();
+        return view('single.around_lviv', compact('around','locale'));
+    })->name('around_lviv');
+
+    Route::get('/public-places', function () {
+        $places = App\PublicPlace::all();
+        return view('public_places', compact('places'));
+    })->name('public-places');
+    Route::get('/public-places/{slug}', function ($slug1) {
+        $place = App\PublicPlace::where('slug','=',$slug1, '')->firstOrFail();
+        return view('single.public_place', compact('place'));
+    })->name('public-place');
+
+    Route::get('/teatrs', function () {
+        $teatrs = App\Teatr::all();
+        return view('teatrs', compact('teatrs'));
+    })->name('teatrs');
+    Route::get('/teatrs/{slug}', function ($slug1) {
+        $teatr = App\Teatr::where('slug','=',$slug1, '')->firstOrFail();
+        return view('single.teatr', compact('teatr'));
+    })->name('teatr');
 
     Route::get('/setlang/{lang}', 'LocaleController@index')->name('setlang');
     Route::group(['prefix' => 'admin'], function () {

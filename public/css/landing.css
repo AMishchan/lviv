@@ -708,6 +708,7 @@ a{
 .cover__title{
     font-size: 60px;
     padding-bottom: 25px;
+    line-height: 65px;
 }
 .breadcrumbs{
     margin: 0 auto;
@@ -772,11 +773,11 @@ a.label{
     padding: 25px 0 25px 0;
 }
 .my_button{
-    font-size: 14px;
+    font-size: 15px;
     background-color: #1a1f21;
     color: #fff;
     padding: 8px 6px 8px 6px;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 .my_button:hover{
     background-color: #000;
@@ -1144,7 +1145,7 @@ a.label{
 }
 /*festival blocks started*/
 .int_text{
-    left: 30%;
+    left: 15%;
 }
 .int_text p{
     font-size: 30px;
@@ -1224,15 +1225,14 @@ a.label{
 }
 .images_gallery{
     position: relative;
-    max-height: 250px;
-    min-height:250px;
+    max-height: 350px;
+    min-height:350px;
     padding: 10px 0 0 0;
 }
 .images_gallery img{
     position: absolute;
-    max-height: 250px;
-    min-height:250px;
-    left: 25%;
+    max-height: 350px;
+    min-height:350px;
 }
 .gallery_button_left{
     color: #000;
@@ -1247,4 +1247,250 @@ a.label{
     top: 50%;
     right: 2%;
     cursor: pointer;
+}
+.btn_padding{
+    padding-top:30px;
+    padding-bottom:20px;
+}
+.image_box{
+    height: auto;
+    position: relative;
+    padding-bottom: 20px;
+}
+.image_box2{
+    display: none;
+}
+.image_box img{
+    width: 150%;
+    max-height: 250px;
+    min-height: 250px;
+}
+.image_box p{
+    color: #fff;
+}
+.image_box p:nth-child(2){
+    position: absolute;
+    bottom: 12%;
+    font-size: 30px;
+    left: 5%;
+}
+.image_box p:nth-child(3){
+    position: absolute;
+    bottom: 5%;
+    font-size: 15px;
+    left: 5%;
+}
+.image_box p:nth-child(4){
+    position: absolute;
+    top: 5%;
+    right: 19%;
+}
+.image_box p:nth-child(5){
+    position: absolute;
+    top: 1%;
+    right: 15%;
+    font-size: 30px;
+}
+.image_box p:nth-child(6){
+    position: absolute;
+    top: 5%;
+    right:5%;
+}
+.animate{
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+}
+.animate:hover{
+    background-color: #fff;
+    color: #000;
+    text-decoration: underline;
+}
+.image_boxx{
+    height: auto;
+    position: relative;
+    padding-bottom: 20px;
+}
+.image_boxx img{
+    width: 150%;
+    max-height: 250px;
+    min-height: 250px;
+}
+.image_boxx p{
+    color: #fff;
+}
+.image_boxx p:nth-child(2){
+    position: absolute;
+    bottom: 12%;
+    font-size: 30px;
+    left: 10%;
+}
+.image_boxx p:nth-child(3){
+    position: absolute;
+    bottom: 5%;
+    font-size: 15px;
+    left: 10%;
+}
+.image_boxx p:nth-child(4){
+    position: absolute;
+    top: 5%;
+    right: 35%;
+}
+.image_boxx p:nth-child(5){
+    position: absolute;
+    top: 1%;
+    right: 28%;
+    font-size: 30px;
+}
+.image_boxx p:nth-child(6){
+    position: absolute;
+    top: 5%;
+    right:8%;
+}
+
+.cover_my{
+    color: #fff;
+    font-size: 20px;
+}
+.sec_pad{
+    padding-top: 20px;
+}
+.my_button_white{
+    font-size: 14px;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    padding: 8px 6px 8px 6px;
+    border-radius: 2px;
+    max-width: 170px;
+    min-width: 170px;
+    text-transform: none;
+    margin-top: 15px;
+}
+.my_button_white i{
+    font-size: 16px;
+    text-indent:15px;
+}
+.adress_block{
+    padding-top:20px;
+    font-size: 15px;
+}
+.adress_block p{
+    padding:0;
+    margin: 10px 0 10px 0;
+}
+.adress_block p:nth-child(1){
+    font-weight: bold;
+}
+.schedule_block{
+    background-color: #eee8aa;
+}
+.schedule_block p:nth-child(1){
+    font-weight: bold;
+    font-size: 25px;
+}
+.schedule_block p{
+    font-size: 14px;
+    margin: 10px 10px;
+}
+.cost_block{
+    font-size: 14px;
+}
+.cost_block p:nth-child(1){
+    font-size: 20px;
+    font-weight: bold;
+}
+.cost_block p:nth-child(2){
+    font-weight: bold;
+    font-size: 16px;
+}
+.cost_block p:nth-child(5){
+    font-weight: bold;
+    font-size: 16px;
+}
+.first_block_container{
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+}
+.first_block_container img{
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    max-height: 150px;
+    min-height: 150px;
+}
+.first_block{
+    padding: 0;
+    margin-left:5%;
+    margin-top:5%;
+    position: absolute;
+    top: 0;
+    color: #fff;
+    font-size: 14px;
+    left: 0;
+}
+.first_block p{
+    padding: 0 0 15px 0;
+    margin: 0 auto;
+}
+.first_block p:nth-child(4){
+    font-size: 20px;
+}
+.first_block p:nth-child(2){
+    font-weight: bold;
+    font-size: 25px;
+
+}
+.second_block{
+    padding: 0;
+    margin-left:5%;
+    margin-top:5%;
+    position: absolute;
+    top: 0;
+    color: #fff;
+    font-size: 16px;
+    right: 0;
+
+}
+.second_block p{
+    padding: 0 0 10px 0;
+    margin: 0 auto;
+}
+.second_block p:nth-child(1){
+    padding-top:40%;
+}
+.half_container p:nth-child(1){
+    font-weight: bold;
+    font-size: 20px;
+}
+.head_p{
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.hot{
+    padding: 0 0 20px 0;
+}
+.left_pad{
+    margin-left: 125px;
+}
+.tuggle_button2{
+    text-decoration: underline;
+    margin: 0;
+    padding: 0;
+}
+.hide_fun{
+    overflow: hidden;
+    font-size: 25px;
+    height: 250px;
+}
+.show_fun{
+    height: unset;
+    overflow: initial;
+}
+.pad_zero{
+    padding: 0 !important;
+    margin: 0 auto !important;
+    width: 100px;
 }
