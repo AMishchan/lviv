@@ -1,16 +1,16 @@
 @extends('layouts.front')
 @section('content')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <div class="cover" style="background-image: url({{Voyager::image($teatr->banner_photo)}});">
+    <div class="cover" style="background-image: url({{Voyager::image($attraction->banner_photo)}});">
         <div class="container">
             <div class="cover__content">
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-3">
-                        <div class="label label--blue">{!!$teatr->{"type_$locale"}!!}</div>
-                        <h1 class="cover__title new_fonts">{!!$teatr->{"name_$locale"}!!}</h1>
+                    <div class="col-md-9 col-lg-8 col-md-offset-3 col-lg-offset-3">
+                        <div class="label label--blue">{!! $attraction->{"type_$locale"} !!}</div>
+                        <h1 class="cover__title">{!! $attraction->{"name_$locale"} !!}</h1>
                         <ul class="breadcrumbs">
-                            <a href="/teatrs" class="label">@lang('voyager.generic.teatrs')/</a>
-                            <a href="#" class="label">{!!$teatr->{"name_$locale"}!!}</a>
+                            <a href="/attractions" class="label">{!! $attraction->{"type_$locale"} !!}/</a>
+                            <a href="#" class="label">{!! $attraction->{"name_$locale"} !!}</a>
                         </ul>
                     </div>
                 </div>
@@ -25,22 +25,29 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star"></span>
-                <p class="reviews">73  @lang('voyager.generic.reviews')</p>
+                <p class="reviews">73 @lang('voyager.generic.reviews')</p>
+
             </div>
-            <div class="col-md-8 col-md-offset-1 pad">
+            <div class="col-md-9 col-md-offset-1 pad">
                 <ul class="buttons">
                     <li><a href="#" class="list">@lang('voyager.generic.what_to_do')</a></li>
                     <li><a href="#" class="list">@lang('voyager.generic.location')</a></li>
-                    <li><a href="#" class="list">@lang('voyager.generic.teatrs')</a></li>
+                    <li><a href="#" class="list">@lang('voyager.generic.attractions')</a></li>
 
                 </ul>
             </div>
+            {{--<div class="col-md-9 col-md-offset-1 left_pad">--}}
+                {{--<ul class="string-list2">--}}
+                    {{--<li><a href="#" class="string2">@lang('voyager.generic.excursions')</a></li>--}}
+                    {{--<li><a href="#" class="string2">@lang('voyager.generic.profiles')</a></li>--}}
+                {{--</ul>--}}
+            {{--</div>--}}
         </div>
 
     </div>
-    <div class="container">
+    <div class="container ">
         <div class="row ">
-            <div class="col-md-2">
+            <div class="col-md-2 left-bar">
                 <a href="#" class="review row">@lang('voyager.generic.review')</a>
             </div>
 
@@ -53,28 +60,38 @@
                 <button type="button" class="row my_button_white">@lang('voyager.generic.location')<i class="fa fa-map-marker"></i></button>
                 <div class="row adress_block">
                     <p>@lang('voyager.generic.address'):</p>
-                    <p>{!!$teatr->{"address_$locale"}!!}</p>
+                    <p>{!! $attraction->{"address_$locale"} !!}</p>
                 </div>
                 <div class="row schedule_block">
                     <p>@lang('voyager.generic.shedule'):</p>
-                   <p>{!!$teatr->{"schedule_$locale"}!!}</p>
+                    <p>{!! $attraction->{"schedule_$locale"} !!}</p>
                 </div>
                 <button type="button" class="row my_button_white">@lang('voyager.generic.visite')<i class="fa fa-facebook"></i></button>
             </div>
-            <div class="col-md-8 col-md-offset-1">
+            <div class="col-md-9 col-md-offset-1">
                 <div class="text-secondary text-content">
-                    <p class="mb-4">{!!$teatr->{"title_$locale"}!!}</p>
+                    <p class="mb-4">{!! $attraction->{"title_$locale"} !!}</p>
                 </div>
                 <div class="text-secondary text-content toggle_text hide_fun">
-                    {!!$teatr->{"post_$locale"}!!}
+                    {!! $attraction->{"post_$locale"} !!}
                 </div>
                 <input type="button" value="@lang('voyager.generic.more')" class="col-md-4 tuggle_button2 pad_zero">
             </div>
-            <div class="col-md-8 col-md-offset-3">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="row cost_block">
+                    <p>@lang('voyager.generic.price')</p>
+                    {!! $attraction->{"cost_$locale"} !!}
+                </div>
+            </div>
+            <div class="col-md-9 col-md-offset-1">
                 <div class="images_gallery">
-                    <img style="width: 100%" class="mySlides" src="{{Voyager::image($teatr->photo1)}}">
-                    <img style="width: 100%" class="mySlides" src="{{Voyager::image($teatr->photo2)}}">
-                    <img style="width: 100%" class="mySlides" src="{{Voyager::image($teatr->photo3)}}">
+                    <img style="width: 100%" class="mySlides" src="{{Voyager::image($attraction->photo1)}}">
+                    <img style="width: 100%" class="mySlides" src="{{Voyager::image($attraction->photo2)}}">
+                    <img style="width: 100%" class="mySlides" src="{{Voyager::image($attraction->photo3)}}">
                     <div class="gallery_button_left" onclick="plusDivs(-1)">&#10094;</div>
                     <div class="gallery_button_right" onclick="plusDivs(1)">&#10095;</div>
                 </div>
@@ -84,7 +101,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9 col-md-offset-3">
-                <p class="head_p">Події</p>
+                <p class="head_p">@lang('voyager.generic.event')</p>
             </div>
         </div>
         <div class="row">
@@ -115,7 +132,7 @@
             </div>
 
         </div>
-        <a href="#" class="col-md-10 col-md-offset-2 hot">Детальніше</a>
+        <a href="#" class="col-md-10 col-md-offset-3 hot">@lang('voyager.generic.more')</a>
     </div>
     @include('maps.searchMap')
     <div class="container">

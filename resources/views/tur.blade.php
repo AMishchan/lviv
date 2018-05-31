@@ -66,10 +66,10 @@
                         <div class="boxes col-md-4">
                             <div class=" box_all">
                                 <div >
-                                    <p id="text2" class="js-text2">{{$excursion->name}}</p>
+                                    <p id="text2" class="js-text2">{!! $excursion->{"name_$locale"}!!}</p>
                                     <img src="{{ Voyager::image( $excursion->photo) }}" style="width:100%">
                                     <div class="overlay">
-                                        <div class="overlay_text">{{$excursion->title}}
+                                        <div class="overlay_text">{!! $excursion->{"title_$locale"}!!}
                                         </div>
                                         <div class="overlay_link">
                                             <a  href="/tur/excursions/{{ $excursion->slug }}">Детальніше </a><span class="fa fa-angle-right"></span>
@@ -142,8 +142,8 @@
 
                 <div class="establishments_text">
                     <a href="/tur/excursions/{{ $excursion->slug }}">
-                    <p>{{$excursion->name}}</p>
-                    <p class="text_end">{{$excursion->title}}</p>
+                    <p>{!! $excursion->{"name_$locale"}!!}</p>
+                    <p class="text_end">{!! $excursion->{"title_$locale"}!!}</p>
                     </a>
                 </div>
 
@@ -152,69 +152,73 @@
             @endforeach
 
             <div class="row">
-                <div class="col-md-9 int_text">
-                    <p>Вас це може зацікавити</p>
+                <div class="col-md-9 col-md-offset-2 int_text pad">
+                    <p>@lang('voyager.generic.interest')</p>
                     <nav>
                         <ul class="int_list">
-                            <li><a href="#">Що робити</a></li>
-                            <li><a href="#">Цікаві статті</a></li>
-                            <li><a href="#">Музеї</a></li>
-                            <li><a href="#">Події</a></li>
-                            <li><a href="#">Екскурсії</a></li>
+                            <li><a href="#">@lang('voyager.generic.what_to_do')</a></li>
+                            <li><a href="#">@lang('voyager.generic.articles')</a></li>
+                            <li><a href="{{asset('/museums')}}">@lang('voyager.generic.museums')</a></li>
+                            <li><a href="#">@lang('voyager.generic.event')</a></li>
+                            <li><a href="#">@lang('voyager.generic.excursions')</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-md-3">
                     <a href="#" class="card card--sq">
                         <div class="card__img">
-                            <img src="images/card-coloured-image-4.jpg" data-lg="images/card-coloured-image-4.jpg"
+                            <img src="../../images/card-coloured-image-4.jpg" data-lg="images/card-coloured-image-4.jpg"
                                  data-md="images/card-coloured-image-4.jpg" data-sm="images/card-coloured-image-4.jpg"
                                  alt="" class="blurryload">
                         </div>
                         <div class="card__colored card__colored--green">
-                            <div class="int_image text-white"><p>Події</p><p>Фестиваль</p></div>
+                            <div class="int_image text-white"><p>@lang('voyager.generic.event')</p><p>Фестиваль</p></div>
                         </div>
-                    </a></div>
+                    </a>
+                </div>
                 <div class="col-md-3">
                     <a href="#" class="card card--sq">
                         <div class="card__img">
-                            <img src="images/card-coloured-image-4.jpg" data-lg="images/card-coloured-image-4.jpg"
+                            <img src="../../images/card-coloured-image-4.jpg" data-lg="images/card-coloured-image-4.jpg"
                                  data-md="images/card-coloured-image-4.jpg" data-sm="images/card-coloured-image-4.jpg"
                                  alt="" class="blurryload">
                         </div>
                         <div class="card__colored card__colored--green">
-                            <div class="int_image text-white"><p>Події</p><p>Фестиваль</p></div>
+                            <div class="int_image text-white"><p>@lang('voyager.generic.event')</p><p>Фестиваль</p></div>
                         </div>
-                    </a></div>
+                    </a>
+                </div>
                 <div class="col-md-3">
                     <a href="#" class="card card--sq">
                         <div class="card__img">
-                            <img src="images/card-coloured-image-4.jpg" data-lg="images/card-coloured-image-4.jpg"
+                            <img src="../../images/card-coloured-image-4.jpg" data-lg="images/card-coloured-image-4.jpg"
                                  data-md="images/card-coloured-image-4.jpg" data-sm="images/card-coloured-image-4.jpg"
                                  alt="" class="blurryload">
                         </div>
                         <div class="card__colored card__colored--green">
-                            <div class="int_image text-white"><p>Події</p><p>Фестиваль</p></div>
+                            <div class="int_image text-white"><p>@lang('voyager.generic.event')</p><p>Фестиваль</p></div>
                         </div>
-                    </a></div>
+                    </a>
+                </div>
                 <div class="col-md-3">
                     <a href="#" class="card card--sq">
                         <div class="card__img">
-                            <img src="images/card-coloured-image-4.jpg" data-lg="images/card-coloured-image-4.jpg"
+                            <img src="../../images/card-coloured-image-4.jpg" data-lg="images/card-coloured-image-4.jpg"
                                  data-md="images/card-coloured-image-4.jpg" data-sm="images/card-coloured-image-4.jpg"
                                  alt="" class="blurryload">
                         </div>
                         <div class="card__colored card__colored--green">
-                            <div class="int_image text-white"><p>Події</p><p>Фестиваль</p></div>
+                            <div class="int_image text-white"><p>@lang('voyager.generic.event')</p><p>Фестиваль</p></div>
                         </div>
-                    </a></div>
+                    </a>
+                </div>
             </div>
+
         </div>
-
-
-    </div>
+        </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="{{ asset('js/my_scripts.js') }}"></script>

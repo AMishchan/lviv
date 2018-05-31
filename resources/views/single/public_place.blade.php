@@ -7,11 +7,11 @@
                 <div class="row">
                     <div class="col-md-9 col-lg-8 col-md-offset-3 col-lg-offset-2">
                         <div class="d-i-block">
-                            <div class="label label--blue mb-1">Громадські місця</div>
-                            <h1 class="cover__title">{{$place->name}}</h1>
+                            <div class="label label--blue mb-1">@lang('voyager.generic.public_places')</div>
+                            <h1 class="cover__title">{!! $place->{"name_$locale"} !!}</h1>
                             <ul class="breadcrumbs">
-                                <a href="/public-places" class="label">Громадські місця/</a>
-                                <a href="#" class="label">{{$place->name}}</a>
+                                <a href="/public-places" class="label">@lang('voyager.generic.public_places')/</a>
+                                <a href="#" class="label">{!! $place->{"name_$locale"} !!}</a>
                             </ul>
                         </div>
                     </div>
@@ -21,58 +21,43 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-2 left-bar row">
+            <div class="col-md-2 pad star_wars">
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star"></span>
-                <p class="reviews">73 відгуки</p>
-                <a href="#" class="review">Залишити відгук</a>
+                <p class="reviews">73 @lang('voyager.generic.reviews')</p>
+                <a href="#" class="review">@lang('voyager.generic.review')</a>
+                <div class="adress_block">
+                    <p>@lang('voyager.generic.address'):</p>
+                    <p>{!! $place->{"address_$locale"} !!}</p>
+                </div>
+                <button type="button" class="row my_button_white">@lang('voyager.generic.location')<i class="fa fa-map-marker"></i></button>
             </div>
-            <div class="col-md-9 col-md-offset-1 left_pad">
-                <ul class="string-list">
-                    <li><a href="#" class="string">Детальніше</a></li>
-                    <li><a href="#" class="string">Профіль</a></li>
-                </ul>
-            </div>
-        </div>
-
-    </div>
-    <div class="container sec_pad">
-        <div class="row ">
-            <div class="col-md-2">
-                <button type="button" class="row my_button_white">Розташування<i class="fa fa-map-marker"></i></button>
-            </div>
-            <div class="col-md-9 col-md-offset-1 ">
+            <div class="col-md-9 pad">
                 <ul class="buttons">
-                    <li><a href="#" class="list">Що робити</a></li>
-                    <li><a href="#" class="list">Локації</a></li>
-                    <li><a href="#" class="list">Парки</a></li>
+                    <li><a href="#" class="list">@lang('voyager.generic.what_to_do')</a></li>
+                    <li><a href="#" class="list">@lang('voyager.generic.location')</a></li>
+                    <li><a href="#" class="list">@lang('voyager.generic.public_places')</a></li>
 
                 </ul>
+                <div class="text-secondary text-content">
+                    <p class="mb-4">{!! $place->{"title_$locale"} !!}</p>
+                </div>
+                <div class="text-secondary text-content toggle_text hide_fun">
+                    {!! $place->{"post_$locale"} !!}
+                </div>
+                <input type="button" value="@lang('voyager.generic.more')" class="col-md-4 tuggle_button2 pad_zero">
             </div>
         </div>
+
     </div>
 
     <div class="container">
         <div class="row">
-            <div class="col-md-2">
-                <div class="row adress_block">
-                    <p>Адреса:</p>
-                    <p>{{$place->address}}</p>
-                </div>
-            </div>
-            <div class="col-md-9 col-md-offset-1">
-                <div class="text-secondary text-content">
-                    <p class="mb-4">{{$place->title}}</p>
-                </div>
-                <div class="text-secondary text-content toggle_text hide_fun">
-                    {!! $place->post!!}
-                </div>
-                <input type="button" value="Детальніше" class="col-md-4 tuggle_button2 pad_zero">
-            </div>
-            <div class="col-md-9 col-md-offset-3">
+
+            <div class="col-md-9 col-md-offset-2">
                 <div class="images_gallery">
                     <img style="width: 100%" class="mySlides" src="{{Voyager::image($place->photo1)}}">
                     <img style="width: 100%" class="mySlides" src="{{Voyager::image($place->photo2)}}">
@@ -85,12 +70,12 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-9 col-md-offset-3">
+            <div class="col-md-9 col-md-offset-2">
                 <p class="head_p">Події</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3 first_block_container">
+            <div class="col-md-2 first_block_container">
                 <img src="http://www.divosad.com.ua/photos/large/rozy-angliyskie-angliyskaya-grexam-tomas-11011498.jpg">
                 <div class="first_block col-md-8">
                     <p>Дата проведення</p>
@@ -117,20 +102,20 @@
             </div>
 
         </div>
-        <a href="#" class="col-md-10 col-md-offset-3 hot">Детальніше</a>
+        <a href="#" class="col-md-10 col-md-offset-2 hot">@lang('voyager.generic.more')</a>
     </div>
     @include('maps.searchMap')
     <div class="container">
         <div class="row">
-            <div class="col-md-9 col-md-offset-2 int_text">
-                <p>Вас це може зацікавити</p>
+            <div class="col-md-9 col-md-offset-2 int_text pad">
+                <p class="pad">@lang('voyager.generic.interest')</p>
                 <nav>
                     <ul class="int_list">
-                        <li><a href="#">Що робити</a></li>
-                        <li><a href="#">Цікаві статті</a></li>
-                        <li><a href="{{asset('/museums')}}">Музеї</a></li>
-                        <li><a href="#">Події</a></li>
-                        <li><a href="#">Екскурсії</a></li>
+                        <li><a href="#">@lang('voyager.generic.what_to_do')</a></li>
+                        <li><a href="#">@lang('voyager.generic.articles')</a></li>
+                        <li><a href="{{asset('/museums')}}">@lang('voyager.generic.museums')</a></li>
+                        <li><a href="#">@lang('voyager.generic.event')</a></li>
+                        <li><a href="#">@lang('voyager.generic.excursions')</a></li>
                     </ul>
                 </nav>
             </div>
@@ -145,7 +130,7 @@
                              alt="" class="blurryload">
                     </div>
                     <div class="card__colored card__colored--green">
-                        <div class="int_image text-white"><p>Події</p><p>Фестиваль</p></div>
+                        <div class="int_image text-white"><p>@lang('voyager.generic.event')</p><p>Фестиваль</p></div>
                     </div>
                 </a>
             </div>
@@ -157,7 +142,7 @@
                              alt="" class="blurryload">
                     </div>
                     <div class="card__colored card__colored--green">
-                        <div class="int_image text-white"><p>Події</p><p>Фестиваль</p></div>
+                        <div class="int_image text-white"><p>@lang('voyager.generic.event')</p><p>Фестиваль</p></div>
                     </div>
                 </a>
             </div>
@@ -169,7 +154,7 @@
                              alt="" class="blurryload">
                     </div>
                     <div class="card__colored card__colored--green">
-                        <div class="int_image text-white"><p>Події</p><p>Фестиваль</p></div>
+                        <div class="int_image text-white"><p>@lang('voyager.generic.event')</p><p>Фестиваль</p></div>
                     </div>
                 </a>
             </div>
@@ -181,7 +166,7 @@
                              alt="" class="blurryload">
                     </div>
                     <div class="card__colored card__colored--green">
-                        <div class="int_image text-white"><p>Події</p><p>Фестиваль</p></div>
+                        <div class="int_image text-white"><p>@lang('voyager.generic.event')</p><p>Фестиваль</p></div>
                     </div>
                 </a>
             </div>
@@ -199,11 +184,11 @@
     });
     $(document).ready(function() {
         $('.tuggle_button2').click(function(){
-            if ($(this).val() == "Детальніше") {
+            if ($(this).val() == "@lang('voyager.generic.more')") {
                 $(this).val("Сховати")
             }
             else{
-                $(this).val("Детальніше")
+                $(this).val("@lang('voyager.generic.more')")
             }
         });
     });

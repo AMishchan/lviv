@@ -698,13 +698,13 @@ a{
     padding: 0;
     margin: 0 auto;
 }
-.cover img{
-    border-radius:50%;
-    width: 13%;
-    top: 40%;
-    left: 1%;
-    position: absolute;
-}
+/*.cover img{*/
+    /*border-radius:50%;*/
+    /*width: 13%;*/
+    /*top: 40%;*/
+    /*left: 1%;*/
+    /*position: absolute;*/
+/*}*/
 .cover__title{
     font-size: 60px;
     padding-bottom: 25px;
@@ -733,7 +733,7 @@ a.label{
 }
 .review{
     display: table;
-    padding: 3% 0 0 0;
+    padding: 0;
 }
 .checked{
     color: #ffa500;
@@ -746,9 +746,9 @@ a.label{
     margin: 0 auto;
     overflow: hidden;
     background-color: #fff;
-    border: 1px solid black;
     text-align: center;
     display: block;
+    border-bottom: 1px solid #000;
 }
 .string-list li{
     float: left;
@@ -759,7 +759,6 @@ a.label{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    border-right: 1px solid black;
 }
 .string:hover{
     background-color: #d3d3d3;
@@ -784,7 +783,7 @@ a.label{
 }
 .buttons{
     list-style-type: none;
-    padding: 0;
+    padding: 0 0 15px 0;
     margin: 0 auto;
     overflow: hidden;
     background-color: #fff;
@@ -1235,14 +1234,14 @@ a.label{
     min-height:350px;
 }
 .gallery_button_left{
-    color: #000;
+    color: #fff;
     position: absolute;
     top: 50%;
     left: 2%;
     cursor: pointer;
 }
 .gallery_button_right{
-    color: #000;
+    color: #fff;
     position: absolute;
     top: 50%;
     right: 2%;
@@ -1374,6 +1373,7 @@ a.label{
 .adress_block{
     padding-top:20px;
     font-size: 15px;
+    padding-bottom: 12px;
 }
 .adress_block p{
     padding:0;
@@ -1384,6 +1384,8 @@ a.label{
 }
 .schedule_block{
     background-color: #eee8aa;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
 }
 .schedule_block p:nth-child(1){
     font-weight: bold;
@@ -1493,4 +1495,142 @@ a.label{
     padding: 0 !important;
     margin: 0 auto !important;
     width: 100px;
+}
+.star_wars{
+    padding-left: 0;
+}
+.string-list2{
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #fff;
+    text-align: center;
+    display: block;
+}
+.string-list2 li{
+    float: left;
+}
+.string-list2 li:first-child{
+    border-bottom: 1px solid #000;
+    border-top:1px solid #000;
+    border-left:1px solid #000;
+}
+.string-list2 li:nth-child(2){
+    border: 1px solid #000;
+}
+.string2{
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.string2:hover{
+    background-color: #d3d3d3;
+    color: #000;
+}
+.card__description--height{
+    height: 100px;
+}
+.margin_top{
+    margin-top: 15px;
+}
+.new_fonts{
+    font-size: 42px;
+}
+.cost_block td{
+    border: 1px solid gray;
+}
+.circle_image{
+    min-height:150px;
+    max-height:150px;
+    max-width: 150px;
+    border-radius: 50%;
+    position: relative;
+    bottom:-80px;
+}
+.new_span span{
+    font-size: 30px;
+}
+.image-top2 {
+    position: absolute;
+    z-index: 1;
+    left: 30%;
+    color: #fff;
+}
+.pad_left_x{
+    padding-left:0;
+}
+@media only screen and (max-width: 600px) {
+    .circle_image{
+        min-height: 50px;
+        max-height: 50px;
+        max-width: 50px;
+        top:0;
+        position: relative;
+    }
+}
+.bad{
+    padding-bottom: 20px;
+}
+.margin_top2{
+    margin-top: 50px;
+}
+.down_wars{
+    margin-bottom: 0;
+}
+.up_wars{
+    margin-top: 0;
+}
+.pad2{
+    padding-top: 50px;
+}
+.my_pad_title{
+    font-weight: bold;
+    font-size: 22px;
+}
+.showmore_size{
+    font-size: 12px;
+}
+/*business box*/
+.overlay_business {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #a9a9a9;
+}
+
+.card:hover .overlay_business {
+    opacity: 1;
+}
+.business_text {
+    font-size: 16px;
+    position: absolute;
+    padding-top: 10px;
+
+}
+.business_text p{
+    padding-left: 10px;
+}
+.business_text a:hover{
+    color: #008e38;
+    text-decoration: underline;
+}
+.text_overlay{
+    position: absolute;
+    left: 30%;
+    bottom: 0;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+.card:hover .text_overlay {
+    color: transparent;
 }

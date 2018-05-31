@@ -1,16 +1,16 @@
 @extends('layouts.front')
 @section('content')
-    <div class="cover" style="background-image: url(images/lviv-cover.jpg);">
+    <div class="cover" style="background-image:  url('{{Voyager::image($page->banner_photo)}}');">
         <div class="container">
             <div class="cover__content">
                 <div class="row">
                     <div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
                         <div class="d-i-block">
-                            <h1 class="cover__title">Гіди</h1>
+                            <h1 class="cover__title">{!! $page->{"name_$locale"} !!}</h1>
                             <ul class="breadcrumbs">
-                                <a href="#" class="label">Що робити/</a>
+                                <a href="#" class="label">@lang('voyager.generic.main')/</a>
                                 <a href="{{ asset('/tur') }}" class="label">Тури/</a>
-                                <a href="{{ asset('/gids') }}" class="label">Гіди/</a>
+                                <a href="{{ asset('/gids') }}" class="label">{!! $page->{"name_$locale"} !!}/</a>
                             </ul>
                         </div>
                     </div>
@@ -24,14 +24,14 @@
                 <div class="mb-1 text-content text-secondary">
                     <br>
                     <br>
-                    <p>Запрошую Вас на знайомство з прекрасним та водночас повним таємниць містом. Містом де народилось стільки пам'яток, які на сьогоднішній день входять до спадщини ЮНЕСКО, містом багатим на відомих та знаменитих постатей з історії міста,які творили історію Європи, містом кохання, містом багатим на байки і легенди, лише у Львові є єдина у світі копальня кави де кава проростає на стінах підземелля, вуличками Львова Вас супроводжуватимуть постаті ангелів, фей, принцес,королів, львівського ката і сажотруса, карети чекатимуть на Вас при входах та виходах з закладів Львова за Вашим бажанням. піднятись на Ратушу і оцінити місто з пташиного польоту-тепер це можливо! Львівська Ратуша чекає на своїх гостей. До Вашої уваги- Вулички таємничого Львова, підземелля, які датуються правлінням засновника міста Данила Галицького, Золота пора Австрійського правляння, Екскурсія Личаківським кладовищем,екскурсія дахами Львова, романтичний Львів, дитячі екскурсії. У Львові безліч різноманітних тематичних вечорів, багато хорошої музики, смаколиків, усміхнених перехожих ,які з радістю та гостиністю чекають на Вас. Де ще Ви зможете зустріти так багатонаціональне місто? Tylko we Lwowie(лише у Львові) Неможливо не закохатись у місто у якому все породжене з Любові. Пропоную Вам послуги екскурсовода у якого в душі панує Любов до Рідного міста.</p>
+                    <p> {!! $page->{"post_$locale"} !!}</p>
                 </div>
             </div>
         </div>
         <section class="section">
             <div class="container">
 
-                <h2 class="section__title">Гіди</h2>
+                <h2 class="section__title">{!! $page->{"name_$locale"} !!}</h2>
                 <div class="row section5">
                     <div class="col-md-12">
                         <div class="row">
@@ -48,14 +48,14 @@
                                         </div>
                                         <div class="col-md-8 gallery-text ">
                                             <div class="">
-                                                    <p class="read-more">{{ $gid->name }}</p>
-                                                    <p class="read-more">{{ $gid->title }}</p>
+                                                    <p class="read-more">{!! $gid->{"name_$locale"} !!}</p>
+                                                    <p class="read-more">{!! $gid->{"title_$locale"} !!}</p>
                                                 </a>
                                             </div>
 
 
                                         </div>
-                                        <a href="/gids/gid/{{ $gid->slug }}" class="button-read-more">Детальніше></a>
+                                        <a href="/gids/gid/{{ $gid->slug }}" class="button-read-more">@lang('voyager.generic.more')</a>
                                     </div>
                                 </div>
                             @endforeach
@@ -69,33 +69,70 @@
 
         </section>
         <div class="row">
-            <div class="col-md-9 int_text">
-                <p>Вас це може зацікавити</p>
+            <div class="col-md-9 col-md-offset-2 int_text">
+                <p>@lang('voyager.generic.interest')</p>
                 <nav>
                     <ul class="int_list">
-                        <li><a href="#">Що робити</a></li>
-                        <li><a href="#">Цікаві статті</a></li>
-                        <li><a href="#">Музеї</a></li>
-                        <li><a href="#">Події</a></li>
-                        <li><a href="#">Екскурсії</a></li>
+                        <li><a href="#">@lang('voyager.generic.what_to_do')</a></li>
+                        <li><a href="#">@lang('voyager.generic.articles')</a></li>
+                        <li><a href="{{asset('/museums')}}">@lang('voyager.generic.museums')</a></li>
+                        <li><a href="#">@lang('voyager.generic.event')</a></li>
+                        <li><a href="#">@lang('voyager.generic.excursions')</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
+
         <div class="row">
             <div class="col-md-3">
                 <a href="#" class="card card--sq">
                     <div class="card__img">
-                        <img src="images/card-coloured-image-4.jpg" data-lg="images/card-coloured-image-4.jpg"
+                        <img src="../../images/card-coloured-image-4.jpg" data-lg="images/card-coloured-image-4.jpg"
                              data-md="images/card-coloured-image-4.jpg" data-sm="images/card-coloured-image-4.jpg"
                              alt="" class="blurryload">
                     </div>
                     <div class="card__colored card__colored--green">
-                        <div class="int_image text-white"><p>Події</p><p>Фестиваль</p></div>
+                        <div class="int_image text-white"><p>@lang('voyager.generic.event')</p><p>Фестиваль</p></div>
                     </div>
-                </a></div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="#" class="card card--sq">
+                    <div class="card__img">
+                        <img src="../../images/card-coloured-image-4.jpg" data-lg="images/card-coloured-image-4.jpg"
+                             data-md="images/card-coloured-image-4.jpg" data-sm="images/card-coloured-image-4.jpg"
+                             alt="" class="blurryload">
+                    </div>
+                    <div class="card__colored card__colored--green">
+                        <div class="int_image text-white"><p>@lang('voyager.generic.event')</p><p>Фестиваль</p></div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="#" class="card card--sq">
+                    <div class="card__img">
+                        <img src="../../images/card-coloured-image-4.jpg" data-lg="images/card-coloured-image-4.jpg"
+                             data-md="images/card-coloured-image-4.jpg" data-sm="images/card-coloured-image-4.jpg"
+                             alt="" class="blurryload">
+                    </div>
+                    <div class="card__colored card__colored--green">
+                        <div class="int_image text-white"><p>@lang('voyager.generic.event')</p><p>Фестиваль</p></div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="#" class="card card--sq">
+                    <div class="card__img">
+                        <img src="../../images/card-coloured-image-4.jpg" data-lg="images/card-coloured-image-4.jpg"
+                             data-md="images/card-coloured-image-4.jpg" data-sm="images/card-coloured-image-4.jpg"
+                             alt="" class="blurryload">
+                    </div>
+                    <div class="card__colored card__colored--green">
+                        <div class="int_image text-white"><p>@lang('voyager.generic.event')</p><p>Фестиваль</p></div>
+                    </div>
+                </a>
+            </div>
         </div>
-
     </div>
 
 

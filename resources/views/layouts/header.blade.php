@@ -27,7 +27,7 @@
             </div>
             <div class="col">
                 <div class="row-flex row-flex--middle">
-                    <div class="col-md-5">
+                    <div class="col-md-4">
                         <div class="header__logo">
                             <a href="/"><img src="{{asset('images/lviv-logo-sprite.png')}}" alt=""></a>
                         </div>

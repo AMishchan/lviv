@@ -1,6 +1,6 @@
 @extends('layouts.front')
 @section('content')
-    <div class="cover" style="background-image:  url('{{Voyager::image($page->banner_photo)}}');">
+    <div class="cover" style="background-image: url('{{Voyager::image($page->banner_photo)}}')">
         <div class="container">
             <div class="cover__content">
                 <div class="row">
@@ -10,7 +10,7 @@
                             <ul class="breadcrumbs">
                                 <a href="/" class="label">@lang('voyager.generic.main')/</a>
                                 <a href="#" class="label">@lang('voyager.generic.what_to_do')/</a>
-                                <a href="{{ asset('/around_lviv') }}" class="label">{!! $page->{"name_$locale"} !!}</a>
+                                <a href="{{ asset('/parks') }}" class="label">{!! $page->{"name_$locale"} !!}</a>
                             </ul>
                         </div>
                     </div>
@@ -24,7 +24,7 @@
                 <ul class="buttons btn_padding">
                     <li><a href="#" class="list">@lang('voyager.generic.what_to_do')</a></li>
                     <li><a href="#" class="list">@lang('voyager.generic.location')</a></li>
-                    <li><a href="{{asset('/around_lviv')}}" class="list">{!! $page->{"name_$locale"} !!}</a></li>
+                    <li><a href="{{asset('/parks')}}" class="list">{!! $page->{"name_$locale"} !!}</a></li>
                 </ul>
             </div>
             <div class="row section4">
@@ -46,25 +46,25 @@
         </div>
     </div>
     <div class="container">
-        <h2 class="row section__title col-md-10">@lang('voyager.generic.best_known')</h2>
+        <h2 class="row section__title col-md-10">@lang('voyager.generic.best_known_attractions')</h2>
     </div>
     <div class="container">
         <div class="row">
-            @foreach($arounds as $around)
+            @foreach($attractions as $attraction)
                 <div class="col-sm-6 col-md-4">
-                    <a href="/around_lviv/{{ $around->slug }}" class="card ">
+                    <a href="/attractions/{{ $attraction->slug }}" class="card ">
                         <div class="card__img">
-                            <img src="{{Voyager::image($around->photo1)}}" data-lg="images/card-image-1.jpg"
+                            <img src="{{Voyager::image($attraction->photo1)}}" data-lg="images/card-image-1.jpg"
                                  data-md="images/card-image-1.jpg" data-sm="images/card-image-1.jpg" alt=""
                                  class="blurryload">
                         </div>
                         <div class="card__overlay">
                             <div class="card__description">
-                                <div class="card__type label label--violet">@lang('voyager.generic.around_lviv')</div>
+                                <div class="card__type label label--violet">{!! $attraction->{"type_$locale"} !!}</div>
 
-                                <div class="card__title">{!!$around->{ "name_$locale"} !!}</div>
+                                <div class="card__title">{!!$attraction->{"name_$locale"}!!}</div>
                                 <ul class="card__info">
-                                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>{!!$around->{"address_$locale"} !!}
+                                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>{!!$attraction->{"address_$locale"}!!}
                                     </li>
 
                                 </ul>
@@ -149,7 +149,6 @@
                 </a>
             </div>
         </div>
-
 
     </div>
 

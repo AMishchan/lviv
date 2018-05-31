@@ -1,182 +1,47 @@
 <div class="menu" id="business">
     <a href="#" class="btn-menu-back visible-xs visible-sm">Назад</a>
     <div class="row">
-        <div class="col-sm-5 col-md-3 col-lg-3">
-            <ul class="accordion-menu menu__subnav menu-trig menu__nav">
-                @foreach($data['categories'] as $category)
-                    @if($category['template'] == 'business' & $category['left_sidebar_menu'] != 0)
-                        @foreach($category['left_sidebar_menu'] as $left_sidebar_menu)
-                            <li><a class="dropdownlink" href="#">{{$left_sidebar_menu['title']}}
-                                    @if($left_sidebar_menu['left_sidebar_droopdown'])
-                                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                    @endif
-                                </a>
-                                @if($left_sidebar_menu['childrens'] & $left_sidebar_menu['left_sidebar_droopdown'])
-                                    <ul class="submenuItems dropdown">
-                                        @foreach($left_sidebar_menu['left_sidebar_droopdown'] as $left_sidebar_droopdown)
-                                            <li>
-                                                <a class="" href="#">{{$left_sidebar_droopdown['title']}}</a>
-                                            </li>
-                                        @endforeach
-                                    </ul>
-                                @endif
-                                 </li>
-                        @endforeach
-                    @endif
-                @endforeach
-            </ul>
-        </div>
-        <div class="col-sm-7 col-md-9 col-lg-9 hidden-xs">
+        <div class="col-sm-10 col-md-12 col-lg-12 hidden-xs">
+            <h3>Бізнес новини</h3>
             <div class="row">
-                <h3>Бізнес новини</h3>
-                <div class="col-sm-4 col-md-4 col-lg-4">
-                    <a href="#" class="card ">
-                        <div class="card__img card-img-now">
-                            <img src="{{asset('images/card-image-1.jpg')}}"
-                                 data-lg="{{asset('images/card-image-1.jpg')}}"
-                                 data-md="{{asset('images/card-image-1.jpg')}}"
-                                 data-sm="{{asset('images/card-image-1.jpg')}}"
-                                 alt="" class="blurryload">
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="card ">
+                        <div class="card__img card_size">
+                            <img src="{{asset('images/card-image-1.jpg')}}">
                         </div>
-                        <div class="card__overlay">
-                            <div class="card__description ">
-                                <div class="card__title">У Львові відбулась Літня конференція міжнародної
-                                    асоціації
-                                </div>
+                        <div class="overlay_business">
+                            <div class="business_text">
+                                <p>-<a href="#">Заплонувати коференцію у Львові</a></p>
+                                <p>-<a href="#">Про LCB</a></p>
+                                <p>-<a href="#">Календар подій - комерційне застосування</a></p>
+                                <p>-<a href="#">Реалізовані події (Амбасадори)</a></p>
+                                <p>-<a href="#">Замовити FAM-тур</a></p>
+                                <p>-<a href="#">Локації для проведення комерційних подій у Львові</a></p>
                             </div>
                         </div>
-                    </a>
+                        <div class="text_overlay">
+                            <p>Lviv Convention Bureau</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-4 col-md-4 col-lg-4">
-                    <a href="#" class="card ">
-                        <div class="card__img card-img-now">
-                            <img src="{{asset('images/card-image-1.jpg')}}"
-                                 data-lg="{{asset('images/card-image-1.jpg')}}"
-                                 data-md="{{asset('images/card-image-1.jpg')}}"
-                                 data-sm="{{asset('images/card-image-1.jpg')}}"
-                                 alt="" class="blurryload">
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="card">
+                        <div class="card__img ">
+                            <img src="{{asset('images/card-image-1.jpg')}}">
                         </div>
-                        <div class="card__overlay">
-                            <div class="card__description ">
-                                <div class="card__title">У Львові відбулась Літня конференція міжнародної
-                                    асоціації
-                                </div>
+                        <div class="overlay_business">
+                            <div class="business_text">
+                                <p>-<a href="#">Чому Львів</a></p>
+                                <p>-<a href="#">Пріорітетні галузі</a></p>
+                                <p>-<a href="#">Інвестиційні проекти</a></p>
+                                <p>-<a href="#">Професійні події</a></p>
+                                <p>-<a href="#">Блог з основними фактами</a></p>
                             </div>
                         </div>
-                    </a>
-                </div>
-                <div class="col-sm-4 col-md-4 col-lg-4">
-                    <a href="#" class="card ">
-                        <div class="card__img card-img-now">
-                            <img src="{{asset('images/card-image-1.jpg')}}"
-                                 data-lg="{{asset('images/card-image-1.jpg')}}"
-                                 data-md="{{asset('images/card-image-1.jpg')}}"
-                                 data-sm="{{asset('images/card-image-1.jpg')}}"
-                                 alt="" class="blurryload">
+                        <div class="text_overlay">
+                            <p>Invest in Lviv</p>
                         </div>
-                        <div class="card__overlay">
-                            <div class="card__description ">
-                                <div class="card__title">У Львові відбулась Літня конференція міжнародної
-                                    асоціації
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <h3>Рекомендовані бізнес події</h3>
-                <div class="col-lg-3 visible-lg">
-                    <a href="#" class="card ">
-                        <div class="events-card-time">
-                            <span class="date">07-08</span>
-                            <span class="month">Жовтня</span>
-
-                        </div>
-                        <div class="card__img">
-                            <img src="{{asset('images/card-image-1.jpg')}}"
-                                 data-lg="{{asset('images/card-image-1.jpg')}}"
-                                 data-md="{{asset('images/card-image-1.jpg')}}"
-                                 data-sm="{{asset('images/card-image-1.jpg')}}"
-                                 alt="" class="blurryload">
-                        </div>
-                        <div class="card__overlay">
-                            <div class="card__description ">
-                                <div class="card__title">Метеорологи прогнозують у Львові
-                                    найсніжнішу зиму за останні 12 років
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 visible-lg">
-                    <a href="#" class="card ">
-                        <div class="events-card-time">
-                            <span class="date">07-08</span>
-                            <span class="month">Жовтня</span>
-
-                        </div>
-                        <div class="card__img">
-                            <img src="{{asset('images/card-image-1.jpg')}}"
-                                 data-lg="{{asset('images/card-image-1.jpg')}}"
-                                 data-md="{{asset('images/card-image-1.jpg')}}"
-                                 data-sm="{{asset('images/card-image-1.jpg')}}"
-                                 alt="" class="blurryload">
-                        </div>
-                        <div class="card__overlay">
-                            <div class="card__description ">
-                                <div class="card__title">Метеорологи прогнозують у Львові
-                                    найсніжнішу зиму за останні 12 років
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 visible-lg">
-                    <a href="#" class="card ">
-                        <div class="events-card-time">
-                            <span class="date">07-08</span>
-                            <span class="month">Жовтня</span>
-
-                        </div>
-                        <div class="card__img">
-                            <img src="{{asset('images/card-image-1.jpg')}}"
-                                 data-lg="{{asset('images/card-image-1.jpg')}}"
-                                 data-md="{{asset('images/card-image-1.jpg')}}"
-                                 data-sm="{{asset('images/card-image-1.jpg')}}"
-                                 alt="" class="blurryload">
-                        </div>
-                        <div class="card__overlay">
-                            <div class="card__description ">
-                                <div class="card__title">Метеорологи прогнозують у Львові
-                                    найсніжнішу зиму за останні 12 років
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 visible-lg">
-                    <a href="#" class="card ">
-                        <div class="events-card-time">
-                            <span class="date">07-08</span>
-                            <span class="month">Жовтня</span>
-
-                        </div>
-                        <div class="card__img">
-                            <img src="{{asset('images/card-image-1.jpg')}}"
-                                 data-lg="{{asset('images/card-image-1.jpg')}}"
-                                 data-md="{{asset('images/card-image-1.jpg')}}"
-                                 data-sm="{{asset('images/card-image-1.jpg')}}"
-                                 alt="" class="blurryload">
-                        </div>
-                        <div class="card__overlay">
-                            <div class="card__description ">
-                                <div class="card__title">Метеорологи прогнозують у Львові
-                                    найсніжнішу зиму за останні 12 років
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+                    </div>
                 </div>
             </div>
             <a href="{{route('business')}}" class="btn btn--green">Більше</a>
