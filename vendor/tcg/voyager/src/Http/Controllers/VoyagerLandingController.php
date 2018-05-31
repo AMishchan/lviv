@@ -10,23 +10,39 @@ use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
 use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Models\Landing;
+use TCG\Voyager\Models\DataType;
+use Illuminate\Support\Facades\DB;
+
+
 
 class VoyagerLandingController extends Controller
 {
     protected $request;
+    protected $tagList = [];
+    protected $typeList = [];
 
     public function __construct()
     {
         $this->request = app('request');
     }
-
-    public function index( $id)
+    public function getTypeTag()
     {
+        $result = $_GET['name'];
+        return $result;
+    }
+
+
+    public function index($id)
+    {
+
         // Check permission
         Voyager::canOrFail('browse_compass');
+        $tagList = DataType::select('name')->where('is_tag', '1')->get();
 
-            $message = '';
-            $active_tab = '';
+        $message = '';
+        $active_tab = '';
+
+
 //dump(Landing::where('id', $id)->get());
 
 
@@ -63,7 +79,7 @@ class VoyagerLandingController extends Controller
 //            ]);
 //        }
 
-       // $artisan_output = '';
+        // $artisan_output = '';
 
 //        if ($request->isMethod('post')) {
 //            $command = $request->command;
@@ -94,11 +110,15 @@ class VoyagerLandingController extends Controller
 //        $current_file = LogViewer::getFileName();
 
         // get the full list of artisan commands and store the output
-       // $commands = $this->getArtisanCommands();
+        // $commands = $this->getArtisanCommands();
 
-        return view('voyager::landings.index', compact('active_tab'))->with($message);
+        return view('voyager::landings.index', compact('tagList', 'typeList', 'active_tab'))->with($message);
     }
-//
+
+
+
+
+
 //    private function getArtisanCommands()
 //    {
 //        Artisan::call('list');
@@ -110,7 +130,6 @@ class VoyagerLandingController extends Controller
 //
 //        return $commands;
 //    }
-
 
 
 //    private function getCommandsFromOutput($output)

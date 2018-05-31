@@ -12,6 +12,7 @@ use TCG\Voyager\Events\BreadDataUpdated;
 use TCG\Voyager\Events\BreadImagesDeleted;
 use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Http\Controllers\Traits\BreadRelationshipParser;
+use App\Tag;
 
 class VoyagerBreadController extends Controller
 {
@@ -35,6 +36,8 @@ class VoyagerBreadController extends Controller
 
         // GET THE DataType based on the slug
         $dataType = Voyager::model('DataType')->where('slug', '=', $slug)->first();
+
+       $tags = TAG::where('category_name',  $dataType->slug)->get();
 
         // Check permission
         $this->authorize('browse', app($dataType->model_name));
@@ -179,7 +182,7 @@ class VoyagerBreadController extends Controller
 
         // Compatibility with Model binding.
         $id = $id instanceof Model ? $id->{$id->getKeyName()} : $id;
-
+        $tags = Tag::where('category_name', $slug)->get();
         $relationships = $this->getRelationships($dataType);
 
         $dataTypeContent = (strlen($dataType->model_name) != 0)
@@ -206,7 +209,7 @@ class VoyagerBreadController extends Controller
             $view = "voyager::$slug.edit-add";
         }
 
-        return Voyager::view($view, compact('dataType', 'dataTypeContent', 'isModelTranslatable'));
+        return Voyager::view($view, compact('dataType', 'dataTypeContent', 'isModelTranslatable', 'tags'));
     }
 
     // POST BR(E)AD
@@ -270,6 +273,8 @@ class VoyagerBreadController extends Controller
         $dataTypeContent = (strlen($dataType->model_name) != 0)
                             ? new $dataType->model_name()
                             : false;
+//dump($dataType);
+        $tags = Tag::where('category_name', $slug)->get();
 
         foreach ($dataType->addRows as $key => $row) {
             $details = json_decode($row->details);
@@ -288,7 +293,9 @@ class VoyagerBreadController extends Controller
             $view = "voyager::$slug.edit-add";
         }
 
-        return Voyager::view($view, compact('dataType', 'dataTypeContent', 'isModelTranslatable'));
+
+
+        return Voyager::view($view, compact('dataType', 'dataTypeContent', 'isModelTranslatable', 'tags'));
     }
 
     /**

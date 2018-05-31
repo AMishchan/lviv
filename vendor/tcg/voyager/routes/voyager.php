@@ -129,11 +129,13 @@ Route::group(['as' => 'voyager.'], function () {
          ],function () use ($namespacePrefix) {
              Route::get('/{id}', ['uses' => $namespacePrefix.'VoyagerLandingController@index',  'as' => 'index']);
              Route::post('/{id}', ['uses' => $namespacePrefix.'VoyagerLandingController@index',  'as' => 'post']);
+
          });
 
         Route::resource('database', $namespacePrefix.'VoyagerDatabaseController');
 
         event(new RoutingAdminAfter());
     });
+
     event(new RoutingAfter());
 });

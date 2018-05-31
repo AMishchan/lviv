@@ -23,7 +23,7 @@ Route::group(['prefix' => 'owner','middleware' => ['auth']], function (){
 Route::group(['middleware' => ['locale']], function () {
     Route::get('/', 'MainpageController@index');
     Route::get('/home', 'HomeController@index')->name('home');
-
+    Route::get('/admin/landings/sendtype', '\TCG\Voyager\Http\Controllers\VoyagerLandingController@getTypeTag');
 
     Route::get('/now', function () {
         return view('now');

@@ -50,6 +50,29 @@
     </style>
 </head>
 <body>
+<a href="https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJzdzwMXrdOkcRP468JXDMaZg&key=AIzaSyCmUcVn8v4mHdwIZKHjc1yvMhkqHU597go">qqq</a>
+
+{{--@php--}}
+
+
+    {{--$googleinfo = file_get_contents('https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJzdzwMXrdOkcRP468JXDMaZg&key=AIzaSyCmUcVn8v4mHdwIZKHjc1yvMhkqHU597go');--}}
+{{--$q = json_decode($googleinfo)--}}
+
+{{--@endphp--}}
+<pre>
+
+</pre>
+{{--@foreach($q as $w)--}}
+    {{--@if(gettype($w) == 'object')--}}
+        {{--@foreach($w as $item)--}}
+    {{--<pre>--}}
+
+        {{--{{var_dump($item)}}--}}
+
+    {{--</pre>--}}
+        {{--@endforeach--}}
+    {{--@endif--}}
+        {{--@endforeach--}}
 <input id="pac-input" class="controls" type="text"
        placeholder="Enter a location">
 <div id="map"></div>

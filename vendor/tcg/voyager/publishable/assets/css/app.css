@@ -24320,7 +24320,9 @@ p#the_plugin_name {
 .panel.widget .readm-link {
     text-decoration: underline
 }
-
+.readmore{
+    overflow: hidden !important;
+}
 .btn {
     padding: 6px 15px;
     font-size: 14px;

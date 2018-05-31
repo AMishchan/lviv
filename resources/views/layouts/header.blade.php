@@ -9,6 +9,7 @@
     <meta property="og:title" content="">
     <meta property="og:image" content="{{asset('/build/images/og.jpg')}}">
     <meta property="og:description" content="">
+    <meta name="_token" content="{{csrf_token()}}" />
     <meta name="format-detection" content="telephone=no">
     <link rel="icon" type="image/png" href="{{asset('favicon/favicon.png')}}">
     <link rel="stylesheet" href="{{asset('font-awesome-4.7.0/css/font-awesome.min.css')}}">

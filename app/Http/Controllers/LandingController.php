@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Slider;
 
 class LandingController extends Controller
 {
@@ -9,4 +9,6 @@ class LandingController extends Controller
     {
 
     }
+
+
 }

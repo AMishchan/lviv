@@ -2,91 +2,30 @@
 @section('content')
 
     <div class="main-slider">
-        <div class="main-slider__slide" style="background-image: url(images/main-slider-img-1.jpg);">
+            @foreach($sliderImages as $image)
+        <div class="main-slider__slide" style="background-image: url('storage/{{$image->image_url}}');">
             <div class="container text-center">
                 <div class="slide-content d-i-block text-left">
                     <div>
-                        <div class="text-hero text-white mb-2">Різдво у Львові</div>
+                        <div class="text-hero text-white mb-2">{{$image->header}}</div>
                     </div>
                     <div>
                         <p class="text-secondary mb-3">
-                            Вікові традиції, смачні й ароматні розваги, свято "Пампуха", <br>різдвяні ярмарки на
-                            вуличках Львова!
+                            {{$image->description}}
                         </p>
                     </div>
-                    <a href="#" class="btn btn--green">Програма святкувань</a>
+                    @if(isset($image->url) && isset($image->link_text))
+                    <a href="{!!$image->url!!}" class="btn btn--green">{{$image->link_text}}</a>
+                    @endif
                 </div>
             </div>
         </div>
-        <div class="main-slider__slide" style="background-image: url(images/main-slider-img-2.jpg);">
-            <div class="container text-center">
-                <div class="slide-content d-i-block text-left">
-                    <div>
-                        <div class="text-hero text-white mb-2">Дослідження туристів</div>
-                    </div>
-                    <div>
-                        <p class="text-secondary mb-3">
-                            Поділіться своїм досвідом перебування у Львові заповнивши цю <br>он-лайн форму! Ваш відгук
-                            важливий для нас!
-                        </p>
-                    </div>
-                    <a href="#" class="btn btn--green">Заповнити</a>
-                </div>
-            </div>
-        </div>
-        <div class="main-slider__slide" style="background-image: url(images/main-slider-img-3.jpg);">
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-md-2 text-right hidden-sm hidden-xs">
-                        <img class="d-i-block v-top" src="images/slide-3-icon.svg" alt="">
-                    </div>
-                    <div class="col-md-10 text-left">
-                        <div class="slide-content d-i-block text-left pt-3-lg">
-                            <div>
-                                <div class="text-hero text-white mb-2">Львів у списку найкращих</div>
-                            </div>
-                            <div>
-                                <p class="text-secondary mb-4">
-                                    Львів у списку найкращих напрямків для бюджетного відпочинку у 2017 році.
-                                    <br>Вартість місячної оренди однокімнатної квартири в центрі міста в порівнянні
-                                    <br>з іншими містами Європи становить:
-                                </p>
-                            </div>
-                            <div class="row-flex row-flex--wrap">
-                                <div class="col">
-                                    <div class="text-white py-1 pr-2-sm">
-                                        <div class="h3">Львів</div>
-                                        <div class="h2">7,580 <span class="fw-regular">&#8372;</span></div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="text-white py-1 px-2-sm">
-                                        <div class="h3">Катовіце</div>
-                                        <div class="h2">10,850 <span class="fw-regular">&#8372;</span></div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="text-white py-1 px-2-sm">
-                                        <div class="h3">Софія</div>
-                                        <div class="h2">11,300 <span class="fw-regular">&#8372;</span></div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="text-white py-1 pl-2-sm">
-                                        <div class="h3">Барселона</div>
-                                        <div class="h2">30,490 <span class="fw-regular">&#8372;</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
+@endforeach
     </div>
     @include('parts.selected')
+
+
+
     <div class="container">
         <section class="section pb-3">
             <h2 class="section__title">Вже і зараз</h2>

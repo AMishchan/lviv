@@ -23,6 +23,7 @@ class Category extends Model
         return $this->hasMany(Voyager::modelClass('Post'))
             ->published()
             ->orderBy('created_at', 'DESC');
+
     }
 
     public function parentId()
