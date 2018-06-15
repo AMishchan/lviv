@@ -11,20 +11,18 @@ use Illuminate\Support\Facades\Session;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Auth::routes();
-
-Route::group(['prefix' => 'owner','middleware' => ['auth']], function (){
+Route::group(['prefix' => 'owner','middleware' => ['locale']], function (){
     Route::get('/','OwnerController@owner')->name('owner');
-    Route::post('/store','OwnerController@store')->name('owner');
-
+    Route::post('/save','OwnerController@save')->name('ownersave');
+    Route::post('/store','OwnerController@store')->name('ownerstore');
+    Route::get('/categoryselect','OwnerController@categorySelect')->name('categoryselect');
+    Route::post('/update','OwnerController@ownerObjectUpdate')->name('ownerobjectupdate');
+    Route::get('/create/{category}','OwnerController@ownerObjectCreate')->name('ownerobjectcreate');
 });
-
 Route::group(['middleware' => ['locale']], function () {
     Route::get('/', 'MainpageController@index');
     Route::get('/home', 'HomeController@index')->name('home');
-
-
     Route::get('/now', function () {
         return view('now');
     })->name('now');
@@ -44,7 +42,6 @@ Route::group(['middleware' => ['locale']], function () {
         $post = App\Post::where('slug', '=', $slug)->firstOrFail();
         return view('single.news', compact('post','posts','locale'));
     })->name('single.news');
-
 
     Route::get('/tur', function () {
         $locale = Session::get('locale');
@@ -125,6 +122,7 @@ Route::group(['middleware' => ['locale']], function () {
 
     Route::get('/parks', function () {
         $locale = Session::get('locale');
+        //dd(TCG\Voyager\Models\Page::where('status','=','Парки', '')->firstOrFail());
         $pages =TCG\Voyager\Models\Page::all();
         $page =TCG\Voyager\Models\Page::where('status','=','Парки', '')->firstOrFail();
         $parks = App\Park::all();
@@ -183,13 +181,13 @@ Route::group(['middleware' => ['locale']], function () {
         $locale = Session::get('locale');
         $pages =TCG\Voyager\Models\Page::all();
         $page =TCG\Voyager\Models\Page::where('status','=','Театри', '')->firstOrFail();
-        $teatrs = App\Teatr::all();
+        $teatrs = App\Theatre::all();
         return view('teatrs', compact('teatrs','locale','pages','page'));
     })->name('teatrs');
     Route::get('/teatrs/{slug}', function ($slug1) {
         $locale = Session::get('locale');
 
-        $teatr = App\Teatr::where('slug','=',$slug1, '')->firstOrFail();
+        $teatr = App\Theatre::where('slug','=',$slug1, '')->firstOrFail();
         return view('single.teatr', compact('teatr','locale'));
     })->name('teatr');
 

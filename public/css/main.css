@@ -9585,9 +9585,13 @@ a.label:hover {
     margin-top: 15px;
 }
 .popup-socials{
-    bottom: 24px;
-    position: absolute;
+    bottom: 0;
+
     display: flex;
+}
+.businnes-row{
+    padding-left: 18px;
+    padding-right: 18px;
 }
 /*============================================interesterd-slider*/
 .interested-slider .slick-slide{

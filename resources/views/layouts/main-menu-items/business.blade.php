@@ -44,8 +44,13 @@
                     </div>
                 </div>
             </div>
-            <a href="{{route('business')}}" class="btn btn--green">Більше</a>
+            <div class="row businnes-row">
+                <a href="{{route('business')}}" class="btn btn--green">Більше</a>
+                <a href="{{route('categoryselect')}}" class="btn btn--green pull-right">Додати власний об'єкт</a>
+            </div>
         </div>
     </div>
-    @include('layouts.social')
+ @include('layouts.social')
+
+
 </div>

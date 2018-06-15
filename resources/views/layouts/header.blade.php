@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="{{asset('/css/landing.css')}}?t=<?php echo(microtime(true)); ?>">
     <link rel="stylesheet" href="{{asset('/css/calendar.css')}}?t=<?php echo(microtime(true)); ?>">
     <link href="{{ asset('/css/header-menu.css')}}?t=<?php echo(microtime(true)); ?>" rel="stylesheet">
-    <script defer src="{{asset('/libs/jquery/jquery-3.3.1.min.js')}}"></script>
+    <script src="{{asset('/libs/jquery/jquery-3.3.1.min.js')}}"></script>
+
 </head>
 <body class="home-page">
 <header class="header header--main header--small">

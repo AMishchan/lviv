@@ -69,5 +69,6 @@
 
 <script defer src="{{asset('/js/accordeon.js')}}"></script>
 <script defer src="{{asset('/js/scripts.js')}}"></script>
+
 </body>
 </html>

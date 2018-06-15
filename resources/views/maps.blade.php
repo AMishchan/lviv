@@ -1,61 +1,57 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Place ID Finder</title>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
-    <style>
-        /* Always set the map height explicitly to define the size of the div
-         * element that contains the map. */
-        #map {
-            height: 100%;
-        }
-        /* Optional: Makes the sample page fill the window. */
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        .controls {
-            background-color: #fff;
-            border-radius: 2px;
-            border: 1px solid transparent;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-            box-sizing: border-box;
-            font-family: Roboto;
-            font-size: 15px;
-            font-weight: 300;
-            height: 29px;
-            margin-left: 17px;
-            margin-top: 10px;
-            outline: none;
-            padding: 0 11px 0 13px;
-            text-overflow: ellipsis;
-            width: 400px;
-        }
+<link rel="stylesheet" href="{{ voyager_asset('css/app.css') }}">
+<style>
+    #map {
+        height: 100%;
+    }
 
-        .controls:focus {
-            border-color: #4d90fe;
-        }
-        .title {
-            font-weight: bold;
-        }
-        #infowindow-content {
-            display: none;
-        }
-        #map #infowindow-content {
-            display: inline;
-        }
+    /* Optional: Makes the sample page fill the window. */
+    html, body {
+        height: 50%;
+        margin: 0;
+        padding: 0;
+    }
 
-    </style>
-</head>
-<body>
-<input id="pac-input" class="controls" type="text"
-       placeholder="Enter a location">
+    .controls {
+        background-color: #fff;
+        border-radius: 2px;
+        border: 1px solid transparent;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        box-sizing: border-box;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        height: 29px;
+        margin-left: 17px;
+        margin-top: 10px;
+        outline: none;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 400px;
+    }
+
+    .controls:focus {
+        border-color: #4d90fe;
+    }
+
+    .title {
+        font-weight: bold;
+    }
+
+    #infowindow-content {
+        display: none;
+    }
+
+    #map #infowindow-content {
+        display: inline;
+    }
+
+</style>
+
+<div style="height: 80px"></div>
+<input id="pac-input" class="controls" type="text" placeholder="Enter a location">
 <div id="map"></div>
 <div id="infowindow-content">
-    <span id="place-name"  class="title"></span><br>
-    Place ID <span id="place-id"></span><br>
+    <span id="place-name" class="title"></span><br>Place ID <span id="place-id"></span><br>
     <span id="place-address"></span>
 </div>
 
@@ -71,7 +67,7 @@
 
     function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: 49.84264208029149 , lng : 24.0322703},
+            center: {lat: 49.84264208029149, lng: 24.0322703},
             zoom: 13
         });
 
@@ -86,11 +82,11 @@
         var marker = new google.maps.Marker({
             map: map
         });
-        marker.addListener('click', function() {
+        marker.addListener('click', function () {
             infowindow.open(map, marker);
         });
 
-        autocomplete.addListener('place_changed', function() {
+        autocomplete.addListener('place_changed', function () {
             infowindow.close();
             var place = autocomplete.getPlace();
             if (!place.geometry) {
@@ -122,35 +118,3 @@
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmUcVn8v4mHdwIZKHjc1yvMhkqHU597go&libraries=places&callback=initMap"
         async defer></script>
-</body>
-</html>
-{{--<!DOCTYPE html>--}}
-{{--<html>--}}
-{{--<head>--}}
-    {{--<style>--}}
-        {{--#map {--}}
-            {{--height: 400px;--}}
-            {{--width: 100%;--}}
-        {{--}--}}
-    {{--</style>--}}
-{{--</head>--}}
-{{--<body>--}}
-{{--<div id="map"></div>--}}
-{{--<script>--}}
-    {{--function initMap() {--}}
-        {{--var uluru = {lat:49.84264208029149, lng: 24.0322703};--}}
-        {{--var map = new google.maps.Map(document.getElementById('map'), {--}}
-            {{--zoom: 4,--}}
-            {{--center: uluru--}}
-        {{--});--}}
-        {{--var marker = new google.maps.Marker({--}}
-            {{--position: uluru,--}}
-            {{--map: map--}}
-        {{--});--}}
-    {{--}--}}
-{{--</script>--}}
-{{--<script async defer--}}
-        {{--src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmUcVn8v4mHdwIZKHjc1yvMhkqHU597go&callback=initMap">--}}
-{{--</script>--}}
-{{--</body>--}}
-{{--</html>--}}

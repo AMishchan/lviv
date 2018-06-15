@@ -1,4 +1,4 @@
-@extends('voyager::master')
+    @extends('voyager::master')
 
 @section('page_title', __('voyager.generic.viewing').' '.$dataType->display_name_plural)
 
@@ -87,6 +87,7 @@
                                         @endcan
                                         @foreach($dataType->browseRows as $row)
                                             <td>
+
                                                 <?php $options = json_decode($row->details); ?>
                                                 @if($row->type == 'image')
                                                     <img src="@if( !filter_var($data->{$row->field}, FILTER_VALIDATE_URL)){{ Voyager::image( $data->{$row->field} ) }}@else{{ $data->{$row->field} }}@endif" style="width:100px">
@@ -94,6 +95,8 @@
                                                     @include('voyager::formfields.relationship', ['view' => 'browse'])
                                                 @elseif($row->type == 'select_multiple')
                                                     @if(property_exists($options, 'relationship'))
+
+
 
                                                         @foreach($data->{$row->field} as $item)
                                                             @if($item->{$row->field . '_page_slug'})
@@ -103,20 +106,20 @@
                                                             @endif
                                                         @endforeach
 
-                                                        {{-- $data->{$row->field}->implode($options->relationship->label, ', ') --}}
+
                                                     @elseif(property_exists($options, 'options'))
                                                         @foreach($data->{$row->field} as $item)
                                                          {{ $options->options->{$item} . (!$loop->last ? ', ' : '') }}
                                                         @endforeach
                                                     @endif
 
-                                                @elseif($row->type == 'select_dropdown' && property_exists($options, 'options'))
+                                                {{--@elseif($row->type == 'select_dropdown' && property_exists($options, 'options'))--}}
 
-                                                    @if($data->{$row->field . '_page_slug'})
-                                                        <a href="{{ $data->{$row->field . '_page_slug'} }}">{!! $options->options->{$data->{$row->field}} !!}</a>
-                                                    @else
-                                                        {!! $options->options->{$data->{$row->field}} !!}
-                                                    @endif
+                                                    {{--@if($data->{$row->field . '_page_slug'})--}}
+                                                        {{--<a href="{{ $data->{$row->field . '_page_slug'} }}">{!! $options->options->{$data->{$row->field}} !!}</a>--}}
+                                                    {{--@else--}}
+                                                        {{--{!! $options->options->{$data->{$row->field}} !!}--}}
+                                                    {{--@endif--}}
 
 
                                                 @elseif($row->type == 'select_dropdown' && $data->{$row->field . '_page_slug'})
@@ -133,6 +136,7 @@
                                                     @else
                                                     {{ $data->{$row->field} }}
                                                     @endif
+
                                                 @elseif($row->type == 'color')
                                                     <span class="badge badge-lg" style="background-color: {{ $data->{$row->field} }}">{{ $data->{$row->field} }}</span>
                                                 @elseif($row->type == 'text')

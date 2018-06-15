@@ -71,7 +71,6 @@
                                         @else
                                             {!! app('voyager')->formField($row, $dataType, $dataTypeContent) !!}
                                         @endif
-
                                         @foreach (app('voyager')->afterFormFields($row, $dataType, $dataTypeContent) as $after)
                                             {!! $after->handle($row, $dataType, $dataTypeContent) !!}
                                         @endforeach

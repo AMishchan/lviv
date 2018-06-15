@@ -12,7 +12,7 @@ use TCG\Voyager\Events\BreadDataUpdated;
 use TCG\Voyager\Events\BreadImagesDeleted;
 use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Http\Controllers\Traits\BreadRelationshipParser;
-
+use Illuminate\Support\Str;
 class VoyagerBreadController extends Controller
 {
     use BreadRelationshipParser;
@@ -300,6 +300,11 @@ class VoyagerBreadController extends Controller
      */
     public function store(Request $request)
     {
+        if ($request->has(['name_en', 'name_uk', 'category_name'])) {
+            $code = Str::slug($request->name_en);
+            $request->request->add(['code'=>$code]);
+        }
+
         $slug = $this->getSlug($request);
 
         $dataType = Voyager::model('DataType')->where('slug', '=', $slug)->first();

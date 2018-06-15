@@ -29,7 +29,7 @@ class Locale
       //  dump(Session::all());
         Session::put('locale', $locale);
      //   dd(Session::all());
-
+        view()->share(['locale' => $locale]);
         return $next($request);
     }
 }
