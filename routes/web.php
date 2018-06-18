@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Session;
 Auth::routes();
 Route::group(['prefix' => 'owner','middleware' => ['locale']], function (){
     Route::get('/','OwnerController@owner')->name('owner');
-    Route::post('/save','OwnerController@save')->name('ownersave');
+    Route::post('/save/{model}','OwnerController@save')->name('ownersave');
     Route::post('/store','OwnerController@store')->name('ownerstore');
     Route::get('/categoryselect','OwnerController@categorySelect')->name('categoryselect');
     Route::post('/update','OwnerController@ownerObjectUpdate')->name('ownerobjectupdate');

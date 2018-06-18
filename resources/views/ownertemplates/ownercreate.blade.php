@@ -6,10 +6,16 @@
     @extends('maps')
     <script src="{{asset('/libs/ckeditor/ckeditor.js')}}"></script>
     <div class="container">
+
+        @if(Session::has('message1'))
+            <div class="alert alert-warning fade in alert-dismissible">
+                <h2 class="text-center"> {{Session::get('message1')}}</h2>
+            </div>
+        @endif
         <!-- Bootstrap шаблон... -->
         <input class="btn btn--green" type="button" id="buttonGrub" value="Стырить"/>
         <div class="panel-body" display="none">
-            <form action="{{ url('owner/save') }}" method="post" class="form-horizontal">
+            <form action="{{ url("owner/save/{$category}") }}" method="post" class="form-horizontal">
                 {{ csrf_field() }}
                 @foreach($columns as $key)
                     @if(preg_match('/photo/', $key))
@@ -56,16 +62,12 @@
 
     <script>
 
-//        $(getElementById('pac-input').value = 111);
-
           $(buttonGrub.onclick = function insertInfoG(){
               var sel = document.querySelector('[class="gm-style-iw"]>div>div>div>div>div').innerText;
               var inp = $('#pac-input');
               inp.val(sel);
+              var params = {};
             });
-
-
-
 
     </script>
 

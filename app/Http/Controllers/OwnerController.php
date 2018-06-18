@@ -97,6 +97,32 @@ class OwnerController extends Controller
         //
     }
 
+    public function geometryInsert($object_id, $tag, $category, $geometry)
+    {
+
+            $data['tag'] = $tag;
+            $data['category'] = $category;
+            $data['object_id'] = $object_id;
+            $data['geometry'] = $geometry;
+            DB::table('google_geometry')
+                ->insert($data);
+
+
+    }
+
+    public function reviewInsert($gooleReviews, $category,$object_id,$tag)
+    {
+
+        foreach ($gooleReviews as $review) {
+            $review['tag'] = $tag;
+            $review['category'] = $category;
+            $review['object_id'] = $object_id;
+            DB::table('google_reviews')
+                ->insert($review);
+
+        }
+    }
+
     /**
      * Update the specified resource in storage.
      *
@@ -104,19 +130,48 @@ class OwnerController extends Controller
      * @param  \App\Owner $owner
      * @return \Illuminate\Http\Response
      */
-    public function save(Request $request)
+    public function save(Request $request, $model)
     {
-        $category = Session::get('model');
+        $category = Session::get('model') ?? $model;
         $data = $request->all();
+
         if (isset($data['_token'])) unset($data['_token']);
+
         $key = md5(uniqid(rand(), 1));
         $unique_key = $category . '~*' . $key;
         $data['unique_key'] = $unique_key;
         $data['status'] = 'draft';
-        $data['slug'] = Str::slug($data['title_en']);
+        $data['slug'] = Str::slug($data['title']);
+        $tag = $data['tag'];
         DB::table($category)
             ->insert($data);
-        return redirect()->back()->with('complete', ['complete registration']);
+        $object_id = DB::select("select last_insert_id() from $category")[0];
+      //  dd($object_id);
+        try {
+            $objJson = file_get_contents("https://maps.googleapis.com/maps/api/place/details/json?key=AIzaSyCmUcVn8v4mHdwIZKHjc1yvMhkqHU597go&placeid={$data['google_place_id']}");
+            $googleInfo = json_decode($objJson);
+        }catch (Exception $e){
+            return redirect()->back()->with('message', 'connection_failed');
+        }
+        if ($googleInfo->status !== 'OK') {
+
+            return redirect()->back()->with('message1', 'Incorrect_Goole_Place_ID');
+
+        } else {
+            $result = $googleInfo->result;
+            dd(json_encode($result));
+            $gooleReviews = $result->reviews ?? 'null';
+            $gooleReviews = json_decode(json_encode($gooleReviews), True);
+            $object_id = json_decode(json_encode($object_id), True)['last_insert_id()'];
+            $geometry = json_encode($result->geometry);
+
+            $this->reviewInsert($gooleReviews, $category,$object_id, $tag);
+            $this->geometryInsert($object_id, $tag, $category, $geometry);
+        }
+
+        return redirect()
+            ->back()
+            ->with('complete', ['complete registration']);
     }
 
     /**
@@ -134,9 +189,9 @@ class OwnerController extends Controller
     public function categorySelect()
     {
         $categoryList = CategorySelect::all();
-        foreach($categoryList as &$category) {
-            if(in_array($category->slug, self::CATEGORY_UNSET)){
-               $category->__unset('slug');
+        foreach ($categoryList as &$category) {
+            if (in_array($category->slug, self::CATEGORY_UNSET)) {
+                $category->__unset('slug');
             }
         }
         return view('ownerCategorySelect', compact('categoryList', 'locale'));
@@ -153,7 +208,7 @@ class OwnerController extends Controller
             unset($columns[$key]);
         }
         Session::put('model', $category);
-        return view('ownertemplates.ownercreate', compact('columns', 'tags', 'locale'));
+        return view('ownertemplates.ownercreate', compact('category', 'columns', 'tags', 'locale'));
     }
 
     public function ownerObjectUpdate(Request $request)
@@ -169,12 +224,12 @@ class OwnerController extends Controller
                 ->where('unique_key', $unique_key)
                 ->get()
                 ->first();
-        }catch (QueryException $e){
-            return redirect()->back()->with('message','Така пошта та ключ не привʼязані до жодного обʼєкту');
+        } catch (QueryException $e) {
+            return redirect()->back()->with('message', 'Така пошта та ключ не привʼязані до жодного обʼєкту');
         }
 
-        if($objectInfo == null){
-            return redirect()->back()->with('message','Така пошта та ключ не привʼязані до жодного обʼєкту');
+        if ($objectInfo == null) {
+            return redirect()->back()->with('message', 'Така пошта та ключ не привʼязані до жодного обʼєкту');
         }
 
         $tags = Tag::where('category_name', '=', $queryModel)->get();
@@ -182,7 +237,7 @@ class OwnerController extends Controller
             if (isset($objectInfo->$prop)) unset($objectInfo->$prop);
         }
         Session::put('model', $queryModel);
-//dd($objectInfo);
+
         return view('ownertemplates.ownerregistration', compact('model', 'objectInfo', 'tags', 'locale'));
     }
 }
