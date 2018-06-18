@@ -5,7 +5,7 @@
     @endif
     @extends('maps')
     <script src="{{asset('/libs/ckeditor/ckeditor.js')}}"></script>
-    <div class="container"><p id="qq"></pid>
+    <div class="container">
         <!-- Bootstrap шаблон... -->
         <div class="panel-body" display="none">
             <form action="{{ url('owner/update') }}" method="post" class="form-horizontal">
