@@ -27,52 +27,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
-      <library name="PHP" type="php">
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/arrilot/laravel-widgets" />
-          <root url="file://$MODULE_DIR$/vendor/doctrine/annotations" />
-          <root url="file://$MODULE_DIR$/vendor/doctrine/cache" />
-          <root url="file://$MODULE_DIR$/vendor/doctrine/collections" />
-          <root url="file://$MODULE_DIR$/vendor/doctrine/common" />
-          <root url="file://$MODULE_DIR$/vendor/doctrine/dbal" />
-          <root url="file://$MODULE_DIR$/vendor/doctrine/lexer" />
-          <root url="file://$MODULE_DIR$/vendor/guzzlehttp/psr7" />
-          <root url="file://$MODULE_DIR$/vendor/intervention/image" />
-          <root url="file://$MODULE_DIR$/vendor/justinrainbow/json-schema" />
-          <root url="file://$MODULE_DIR$/vendor/larapack/doctrine-support" />
-          <root url="file://$MODULE_DIR$/vendor/larapack/hooks" />
-          <root url="file://$MODULE_DIR$/vendor/larapack/voyager-hooks" />
-          <root url="file://$MODULE_DIR$/vendor/psr/http-message" />
-          <root url="file://$MODULE_DIR$/vendor/seld/cli-prompt" />
-          <root url="file://$MODULE_DIR$/vendor/seld/jsonlint" />
-          <root url="file://$MODULE_DIR$/vendor/seld/phar-utils" />
-          <root url="file://$MODULE_DIR$/vendor/symfony/filesystem" />
-          <root url="file://$MODULE_DIR$/vendor/tcg/voyager" />
-        </CLASSES>
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/arrilot/laravel-widgets" />
-          <root url="file://$MODULE_DIR$/vendor/doctrine/annotations" />
-          <root url="file://$MODULE_DIR$/vendor/doctrine/cache" />
-          <root url="file://$MODULE_DIR$/vendor/doctrine/collections" />
-          <root url="file://$MODULE_DIR$/vendor/doctrine/common" />
-          <root url="file://$MODULE_DIR$/vendor/doctrine/dbal" />
-          <root url="file://$MODULE_DIR$/vendor/doctrine/lexer" />
-          <root url="file://$MODULE_DIR$/vendor/guzzlehttp/psr7" />
-          <root url="file://$MODULE_DIR$/vendor/intervention/image" />
-          <root url="file://$MODULE_DIR$/vendor/justinrainbow/json-schema" />
-          <root url="file://$MODULE_DIR$/vendor/larapack/doctrine-support" />
-          <root url="file://$MODULE_DIR$/vendor/larapack/hooks" />
-          <root url="file://$MODULE_DIR$/vendor/larapack/voyager-hooks" />
-          <root url="file://$MODULE_DIR$/vendor/psr/http-message" />
-          <root url="file://$MODULE_DIR$/vendor/seld/cli-prompt" />
-          <root url="file://$MODULE_DIR$/vendor/seld/jsonlint" />
-          <root url="file://$MODULE_DIR$/vendor/seld/phar-utils" />
-          <root url="file://$MODULE_DIR$/vendor/symfony/filesystem" />
-          <root url="file://$MODULE_DIR$/vendor/tcg/voyager" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
       <library name="PHARS">
         <CLASSES>
           <root url="phar://$MODULE_DIR$/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.0.phar/" />

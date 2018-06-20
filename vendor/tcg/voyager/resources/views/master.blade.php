@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}">
+<html lang="{{ config('app.locale') }}" @if (config('voyager.multilingual.rtl')) dir="rtl" @endif>
 <head>
-    <title>Admin-Lviv-Travel</title>
+    <title>@yield('page_title', setting('admin.title') . " - " . setting('admin.description'))</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
 
@@ -9,13 +9,18 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ asset('favicon/favicon.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ voyager_asset('images/logo-icon.png') }}" type="image/x-icon">
+
 
 
     <!-- App CSS -->
     <link rel="stylesheet" href="{{ voyager_asset('css/app.css') }}">
 
     @yield('css')
+    @if(config('voyager.multilingual.rtl'))
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-rtl/3.4.0/css/bootstrap-rtl.css">
+        <link rel="stylesheet" href="{{ voyager_asset('css/rtl.css') }}">
+    @endif
 
     <!-- Few Dynamic Styles -->
     <style type="text/css">
@@ -32,9 +37,6 @@
         .voyager .breadcrumb a{
             color:{{ config('voyager.primary_color','#22A7F0') }};
         }
-        .readmore{
-            overflow: hidden;
-        }
     </style>
 
     @if(!empty(config('voyager.additional_css')))<!-- Additional CSS -->
@@ -46,14 +48,22 @@
 
 <body class="voyager @if(isset($dataType) && isset($dataType->slug)){{ $dataType->slug }}@endif">
 
-
+<div id="voyager-loader">
+    <?php $admin_loader_img = Voyager::setting('admin.loader', ''); ?>
+    @if($admin_loader_img == '')
+        <img src="{{ voyager_asset('images/logo-icon.png') }}" alt="Voyager Loader">
+    @else
+        <img src="{{ Voyager::image($admin_loader_img) }}" alt="Voyager Loader">
+    @endif
+</div>
 
 <?php
-//$user_avatar = Voyager::image(Auth::user()->avatar);
-//if ((substr(Auth::user()->avatar, 0, 7) == 'http://') || (substr(Auth::user()->avatar, 0, 8) == 'https://')) {
-//    $user_avatar = Auth::user()->avatar;
-//}
-//?>
+if (starts_with(Auth::user()->avatar, 'http://') || starts_with(Auth::user()->avatar, 'https://')) {
+    $user_avatar = Auth::user()->avatar;
+} else {
+    $user_avatar = Voyager::image(Auth::user()->avatar);
+}
+?>
 
 <div class="app-container">
     <div class="fadetoblack visible-xs"></div>
@@ -96,7 +106,7 @@
         </div>
     </div>
 </div>
-{{----}}
+@include('voyager::partials.app-footer')
 
 <!-- Javascript Libs -->
 
@@ -112,7 +122,7 @@
 
     @if(Session::has('message'))
 
-    // TODO: change Controllers to use AlertsMevfcdvdfvzdfbdfbdfbdgbssages trait... then remove this
+    // TODO: change Controllers to use AlertsMessages trait... then remove this
     var alertType = {!! json_encode(Session::get('alert-type', 'info')) !!};
     var alertMessage = {!! json_encode(Session::get('message')) !!};
     var alerter = toastr[alertType];

@@ -57,10 +57,9 @@
     @endphp
 
     <li class="{{ implode(" ", $listItemClass) }}">
-        <a {!! $linkAttributes !!} target="{{ $item->target }}">
+        <a {!! $linkAttributes !!} target="{{ $item->target }}" style="color:{{ (isset($item->color) && $item->color != '#000000' ? $item->color : '') }}">
             <span class="icon {{ $item->icon_class }}"></span>
-            {{--TODO lang changes for title + _uk same like in adminmenublade--}}
-            <span class="title">{{ $transItem->title_uk }}</span>
+            <span class="title">{{ $transItem->title }}</span>
         </a>
         @if($hasChildren)
             <div id="{{ $transItem->id }}-dropdown-element" class="panel-collapse collapse {{ (in_array('active', $listItemClass) ? 'in' : '') }}">

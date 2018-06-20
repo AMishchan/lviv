@@ -11,6 +11,7 @@
 
 namespace Symfony\Component\Filesystem;
 
+use Symfony\Component\Filesystem\Exception\InvalidArgumentException;
 use Symfony\Component\Filesystem\Exception\IOException;
 use Symfony\Component\Filesystem\Exception\FileNotFoundException;
 
@@ -21,6 +22,8 @@ use Symfony\Component\Filesystem\Exception\FileNotFoundException;
  */
 class Filesystem
 {
+    private static $lastError;
+
     /**
      * Copies a file.
      *
@@ -95,12 +98,11 @@ class Filesystem
                 continue;
             }
 
-            if (true !== @mkdir($dir, $mode, true)) {
-                $error = error_get_last();
+            if (!self::box('mkdir', $dir, $mode, true)) {
                 if (!is_dir($dir)) {
                     // The directory was not created by a concurrent process. Let's throw an exception with a developer friendly error message if we have one
-                    if ($error) {
-                        throw new IOException(sprintf('Failed to create "%s": %s.', $dir, $error['message']), 0, null, $dir);
+                    if (self::$lastError) {
+                        throw new IOException(sprintf('Failed to create "%s": %s.', $dir, self::$lastError), 0, null, $dir);
                     }
                     throw new IOException(sprintf('Failed to create "%s"', $dir), 0, null, $dir);
                 }
@@ -169,20 +171,17 @@ class Filesystem
         foreach ($files as $file) {
             if (is_link($file)) {
                 // See https://bugs.php.net/52176
-                if (!@(unlink($file) || '\\' !== DIRECTORY_SEPARATOR || rmdir($file)) && file_exists($file)) {
-                    $error = error_get_last();
-                    throw new IOException(sprintf('Failed to remove symlink "%s": %s.', $file, $error['message']));
+                if (!(self::box('unlink', $file) || '\\' !== DIRECTORY_SEPARATOR || self::box('rmdir', $file)) && file_exists($file)) {
+                    throw new IOException(sprintf('Failed to remove symlink "%s": %s.', $file, self::$lastError));
                 }
             } elseif (is_dir($file)) {
                 $this->remove(new \FilesystemIterator($file, \FilesystemIterator::CURRENT_AS_PATHNAME | \FilesystemIterator::SKIP_DOTS));
 
-                if (!@rmdir($file) && file_exists($file)) {
-                    $error = error_get_last();
-                    throw new IOException(sprintf('Failed to remove directory "%s": %s.', $file, $error['message']));
+                if (!self::box('rmdir', $file) && file_exists($file)) {
+                    throw new IOException(sprintf('Failed to remove directory "%s": %s.', $file, self::$lastError));
                 }
-            } elseif (!@unlink($file) && file_exists($file)) {
-                $error = error_get_last();
-                throw new IOException(sprintf('Failed to remove file "%s": %s.', $file, $error['message']));
+            } elseif (!self::box('unlink', $file) && file_exists($file)) {
+                throw new IOException(sprintf('Failed to remove file "%s": %s.', $file, self::$lastError));
             }
         }
     }
@@ -252,7 +251,7 @@ class Filesystem
                 $this->chgrp(new \FilesystemIterator($file), $group, true);
             }
             if (is_link($file) && function_exists('lchgrp')) {
-                if (true !== @lchgrp($file, $group) || (defined('HHVM_VERSION') && !posix_getgrnam($group))) {
+                if (true !== @lchgrp($file, $group)) {
                     throw new IOException(sprintf('Failed to chgrp file "%s".', $file), 0, null, $file);
                 }
             } else {
@@ -336,16 +335,14 @@ class Filesystem
 
         $this->mkdir(dirname($targetDir));
 
-        $ok = false;
         if (is_link($targetDir)) {
-            if (readlink($targetDir) != $originDir) {
-                $this->remove($targetDir);
-            } else {
-                $ok = true;
+            if (readlink($targetDir) === $originDir) {
+                return;
             }
+            $this->remove($targetDir);
         }
 
-        if (!$ok && true !== @symlink($originDir, $targetDir)) {
+        if (!self::box('symlink', $originDir, $targetDir)) {
             $this->linkException($originDir, $targetDir, 'symbolic');
         }
     }
@@ -377,7 +374,7 @@ class Filesystem
                 $this->remove($targetFile);
             }
 
-            if (true !== @link($originFile, $targetFile)) {
+            if (!self::box('link', $originFile, $targetFile)) {
                 $this->linkException($originFile, $targetFile, 'hard');
             }
         }
@@ -390,9 +387,8 @@ class Filesystem
      */
     private function linkException($origin, $target, $linkType)
     {
-        $report = error_get_last();
-        if (is_array($report)) {
-            if ('\\' === DIRECTORY_SEPARATOR && false !== strpos($report['message'], 'error code(1314)')) {
+        if (self::$lastError) {
+            if ('\\' === DIRECTORY_SEPARATOR && false !== strpos(self::$lastError, 'error code(1314)')) {
                 throw new IOException(sprintf('Unable to create %s link due to error code 1314: \'A required privilege is not held by the client\'. Do you have the required Administrator-rights?', $linkType), 0, null, $target);
             }
         }
@@ -450,8 +446,12 @@ class Filesystem
      */
     public function makePathRelative($endPath, $startPath)
     {
-        if (!$this->isAbsolutePath($endPath) || !$this->isAbsolutePath($startPath)) {
-            @trigger_error(sprintf('Support for passing relative paths to %s() is deprecated since Symfony 3.4 and will be removed in 4.0.', __METHOD__), E_USER_DEPRECATED);
+        if (!$this->isAbsolutePath($startPath)) {
+            throw new InvalidArgumentException(sprintf('The start path "%s" is not absolute.', $startPath));
+        }
+
+        if (!$this->isAbsolutePath($endPath)) {
+            throw new InvalidArgumentException(sprintf('The end path "%s" is not absolute.', $endPath));
         }
 
         // Normalize separators on Windows
@@ -475,11 +475,11 @@ class Filesystem
         $startPathArr = explode('/', trim($startPath, '/'));
         $endPathArr = explode('/', trim($endPath, '/'));
 
-        $normalizePathArray = function ($pathSegments, $absolute) {
+        $normalizePathArray = function ($pathSegments) {
             $result = array();
 
             foreach ($pathSegments as $segment) {
-                if ('..' === $segment && ($absolute || count($result))) {
+                if ('..' === $segment) {
                     array_pop($result);
                 } elseif ('.' !== $segment) {
                     $result[] = $segment;
@@ -489,8 +489,8 @@ class Filesystem
             return $result;
         };
 
-        $startPathArr = $normalizePathArray($startPathArr, static::isAbsolutePath($startPath));
-        $endPathArr = $normalizePathArray($endPathArr, static::isAbsolutePath($endPath));
+        $startPathArr = $normalizePathArray($startPathArr);
+        $endPathArr = $normalizePathArray($endPathArr);
 
         // Find for which directory the common path stops
         $index = 0;
@@ -724,27 +724,43 @@ class Filesystem
         }
     }
 
-    /**
-     * @param mixed $files
-     *
-     * @return array|\Traversable
-     */
-    private function toIterable($files)
+    private function toIterable($files): iterable
     {
         return is_array($files) || $files instanceof \Traversable ? $files : array($files);
     }
 
     /**
      * Gets a 2-tuple of scheme (may be null) and hierarchical part of a filename (e.g. file:///tmp -> array(file, tmp)).
-     *
-     * @param string $filename The filename to be parsed
-     *
-     * @return array The filename scheme and hierarchical part
      */
-    private function getSchemeAndHierarchy($filename)
+    private function getSchemeAndHierarchy(string $filename): array
     {
         $components = explode('://', $filename, 2);
 
         return 2 === count($components) ? array($components[0], $components[1]) : array(null, $components[0]);
+    }
+
+    private static function box($func)
+    {
+        self::$lastError = null;
+        \set_error_handler(__CLASS__.'::handleError');
+        try {
+            $result = \call_user_func_array($func, \array_slice(\func_get_args(), 1));
+            \restore_error_handler();
+
+            return $result;
+        } catch (\Throwable $e) {
+        } catch (\Exception $e) {
+        }
+        \restore_error_handler();
+
+        throw $e;
+    }
+
+    /**
+     * @internal
+     */
+    public static function handleError($type, $msg)
+    {
+        self::$lastError = $msg;
     }
 }

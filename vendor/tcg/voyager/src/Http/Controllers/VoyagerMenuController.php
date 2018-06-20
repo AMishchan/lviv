@@ -4,27 +4,18 @@ namespace TCG\Voyager\Http\Controllers;
 
 use Illuminate\Http\Request;
 use TCG\Voyager\Facades\Voyager;
-use App\Language;
 
 class VoyagerMenuController extends Controller
 {
-    protected $locales;
-
-    public function __construct()
-   {
-     $this->locales = Language::where('status', 1)->get();
-
-   }
     public function builder($id)
     {
-$locales = $this->locales;
         $menu = Voyager::model('Menu')->findOrFail($id);
 
         $this->authorize('edit', $menu);
 
         $isModelTranslatable = is_bread_translatable(Voyager::model('MenuItem'));
 
-        return Voyager::view('voyager::menus.builder', compact('menu', 'isModelTranslatable', 'locales'));
+        return Voyager::view('voyager::menus.builder', compact('menu', 'isModelTranslatable'));
     }
 
     public function delete_menu($menu, $id)
@@ -40,7 +31,7 @@ $locales = $this->locales;
         return redirect()
             ->route('voyager.menus.builder', [$menu])
             ->with([
-                'message'    => __('voyager.menu_builder.successfully_deleted'),
+                'message'    => __('voyager::menu_builder.successfully_deleted'),
                 'alert-type' => 'success',
             ]);
     }
@@ -75,7 +66,7 @@ $locales = $this->locales;
         return redirect()
             ->route('voyager.menus.builder', [$data['menu_id']])
             ->with([
-                'message'    => __('voyager.menu_builder.successfully_created'),
+                'message'    => __('voyager::menu_builder.successfully_created'),
                 'alert-type' => 'success',
             ]);
     }
@@ -103,7 +94,7 @@ $locales = $this->locales;
         return redirect()
             ->route('voyager.menus.builder', [$menuItem->menu_id])
             ->with([
-                'message'    => __('voyager.menu_builder.successfully_updated'),
+                'message'    => __('voyager::menu_builder.successfully_updated'),
                 'alert-type' => 'success',
             ]);
     }
@@ -160,7 +151,7 @@ $locales = $this->locales;
         $trans = json_decode($data['title_i18n'], true);
 
         // Set field value with the default locale
-        $data['title'] = $trans[config('voyager.multilingual.default', 'uk')];
+        $data['title'] = $trans[config('voyager.multilingual.default', 'en')];
 
         unset($data['title_i18n']);     // Remove hidden input holding translations
         unset($data['i18n_selector']);  // Remove language selector input radio
